@@ -1,4 +1,5 @@
 # General
+*.icloud
 *.code-workspace
 .DS_Store
 .AppleDouble
