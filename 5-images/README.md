@@ -15,7 +15,7 @@ Then, be sure to review Jen Simmmons' videos. These are both important to unders
         - Be sure this second image is at least 960px wide. 
         - It can be anything as long as it is appropriate for class.
         - Be sure that it is public domain, or the CC license allows for reuse. But it should NOT be copyrighted.
-6. Using photo editing software or this [online tool](https://pixelied.com/features/scale-image), create 2 different scaled versions of this file and save them to your images folder: 
+6. Using photo editing software or this [online tool](https://www2.lunapic.com/editor/)  (thanks, Stephanie!), create 2 different scaled versions of this file and save them to your images folder: 
     1. one that is *1.5 time*s the width of the original,
     2. another that is *0.5* of the width of the original.
 7. Name the scaled versions with their appropriate dimensions. For example, an image that is 960px by 460px could be named something like `image_name_960x460.png`, while the *0.5 scaled version* would be `image_name_480x230.png`. 
