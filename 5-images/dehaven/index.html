@@ -60,8 +60,14 @@
           height="661"
           srcset="images/flowerpic_497x330.jpg 497w,
                 images/flowerpic.jpeg 994w
-                images/flowerpic_flowerpic_1491x992.jpeg 1491w"
-    
+                images/flowerpic_1491x992.jpeg 1491w"
+              sizes="(max-width: 994px) 497px,
+              (max-width: 1988px) 994px,
+              (max-width: 2982px) 1491px">
+
+
+
+
           <!-- Replace this comment with an img element -->
         </div>
 
@@ -70,7 +76,7 @@
       <!-- Practice the <picture> Element -->
       <section id="picture__source">
         
-        <h2>[YOUR THEME HERE] in the <code>&lt;picture&gt;</code> element</h2>
+        <h2>The Bee and the Flowers in the <code>&lt;picture&gt;</code> element</h2>
         <p>
           Below, practice creating a picture element that:
         </p>
@@ -86,7 +92,17 @@
         <p>
           Be sure to reference the Simmons video for support. If you need more help, refer to the MDN page about the picture element and its attributes that I ask you to use above.
         </p>
-        <!-- Replace this comment with your <picture> element -->
+        <picture>
+          <source media="(min-width:600px)"
+                  srcset="images/flowerpic_1491x992.jpg">
+          <source srcset="images/flowerpic_497x330.jpg">
+          <img src="images/flowerpic.jpeg"
+           alt="A hot pink flower with a yellow stem at its center."
+           width="994"
+           height="661">
+
+
+        </picture>
       </section>
 
     </main>
