@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>[YOUR THEME HERE] - Home Page</title>
+    <title>The Bee and the Flowers- Home Page</title>
+    <meta author="Zenia deHaven"/>
+    <meta charset="utf-8"/>
+    <meta name="Home Page" content="5-images-homework"/>
   </head>
   <body>
     
-    <!-- ~~~~~~~~~~~~~~~~~~~
-      HEADER
-      Don't forget to personalize 
-      the content inside of this 
-      header.
-      ~~~~~~~~~~~~~~~~~~ -->
+  
     <header>
-      <!-- Replace this comment with a logo via an <img /> element. -->
+      <img src="images/beepic.png"
+      alt="A round black and yellow cartoon bee."
+      width="150"
+      height="150">
+    <figcaption>Bees polinate flowers, which is why he buzzes 
+      on the top of our page.</figcaption>
+    </figure>
       <h1>
-        <!-- Replace this comment with text that names your page's theme. -->
+       The Bee and the Flowers
       </h1>
     </header>
 
-    <!-- ~~~~~~~~~~~~~~~~~~~
-      MAIN
-      Below, you'll find some
-      wicked cool prompts.
-      ~~~~~~~~~~~~~~~~~~ -->
     <main>
       
       <!-- Practice the <img /> Element -->
       <section id="img">
 
-        <h2>[YOUR THEME HERE] in the <code>&lt;img&gt;</code> element</h2>
+        <h2>The Bee and the Flowers in the <code>&lt;img&gt;</code> element</h2>
         
         <!-- 
           Practice the <img /> element with 1 file source
@@ -38,7 +37,12 @@
           <p>
             After this paragraph element, use the one of your image files to render an image with the src, width, height, and alt attributes.
           </p>
-          <!-- Replace this comment with an img element -->
+          <img src="images/flowerpic.jpeg"
+          alt="A hot pink flower with a yellow stem at its center."
+          width="994"
+          height="661"
+          >
+
         </div>
 
         <!-- 
@@ -50,6 +54,14 @@
           <p>
             After this paragraph element, practice using the your set of 3 images by using the srcset and sizes attributes in the img element. Use the w (width) value for the srcset. Use the max-width attribute with the px (pixel) value for the sizes.
           </p>
+          <img src="images/flowerpic.jpeg"
+          alt= "A hot pink flower with a yellow stem at its center."
+          width="994"
+          height="661"
+          srcset="images/flowerpic_497x330.jpg 497w,
+                images/flowerpic.jpeg 994w
+                images/flowerpic_flowerpic_1491x992.jpeg 1491w"
+    
           <!-- Replace this comment with an img element -->
         </div>
 
@@ -66,10 +78,9 @@
           <li>
             uses the standard <code>&lt;img&gt;</code> as the default use of the smallest image file,</li>
           <li>
-            but <code>&lt;picture&gt;</code> also uses the <code>&lt;source&gt;</code> element to tell the browser to use the next largest image at a specified minimum width (px) of your choice,
-          </li>
+            but the <code>&lt;picture&gt;</code> also uses the <code>&lt;source&gt;</code> element to tell the browser to use the next largest image at a specified minimum width of 600px,</li>
           <li>
-            but the <code>&lt;picture&gt;</code> uses the <code>&lt;source&gt;</code> element to tell the browser to otherwise use the cropped version of your medium-sized file,
+            but the <code>&lt;picture&gt;</code> uses the <code>&lt;source&gt;</code> element to tell the browser to otherwise use the cropped version of your medium-sized file.
           </li>
         </ol>
         <p>
