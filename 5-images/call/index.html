@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>[YOUR THEME HERE] - Home Page</title>
+    <title>Apple and Dogs - Home Page</title>
   </head>
   <body>
     
@@ -12,9 +12,15 @@
       header.
       ~~~~~~~~~~~~~~~~~~ -->
     <header>
-      <!-- Replace this comment with a logo via an <img /> element. -->
+      <figure>
+        <img src="./images/apple_logo_1024x768.jpeg"
+        alt="" 
+        width="1024"
+        height="768">
+      </figure>
+    <!--logo is decorative image so you do not need alt text-->
       <h1>
-        <!-- Replace this comment with text that names your page's theme. -->
+        Apple and Dogs
       </h1>
     </header>
 
@@ -28,7 +34,7 @@
       <!-- Practice the <img /> Element -->
       <section id="img">
 
-        <h2>[YOUR THEME HERE] in the <code>&lt;img&gt;</code> element</h2>
+        <h2>Apple and Dogs in the <code>&lt;img&gt;</code> element</h2>
         
         <!-- 
           Practice the <img /> element with 1 file source
@@ -38,7 +44,10 @@
           <p>
             After this paragraph element, use the one of your image files to render an image with the src, width, height, and alt attributes.
           </p>
-          <!-- Replace this comment with an img element -->
+         <img src="images/dogs_1024x651.jpeg"
+         alt="A black dog resting his paw and head on a brown dog's body"
+         width="1024"
+         height="651">
         </div>
 
         <!-- 
@@ -50,7 +59,14 @@
           <p>
             After this paragraph element, practice using the your set of 3 images by using the srcset and sizes attributes in the img element. Use the w (width) value for the srcset. Use the max-width attribute with the px (pixel) value for the sizes.
           </p>
-          <!-- Replace this comment with an img element -->
+          <img srcset="images/dogs_512x325.jpg 512w,
+                      images/dogs_1024x651.jpeg 1024w,
+                      images/dogs_1536x976.jpg 1536w"
+              sizes="(max-width: 512px) 256px,
+                      (max-width: 1024px) 512px,
+                      (max-width: 1536px) 1024px, 
+                      1536px"
+              alt="A black dog resting his paw and head on a brown dog's body">
         </div>
 
       </section>
@@ -58,7 +74,7 @@
       <!-- Practice the <picture> Element -->
       <section id="picture__source">
         
-        <h2>[YOUR THEME HERE] in the <code>&lt;picture&gt;</code> element</h2>
+        <h2>Apple and Dogs in the <code>&lt;picture&gt;</code> element</h2>
         <p>
           Below, practice creating a picture element that:
         </p>
@@ -66,16 +82,24 @@
           <li>
             uses the standard <code>&lt;img&gt;</code> as the default use of the smallest image file,</li>
           <li>
-            but <code>&lt;picture&gt;</code> also uses the <code>&lt;source&gt;</code> element to tell the browser to use the next largest image at a specified minimum width (px) of your choice,
-          </li>
+            but the <code>&lt;picture&gt;</code> also uses the <code>&lt;source&gt;</code> element to tell the browser to use the next largest image at a specified minimum width of 600px,</li>
           <li>
-            but the <code>&lt;picture&gt;</code> uses the <code>&lt;source&gt;</code> element to tell the browser to otherwise use the cropped version of your medium-sized file,
+            but the <code>&lt;picture&gt;</code> uses the <code>&lt;source&gt;</code> element to tell the browser to otherwise use the cropped version of your medium-sized file.
           </li>
         </ol>
         <p>
           Be sure to reference the Simmons video for support. If you need more help, refer to the MDN page about the picture element and its attributes that I ask you to use above.
         </p>
-        <!-- Replace this comment with your <picture> element -->
+      <picture>
+        <source media="(min-width:600px)"
+                srcset="images/dogs_1536x976.jpg">
+        <source srcset="images/dogs_512x325.jpg">
+        <img src="images/dogs.jpeg"
+         alt="A black dog resting his paw and head on a brown dog's body"
+         width="1024"
+         height="651">
+    <!--I tried mimicking the syntax from the linkedin video...I have no idea if this is right.-->
+      </picture>
       </section>
 
     </main>

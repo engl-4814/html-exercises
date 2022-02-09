@@ -1,60 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Frogs and BMWs - Home Page</title>
+    <title>Football - Home Page</title>
   </head>
   <body>
-    
     <header>
-      <figure>
-        <img src="images/bmw-logo.jpg"
-      alt="A circular BMW car logo rests on a white background."
-      width="500"
-      height="500">
-
-      <figcaption>The logo for BMW, car brand. If frogs could drive, they would definitely drive Beamers.</figcaption>
-      </figure>
-  
+      <img src="images/nfl.jpg"
+      width="600"
+      height="375"
+      alt="The NFL Logo">
       <h1>
-        BMWs and Frogs
+       The NFl 
       </h1>
     </header>
-
     <main>
+      <!-- Practice the <img /> Element -->
       <section id="img">
+        <h2>Football in the <code>&lt;img&gt;</code> element</h2>
+        <!-- 
+          Practice the <img /> element with 1 file source
+        -->
+        <img src="images/fireworks.jpg"
+        width="1023"
+        height="646"
+        alt="Fireworks over a bridge"
+        title="Fireworks were set off in San Francisco before Super Bowl 50">
 
-        <h2>BMWs and Frogs in the <code>&lt;img&gt;</code> element</h2>
-        
         <div id="img__basics">
           <h3>The Basics</h3>
           <p>
             After this paragraph element, use the one of your image files to render an image with the src, width, height, and alt attributes.
           </p>
-          <img src="./images/frog.jpg"
-          alt="A hand holds a brown frog above a shallow pond."
-          width="1024"
-          height="768">
+          <img src="images/fireworks_512x323.jpg"
+          width="512"
+          length="323"
+          alt="The fireworks before Super Bowl 50">
         </div>
-
-
+  
         <div id="img__srcset_and_sizes">
           <h3>Using srcset &amp; sizes</h3>
           <p>
             After this paragraph element, practice using the your set of 3 images by using the srcset and sizes attributes in the img element. Use the w (width) value for the srcset. Use the max-width attribute with the px (pixel) value for the sizes.
           </p>
-          <img src="./images/frog.jpg"
-          alt="A hand holds a brown frog above a shallow pond."
-          width="1024"
-          height="768"
+          <img src="images/fireworks_512x323.jpg"
+          width="512"
+          length="323"
+          alt="The fireworks before Super Bowl 50">
 
-          srcset="./images/frog-512x384.jpg 512w,
-          ./images/frog.jpg 1024w,
-          ./images/frog-1536x1152.jpg 1536w"
+          <img src="images/fireworks_1535x969.jpg"
+          width="1535"
+          length="969"
+          alt="Fireworks before Super Bowl 50">
 
-          sizes="(max-width:512px) 256px,
-          (max-width: 1024px) 512px,
-          (max-width: 1538px) 769px,
-          1536px">
+          <img src="images/fireworks.jpg"
+          width="1023"
+          height="646"
+          alt="Fireworks over a bridge"
+          title="Fireworks were set off in San Francisco before Super Bowl 50">
         </div>
 
       </section>
@@ -62,7 +64,7 @@
       <!-- Practice the <picture> Element -->
       <section id="picture__source">
         
-        <h2>BMWs and Frogs in the <code>&lt;picture&gt;</code> element</h2>
+        <h2>Football in the <code>&lt;picture&gt;</code> element</h2>
         <p>
           Below, practice creating a picture element that:
         </p>
@@ -78,12 +80,13 @@
         <p>
           Be sure to reference the Simmons video for support. If you need more help, refer to the MDN page about the picture element and its attributes that I ask you to use above.
         </p>
-        <img src="./images/frog.jpg"
-        alt="A hand holds a brown frog above a shallow pond."
-        width="1024"
-        height="768"
-      </section>
-
+        <picture>
+          <source srcset="/images/fireworks.jpg"
+          media="(mid-width: 1023px)">
+          <img src="images/fireworks.jpg"
+          alt="Fireworks before Super Bowl 50">
+        </picture>
+        </section>
     </main>
   </body>
 </html>
