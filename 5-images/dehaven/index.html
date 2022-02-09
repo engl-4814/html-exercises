@@ -52,9 +52,9 @@
                 images/flowerpic.jpeg 994w
                 images/flowerpic_1491x992.jpeg 1491w"
               sizes=
-              "(max-width: 994px) 497px,
-              (max-width: 1988px) 994px,
-              (max-width: 2982px) 1491px"
+              "(max-width: 497px) 249px,
+              (max-width: 994px) 497px,
+              (max-width: 1491px) 994px, 1491px"
             alt="Hot pink flower with yellow stem.">
         </div>
 
@@ -78,22 +78,20 @@
         <p>
           Be sure to reference the Simmons video for support. If you need more help, refer to the MDN page about the picture element and its attributes that I ask you to use above.
         </p>
+
         <picture>
-          <source media="(min-width:600px)"
-                  srcset="images/flowerpic_1491x992.jpg">
+          <source media="(max-width:497px)"
+                  srcset="images/flowerpic_497x330">
 
-          <source srcset="images/flowerpic_497x330.jpg">
+          <source media="(min-width: 994px")
+          srcset="images/flowerpic.jpeg">
 
-          <img src="images/flowerpic.jpeg"
-           alt="A hot pink flower with a yellow stem at its center."
-           width="994"
-           height="661">
+          <img src="images/flowerpic_1491x992.jpg"
+           alt="A hot pink flower with a yellow stem at its center.",>
       
-          
         </picture>
-      </section>
 
+      </section>
     </main>
-    <!-- YOU MADE IT! -->
   </body>
 </html>
