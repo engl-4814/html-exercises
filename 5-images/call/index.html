@@ -91,14 +91,15 @@
           Be sure to reference the Simmons video for support. If you need more help, refer to the MDN page about the picture element and its attributes that I ask you to use above.
         </p>
       <picture>
-        <source media="(min-width:600px)"
-                srcset="images/dogs_1536x976.jpg">
-        <source srcset="images/dogs_512x325.jpg">
-        <img src="images/dogs.jpeg"
-         alt="A black dog resting his paw and head on a brown dog's body"
-         width="1024"
-         height="651">
-    <!--I tried mimicking the syntax from the linkedin video...I have no idea if this is right.-->
+        <source media="(min-width: 512px)"
+                srcset="images/dogs_512x325.jpg">
+            
+        <source media="(min-width: 600px)"
+                srcset="images/dogs_1024x651.jpeg">
+        
+        <img src="images/dogs_512x325.jpg"
+         alt="A black dog resting his paw and head on a brown dog's body">
+    
       </picture>
       </section>
 
