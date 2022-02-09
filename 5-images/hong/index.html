@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <title>Books - Home Page</title>
+    <meta author="Michelle Hong"/>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
   </head>
   <body>
     
@@ -12,7 +14,11 @@
       header.
       ~~~~~~~~~~~~~~~~~~ -->
     <header>
-      <img src="images/pencil.jpeg">
+      <img src="images/pencil_180x180.jpeg"
+           width="180"
+           height ="180"
+           alt=""
+      >
       <h1>
         Books
       </h1>
@@ -53,8 +59,13 @@
           <p>
             After this paragraph element, practice using the your set of 3 images by using the srcset and sizes attributes in the img element. Use the w (width) value for the srcset. Use the max-width attribute with the px (pixel) value for the sizes.
           </p>
-          <img srcset="images/books_1024x768.jpeg 1024w,images/books_512x384.jpeg 512w,images/books_1536x1152.jpeg 1536w"
-               sizes="(max-width: 600px) 1024px,768px"
+          <img srcset="images/books_1024x768.jpeg 1024w,
+                       images/books_512x384.jpeg 512w,
+                       images/books_1536x1152.jpeg 1536w"
+               sizes="(max-width: 480px) 240px
+                      (max-width: 960px) 480px
+                      (max-width: 1440px) 960px
+                      1440"
                src="images/books_1024x768.jpeg"
                alt="An assortment of books in a bookshelf">
         </div>
@@ -83,11 +94,12 @@
         </p>
 
         <picture>
-          <source media="(max-width: 799px)" 
-                  srcset="images/books_512x384.jpeg">
-          <source media="(min-width: 800px)" 
+          <source media="(max-width: 480px)" 
+                  srcset="images/books_256crop.jpeg">
+          <source media="(min-width: 960px)" 
                   srcset="images/books_1024x768.jpeg">
-          <img src="images/books_512x384.jpeg" alt="An assortment of books in a bookshelf">
+          <img src="images/books_512x384.jpeg" 
+               alt="An assortment of books in a bookshelf">
         </picture>
 
       </section>
