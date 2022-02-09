@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>[YOUR THEME HERE] - Home Page</title>
+    <title>Apple Steaks - Home Page</title>
+    <link rel="icon" href="./images/logo.jpg" type="image/x-icon">
   </head>
   <body>
     
@@ -13,8 +14,11 @@
       ~~~~~~~~~~~~~~~~~~ -->
     <header>
       <!-- Replace this comment with a logo via an <img /> element. -->
+      <img src="./images/logo.jpg" width="40" height="40" alt="">
+
       <h1>
         <!-- Replace this comment with text that names your page's theme. -->
+        Apple Steaks
       </h1>
     </header>
 
@@ -28,7 +32,7 @@
       <!-- Practice the <img /> Element -->
       <section id="img">
 
-        <h2>[YOUR THEME HERE] in the <code>&lt;img&gt;</code> element</h2>
+        <h2>Apple Steaks in the <code>&lt;img&gt;</code> element</h2>
         
         <!-- 
           Practice the <img /> element with 1 file source
@@ -39,6 +43,7 @@
             After this paragraph element, use the one of your image files to render an image with the src, width, height, and alt attributes.
           </p>
           <!-- Replace this comment with an img element -->
+          <img src="./images/ribeye1536x788.jpeg" width="1536" height="788" alt="A juicy ribeye">
         </div>
 
         <!-- 
@@ -51,6 +56,10 @@
             After this paragraph element, practice using the your set of 3 images by using the srcset and sizes attributes in the img element. Use the w (width) value for the srcset. Use the max-width attribute with the px (pixel) value for the sizes.
           </p>
           <!-- Replace this comment with an img element -->
+          <img srcset="images/ribeye1536x788.jpeg 1536w, images/ribeye512x788.jpeg 512w, images/ribeye1024x683.jpeg 1024w"
+            sizes="(max-width: 1536px) 1024px, (max-width: 512px) 256px, (max-width: 1024px) 512px, 1024px"
+            alt="Ribeyes"
+          />
         </div>
 
       </section>
@@ -58,7 +67,7 @@
       <!-- Practice the <picture> Element -->
       <section id="picture__source">
         
-        <h2>[YOUR THEME HERE] in the <code>&lt;picture&gt;</code> element</h2>
+        <h2>Apple Steaks in the <code>&lt;picture&gt;</code> element</h2>
         <p>
           Below, practice creating a picture element that:
         </p>
@@ -75,6 +84,11 @@
           Be sure to reference the Simmons video for support. If you need more help, refer to the MDN page about the picture element and its attributes that I ask you to use above.
         </p>
         <!-- Replace this comment with your <picture> element -->
+          <picture>
+            <source media="(max-width: 480px)" srcset="images/ribeye512x788.jpeg">
+            <source media="(min-width: 960px)" srcset="images/ribeye1024x683.jpeg">
+            <img src="images/ribeye1536x788.jpeg" alt="Ribeye" />
+          </picture>
       </section>
 
     </main>
