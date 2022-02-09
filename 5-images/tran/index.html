@@ -4,11 +4,12 @@
 <head>
   <meta name="Author" content="Tyler Tran">
   <title>Origami - Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <header>
-    <img src="images/hedgehog.jpg" alt="hedgehog logo">
+    <img src="images/hedgehog.jpg" alt="hedgehog logo" width="100" height="100">
     <h1>Origami</h1>
   </header>
 
@@ -42,12 +43,12 @@
           in the img element. Use the w (width) value for the srcset. Use the max-width attribute with the px (pixel)
           value for the sizes.
         </p>
-        <img src="images/cranes.jpg" alt="Many cranes" width="1024" height="683"
+        <img alt="Many cranes"
           srcset="images/cranes.jpg 1024w, images/cranes_512x342.jpg 512w, images/cranes_1536x1024.jpg 1536w" 
-          sizes="(max-width: 512px) 512px,
-                 (max-width: 1024px) 1024px,
-                 (max-width: 1536px) 1529px,
-                  100vw">
+          sizes="(max-width: 480px) 240px,
+                 (max-width: 960px) 480px, 
+                 (max-width: 1440px) 960px,
+                  1440px">
       </div>
 
     </section>
@@ -76,13 +77,9 @@
         picture element and its attributes that I ask you to use above.
       </p>
       <picture>
-        <source media="(min-width:720px)"
-        srcset="images/cranes_1536x1024.jpg">
-<source srcset="images/cranes_512x342.jpg">
-<img src="images/cranes.jpg"
-    width="1024"
-    height="683"
-    alt="Many origami cranes hanging">
+        <source media="(max-width: 480)" srcset="images/cranes.jpg 0.5x">
+        <source media="(max-width: 960)" srcset="images/cranes_512x342.jpg">
+        <img src="images/cranes.jpg" alt="many origami cranes hung up">
       </picture>
     </section>
 
