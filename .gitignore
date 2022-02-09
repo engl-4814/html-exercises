@@ -1,4 +1,5 @@
 # General
+*.icloud
 *.code-workspace
 .DS_Store
 .AppleDouble
@@ -34,6 +35,9 @@ ehthumbs_vista.db
 # Dump file
 *.stackdump
 
+# Image / Media
+*.psd
+
 # Folder config file
 [Dd]esktop.ini
 
@@ -54,3 +58,4 @@ $RECYCLE.BIN/
 *.workspace
 .vscode/settings.json
 3-quick-components/lindgren
+5-images/lindgren
