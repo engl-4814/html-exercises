@@ -12,7 +12,7 @@
       width="500"
       height="500">
 
-      <figcaption>The logo for BMW, car brand.</figcaption>
+      <figcaption>The logo for BMW, car brand. If frogs could drive, they would definitely drive Beamers.</figcaption>
       </figure>
   
       <h1>
@@ -36,16 +36,24 @@
           height="768">
         </div>
 
-        <!-- 
-          Practice the <img /> element with multiple file sources
-          with the srcset attribute
-        -->
         <div id="img__srcset_and_sizes">
           <h3>Using srcset &amp; sizes</h3>
           <p>
             After this paragraph element, practice using the your set of 3 images by using the srcset and sizes attributes in the img element. Use the w (width) value for the srcset. Use the max-width attribute with the px (pixel) value for the sizes.
           </p>
-          <!-- Replace this comment with an img element -->
+          <img src="./images/frog.jpg"
+          alt="A hand holds a brown frog above a shallow pond."
+          width="1024"
+          height="768"
+
+          srcset="./images/frog-512x384.jpg 512w,
+          ./images/frog.jpg 1024w,
+          ./images/frog-1536x1152.jpg 1536w"
+
+          sizes="(max-width:512px) 256px,
+          (max-width: 1024px) 512px,
+          (max-width: 1538px) 769px,
+          1536px">
         </div>
 
       </section>
@@ -53,7 +61,7 @@
       <!-- Practice the <picture> Element -->
       <section id="picture__source">
         
-        <h2>[YOUR THEME HERE] in the <code>&lt;picture&gt;</code> element</h2>
+        <h2>BMWs and Frogs in the <code>&lt;picture&gt;</code> element</h2>
         <p>
           Below, practice creating a picture element that:
         </p>
@@ -73,6 +81,5 @@
       </section>
 
     </main>
-    <!-- YOU MADE IT! -->
   </body>
 </html>
