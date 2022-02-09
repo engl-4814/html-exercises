@@ -10,7 +10,7 @@
       <img src="images/treble.jpeg"
         width="93" height="98"
         alt=""
-    <h1> 
+      <h1>
         Treblemaker
       </h1>
     </header>
@@ -30,10 +30,7 @@
           alt="iPod lying onthe ground with a cord coming out of it in the shape of a treble clef sign"
         </div>
 
-        <!-- 
-          Practice the <img /> element with multiple file sources
-          with the srcset attribute
-        -->
+        
         <div id="img__srcset_and_sizes">
           <h3>Using srcset &amp; sizes</h3>
           <p>
@@ -41,16 +38,17 @@
           </p>
           
           <img srcset="images/treble.jpeg 480w,
-                      images/kittens_960.jpg 960w,
-                     images/kittens_1440.png 1440w"
+                       images/iPod.jpeg 960w"
+              sizes="(max width: 480px) 240 px,
+                     (max width: 960 px) 480px"
+              alt="Treble clef and iPod images"
         </div>
 
       </section>
-      
-      <!-- Practice the <picture> Element -->
+  
       <section id="picture__source">
         
-        <h2>[YOUR THEME HERE] in the <code>&lt;picture&gt;</code> element</h2>
+        <h2>Music in the <code>&lt;picture&gt;</code> element</h2>
         <p>
           Below, practice creating a picture element that:
         </p>
@@ -64,10 +62,11 @@
             but the <code>&lt;picture&gt;</code> uses the <code>&lt;source&gt;</code> element to tell the browser to otherwise use the cropped version of your medium-sized file,
           </li>
         </ol>
-        <p>
-          Be sure to reference the Simmons video for support. If you need more help, refer to the MDN page about the picture element and its attributes that I ask you to use above.
-        </p>
-        <!-- Replace this comment with your <picture> element -->
+        <picture>
+          <source media="(max-width: 480 px)"
+                 srcset="images/iPod.jpeg"
+        </picture>
+        
       </section>
 
     </main>
