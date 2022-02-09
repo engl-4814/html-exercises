@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>[YOUR THEME HERE] - Home Page</title>
+    <title>Cheeseburgers and Bears - Home Page</title>
+    <meta charset="utf-8">
+    <meta description="author" content="Benjamin Sammons">
   </head>
   <body>
     
@@ -12,9 +14,9 @@
       header.
       ~~~~~~~~~~~~~~~~~~ -->
     <header>
-      <!-- Replace this comment with a logo via an <img /> element. -->
+      <img src="images/cheeseburger_logo.png">
       <h1>
-        <!-- Replace this comment with text that names your page's theme. -->
+        Bears and a Cheeseburger
       </h1>
     </header>
 
@@ -28,7 +30,7 @@
       <!-- Practice the <img /> Element -->
       <section id="img">
 
-        <h2>[YOUR THEME HERE] in the <code>&lt;img&gt;</code> element</h2>
+        <h2>Bears and a Cheeseburger in the <code>&lt;img&gt;</code> element</h2>
         
         <!-- 
           Practice the <img /> element with 1 file source
@@ -38,7 +40,10 @@
           <p>
             After this paragraph element, use the one of your image files to render an image with the src, width, height, and alt attributes.
           </p>
-          <!-- Replace this comment with an img element -->
+          <img src="images/bear_pic.jpg"
+               alt="A picture of a brown bear walking in a field"
+               width="1023"
+               height="685">
         </div>
 
         <!-- 
@@ -50,7 +55,17 @@
           <p>
             After this paragraph element, practice using the your set of 3 images by using the srcset and sizes attributes in the img element. Use the w (width) value for the srcset. Use the max-width attribute with the px (pixel) value for the sizes.
           </p>
-          <!-- Replace this comment with an img element -->
+          <img src="images/bear_pic.jpg"
+               alt="A picture of a brown bear walking in a field"
+               width="1023"
+               height="685"
+               srcset="images/bear_pic_511x342.jpg 511w,
+                       images/bear_pic.jpg 1023w,
+                       images/bear_pic_1534x1027 1534w"
+                sizes="(max width: 511px) 255px,
+                       (max width: 1023px) 511px,
+                       (max width: 1534px) 1023px,
+                       1920px">
         </div>
 
       </section>
@@ -58,7 +73,7 @@
       <!-- Practice the <picture> Element -->
       <section id="picture__source">
         
-        <h2>[YOUR THEME HERE] in the <code>&lt;picture&gt;</code> element</h2>
+        <h2>Bears and a Cheeseburger in the <code>&lt;picture&gt;</code> element</h2>
         <p>
           Below, practice creating a picture element that:
         </p>
@@ -75,7 +90,15 @@
         <p>
           Be sure to reference the Simmons video for support. If you need more help, refer to the MDN page about the picture element and its attributes that I ask you to use above.
         </p>
-        <!-- Replace this comment with your <picture> element -->
+        <picture>
+          <source media="(min-width:840px)"
+                  srcset="images/bear_pic_1534x1027.jpg">
+          <source srcset="images/bear_pic_511x342.jpg">
+          <img src="images/bear_pic.jpg"
+              width="1023"
+              height="685"
+              alt="A picture of a brown bear walking in a field">
+        </picture>
       </section>
 
     </main>

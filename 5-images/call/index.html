@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>The Bee and the Flowers- Home Page</title>
-    <meta author="Zenia deHaven"/>
-    <meta charset="utf-8"/>
-    <meta name="Home Page" content="5-images-homework"/>
+    <title>Apple and Dogs - Home Page</title>
   </head>
   <body>
     
-  
+    <!-- ~~~~~~~~~~~~~~~~~~~
+      HEADER
+      Don't forget to personalize 
+      the content inside of this 
+      header.
+      ~~~~~~~~~~~~~~~~~~ -->
     <header>
-      <img src="images/beepic.png"
-      alt="A round black and yellow cartoon bee."
-      width="150"
-      height="150">
-    <figcaption>Bees polinate flowers, which is why he buzzes 
-      on the top of our page.</figcaption>
-    </figure>
+      <figure>
+        <img src="./images/applelogo.jpeg"
+        alt="The Apple logo in front of a gray background"
+        width="1024"
+        height="768">
+        <figcaption>Steve Jobs chose an Apple for his technology company's logo because he liked to eat them.</figcaption>
+      </figure>
       <h1>
-       The Bee and the Flowers
+        Apple and Dogs
       </h1>
     </header>
 
+    <!-- ~~~~~~~~~~~~~~~~~~~
+      MAIN
+      Below, you'll find some
+      wicked cool prompts.
+      ~~~~~~~~~~~~~~~~~~ -->
     <main>
       
       <!-- Practice the <img /> Element -->
       <section id="img">
 
-        <h2>The Bee and the Flowers in the <code>&lt;img&gt;</code> element</h2>
+        <h2>Apple and Dogs in the <code>&lt;img&gt;</code> element</h2>
         
         <!-- 
           Practice the <img /> element with 1 file source
@@ -37,15 +44,10 @@
           <p>
             After this paragraph element, use the one of your image files to render an image with the src, width, height, and alt attributes.
           </p>
-          <img src="images/flowerpic.jpeg"
-          alt="A hot pink flower with a yellow stem at its center."
-          width="994"
-          height="661">
-          <figcaption>
-            A hot pink flower with a yellow stem.
-          </figcaption>
-          
-
+         <img src="images/dogs.jpeg"
+         alt="A black dog resting his paw and head on a brown dog's body"
+         width="1024"
+         height="651">
         </div>
 
         <!-- 
@@ -57,21 +59,18 @@
           <p>
             After this paragraph element, practice using the your set of 3 images by using the srcset and sizes attributes in the img element. Use the w (width) value for the srcset. Use the max-width attribute with the px (pixel) value for the sizes.
           </p>
-          <img src="images/flowerpic.jpeg"
-          alt= "A hot pink flower with a yellow stem at its center."
-          width="994"
-          height="661"
-          srcset="images/flowerpic_497x330.jpg 497w,
-                images/flowerpic.jpeg 994w
-                images/flowerpic_1491x992.jpeg 1491w"
-              sizes="(max-width: 994px) 497px,
-              (max-width: 1988px) 994px,
-              (max-width: 2982px) 1491px">
-              <figcaption>
-                A hot pink flower with a yellow stem.
-              </figcaption>
-
-          <!-- Replace this comment with an img element -->
+          <img src="images/dogs.jpeg"
+              alt="A black dog resting his paw and head on a brown dog's body"
+              width="1024"
+              height="651"
+              srcset="images/dogs_512x325.jpg 512w,
+                      images/dogs.jpeg 1024w,
+                      images/dogs_1536x976.jpg 1536w"
+              sizes="(max-width: 1024px) 512px,
+                      (max-width: 2048px) 1024px,
+                      (max-width: 3072px) 1536px">
+        <!--values inside max-width are based off of linkedin learning video 1...idk what to put-->
+          
         </div>
 
       </section>
@@ -79,7 +78,7 @@
       <!-- Practice the <picture> Element -->
       <section id="picture__source">
         
-        <h2>The Bee and the Flowers in the <code>&lt;picture&gt;</code> element</h2>
+        <h2>Apple and Dogs in the <code>&lt;picture&gt;</code> element</h2>
         <p>
           Below, practice creating a picture element that:
         </p>
@@ -95,19 +94,16 @@
         <p>
           Be sure to reference the Simmons video for support. If you need more help, refer to the MDN page about the picture element and its attributes that I ask you to use above.
         </p>
-        <picture>
-          <source media="(min-width:600px)"
-                  srcset="images/flowerpic_1491x992.jpg">
-          <source srcset="images/flowerpic_497x330.jpg">
-          <img src="images/flowerpic.jpeg"
-           alt="A hot pink flower with a yellow stem at its center."
-           width="994"
-           height="661">
-           <figcaption>
-            A hot pink flower with a yellow stem.
-          </figcaption>
-          
-        </picture>
+      <picture>
+        <source media="(min-width:600px)"
+                srcset="images/dogs_1536x976.jpg">
+        <source srcset="images/dogs_512x325.jpg">
+        <img src="images/dogs.jpeg"
+         alt="A black dog resting his paw and head on a brown dog's body"
+         width="1024"
+         height="651">
+    <!--I tried mimicking the syntax from the linkedin video...I have no idea if this is right.-->
+      </picture>
       </section>
 
     </main>
