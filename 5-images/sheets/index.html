@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Frogs and BMWs - Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     
@@ -10,7 +11,7 @@
         <img src="images/bmw-logo.jpg"
       alt="A circular BMW car logo rests on a white background."
       width="500"
-      height="500">
+      height="500"/>
 
       <figcaption>The logo for BMW, car brand. If frogs could drive, they would definitely drive Beamers.</figcaption>
       </figure>
@@ -32,9 +33,12 @@
           </p>
           <img src="./images/frog.jpg"
           alt="A hand holds a brown frog above a shallow pond."
-          width="1024"
-          height="768">
+          width="1024px"
+          height="768px"/>
+
+          <figcaption>This little froggy definitely wants a BMW.</figcaption>
         </div>
+
 
         <div id="img__srcset_and_sizes">
           <h3>Using srcset &amp; sizes</h3>
@@ -43,22 +47,21 @@
           </p>
           <img src="./images/frog.jpg"
           alt="A hand holds a brown frog above a shallow pond."
-          width="1024"
-          height="768"
+          width="1024px"
+          height="768px"
 
-          srcset="./images/frog-512x384.jpg 512w,
-          ./images/frog.jpg 1024w,
-          ./images/frog-1536x1152.jpg 1536w"
+          srcset="images/frog-512x384.jpg 512w,
+          images/frog.jpg 1024w,
+          images/frog-1536x1152.jpg 1536w"
 
           sizes="(max-width:512px) 256px,
           (max-width: 1024px) 512px,
-          (max-width: 1538px) 769px,
-          1536px">
+          (max-width: 1536px) 769px,
+          1536px"/>
         </div>
 
       </section>
       
-      <!-- Practice the <picture> Element -->
       <section id="picture__source">
         
         <h2>BMWs and Frogs in the <code>&lt;picture&gt;</code> element</h2>
@@ -77,7 +80,16 @@
         <p>
           Be sure to reference the Simmons video for support. If you need more help, refer to the MDN page about the picture element and its attributes that I ask you to use above.
         </p>
-        <!-- Replace this comment with your <picture> element -->
+       <picture>
+         <source media="(max-width: 595px)"
+         srcset="images/frog-cropped.jpg">
+
+         <source media="(min-width:600px)"
+         srcset="images/frog-1536x1152.jpg">
+
+         <img src="images/frog.jpg"
+         alt="This image shows just the frog's head."/>
+       </picture>
       </section>
 
     </main>
