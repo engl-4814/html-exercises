@@ -38,14 +38,14 @@
         </p>
         <!-- 
           3 SRCSET Attributes
-            1. An image filename
+            1. An image path/filename
             2. A space
             3. The image's intrinsic width in pixels
          -->
         <img srcset="images/kittens_480.jpg 480w,
                      images/kittens_960.jpg 960w,
                      images/kittens_1440.png 1440w"
-             sizes="(max-width: 480px) 240px,
+             sizes="(max-width: 480px) 320px,
                     (max-width: 960px) 480px,
                     (max-width: 1440px) 960px,
                     1440px"
@@ -53,7 +53,7 @@
         />
         <!-- 
           3 SIZES Attributes
-            1. A media condition ((max-width: 480px)) - a media condition describes a possible state of a screen, e.g., "when the viewport width is 600 pixels or less".
+            1. A media condition ((max-width: 480px)) - a media condition describes a possible state of a screen, e.g., "when the viewport width is 480 pixels or less".
             2. A space
             3. The width of the slot the image will fill when the media condition is true (479px)
          -->
