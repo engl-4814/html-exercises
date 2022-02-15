@@ -1,69 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Frogs and BMWs - Home Page</title>
+    <title>Sunsets - Home Page</title>
   </head>
   <body>
     
+    <!-- ~~~~~~~~~~~~~~~~~~~
+      HEADER
+      Don't forget to personalize 
+      the content inside of this 
+      header.
+      ~~~~~~~~~~~~~~~~~~ -->
     <header>
-      <figure>
-        <img src="images/bmw-logo.jpg"
-      alt="A circular BMW car logo rests on a white background."
-      width="500"
-      height="500"/>
-
-      <figcaption>The logo for BMW, car brand. If frogs could drive, they would definitely drive Beamers.</figcaption>
-      </figure>
-  
-      <h1>
-        BMWs and Frogs
-      </h1>
+      <img src="images/logo.jpeg">
+      <h1>Sunsets</h1>
     </header>
 
+    <!-- ~~~~~~~~~~~~~~~~~~~
+      MAIN
+      Below, you'll find some
+      wicked cool prompts.
+      ~~~~~~~~~~~~~~~~~~ -->
     <main>
+      
+      <!-- Practice the <img /> Element -->
       <section id="img">
 
-        <h2>BMWs and Frogs in the <code>&lt;img&gt;</code> element</h2>
+        <h2>Sunsets in the <code>&lt;img&gt;</code> element</h2>
         
+        <!-- 
+          Practice the <img /> element with 1 file source
+        -->
         <div id="img__basics">
           <h3>The Basics</h3>
           <p>
             After this paragraph element, use the one of your image files to render an image with the src, width, height, and alt attributes.
           </p>
-          <img src="./images/frog.jpg"
-          alt="A hand holds a brown frog above a shallow pond."
-          width="1024px"
-          height="768px"/>
-
-          <figcaption>This little froggy definitely wants a BMW.</figcaption>
+          <img src="images/sunset_1536x1536.jpeg" 
+          width="1536px" height="1536px"
+          alt="Sunset over the water with a boat"/>
         </div>
 
-
+        <!-- 
+          Practice the <img /> element with multiple file sources
+          with the srcset attribute
+        -->
         <div id="img__srcset_and_sizes">
           <h3>Using srcset &amp; sizes</h3>
           <p>
             After this paragraph element, practice using the your set of 3 images by using the srcset and sizes attributes in the img element. Use the w (width) value for the srcset. Use the max-width attribute with the px (pixel) value for the sizes.
           </p>
-          <img src="./images/frog.jpg"
-          alt="A hand holds a brown frog above a shallow pond."
-          width="1024px"
-          height="768px"
-
-          srcset="images/frog-512x384.jpg 512w,
-          images/frog.jpg 1024w,
-          images/frog-1536x1152.jpg 1536w"
-
-          sizes="(max-width:512px) 256px,
-          (max-width: 1024px) 512px,
-          (max-width: 1536px) 769px,
-          1536px"/>
+          <img scrset="images/logo.jpeg 256w,
+                      images/sunset_1536x1536.jpeg 1536w, 
+                      images/sunset_512x512.jpeg 512w" 
+                      sizes="(max-width: 256px) 128px, 
+                      (max-width: 1536px) 768px, 
+                      (max-width: 512px) 256px" 
+                      alt="Sunsets!"
+                      />
         </div>
 
       </section>
       
+      <!-- Practice the <picture> Element -->
       <section id="picture__source">
         
-        <h2>BMWs and Frogs in the <code>&lt;picture&gt;</code> element</h2>
+        <h2>Sunsets in the <code>&lt;picture&gt;</code> element</h2>
         <p>
           Below, practice creating a picture element that:
         </p>
@@ -79,18 +81,10 @@
         <p>
           Be sure to reference the Simmons video for support. If you need more help, refer to the MDN page about the picture element and its attributes that I ask you to use above.
         </p>
-       <picture>
-         <source media="(max-width: 595px)"
-         srcset="images/frog-cropped.jpg">
-
-         <source media="(min-width:600px)"
-         srcset="images/frog-1536x1152.jpg">
-
-         <img src="images/frog.jpg"
-         alt="This image shows just the frog's head."/>
-       </picture>
+        <!-- Replace this comment with your <picture> element -->
       </section>
 
     </main>
+    <!-- YOU MADE IT! -->
   </body>
 </html>
