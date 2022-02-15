@@ -5,6 +5,9 @@
     <title>A11Y Practice</title>
   </head>
   <body>
+    <a id="skip-nav" class="screenreader-text" href="#main-chunk"> 
+      Skip Nav to go to Main
+    </a>
     <header>
       <h1>This is about A11Y</h1>
     </header>
@@ -15,7 +18,7 @@
         <li><a href="#">Bottom</a></li>
       </ul>
     </nav>
-    <main role="main" aria-label="Main Chunk of Information">
+    <main id="main-chunk" role="main" aria-label="Main Chunk of Information">
       <h2>Main Chunk of Info</h2>
       <section id="section-1" role="region" aria-labeledlby="region1">
         <h3>Sub-Chunk 1</h3>
