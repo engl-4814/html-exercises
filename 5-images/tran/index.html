@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="Author" content="Tyler Tran">
+  <title>Origami - Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <img src="images/hedgehog.jpg" alt="hedgehog logo" width="100" height="100">
+    <h1>Origami</h1>
+  </header>
+
+  <main>
+
+    <!-- Practice the <img /> Element -->
+    <section id="img">
+
+      <h2> Origami in the <code>&lt;img&gt;</code> element</h2>
+
+      <!-- 
+          Practice the <img /> element with 1 file source
+        -->
+      <div id="img__basics">
+        <h3>The Basics</h3>
+        <p>
+          After this paragraph element, use the one of your image files to render an image with the src, width, height,
+          and alt attributes.
+        </p>
+        <img src="images/cranes.jpg" alt="Picture of many origami cranes" width="1024" height="683">
+      </div>
+
+      <!-- 
+          Practice the <img /> element with multiple file sources
+          with the srcset attribute
+        -->
+      <div id="img__srcset_and_sizes">
+        <h3>Using srcset &amp; sizes</h3>
+        <p>
+          After this paragraph element, practice using the your set of 3 images by using the srcset and sizes attributes
+          in the img element. Use the w (width) value for the srcset. Use the max-width attribute with the px (pixel)
+          value for the sizes.
+        </p>
+        <img alt="Many cranes"
+          srcset="images/cranes.jpg 1024w, images/cranes_512x342.jpg 512w, images/cranes_1536x1024.jpg 1536w" 
+          sizes="(max-width: 480px) 240px,
+                 (max-width: 960px) 480px, 
+                 (max-width: 1440px) 960px,
+                  1440px">
+      </div>
+
+    </section>
+
+    <!-- Practice the <picture> Element -->
+    <section id="picture__source">
+
+      <h2>[YOUR THEME HERE] in the <code>&lt;picture&gt;</code> element</h2>
+      <p>
+        Below, practice creating a picture element that:
+      </p>
+      <ol>
+        <li>
+          uses the standard <code>&lt;img&gt;</code> as the default use of the smallest image file,</li>
+        <li>
+          but <code>&lt;picture&gt;</code> also uses the <code>&lt;source&gt;</code> element to tell the browser to use
+          the next largest image at a specified minimum width (px) of your choice,
+        </li>
+        <li>
+          but the <code>&lt;picture&gt;</code> uses the <code>&lt;source&gt;</code> element to tell the browser to
+          otherwise use the cropped version of your medium-sized file,
+        </li>
+      </ol>
+      <p>
+        Be sure to reference the Simmons video for support. If you need more help, refer to the MDN page about the
+        picture element and its attributes that I ask you to use above.
+      </p>
+      <picture>
+        <source media="(max-width: 480)" srcset="images/cranes.jpg 0.5x">
+        <source media="(max-width: 960)" srcset="images/cranes_512x342.jpg">
+        <img src="images/cranes.jpg" alt="many origami cranes hung up">
+      </picture>
+    </section>
+
+  </main>
+  <!-- YOU MADE IT! -->
+</body>
+
+</html>

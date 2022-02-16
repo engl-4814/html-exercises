@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>A11Y Practice</title>
+  </head>
+  <body>
+    <a id="skip-nav" href="#main-chunk"> 
+      Skip Nav to go to Main
+    </a>
+    <header>
+      <h1>This is about A11Y</h1>
+    </header>
+    <nav role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="#">Top</a></li>
+        <li><a href="#">Middle</a></li>
+        <li><a href="#">Bottom</a></li>
+      </ul>
+    </nav>
+    <main id="main-chunk" role="main" aria-label="Main Chunk of Information">
+      <h2>Main Chunk of Info</h2>
+      <section id="section-1" role="region" aria-labeledlby="region1">
+        <h3>Sub-Chunk 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolorem sed doloribus, maxime id odit sequi. Voluptatem vitae totam vel dolorum hic aliquam, aliquid rerum deleniti nemo, quas commodi at?</p>
+      </section>
+      <section  id="section-2" role="region" aria-labelledby="region2">
+      <h3>Sub-Chunk 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolorem sed doloribus, maxime id odit sequi. Voluptatem vitae totam vel dolorum hic aliquam, aliquid rerum deleniti nemo, quas commodi at?</p>
+      </section>
+      <section  id="section-3" role="region" aria-labelledby="region3">
+      <h3>Sub-Chunk 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolorem sed doloribus, maxime id odit sequi. Voluptatem vitae totam vel dolorum hic aliquam, aliquid rerum deleniti nemo, quas commodi at?</p>
+      </section>
+    </main>
+    <aside id="adcontent" role="complementary" aria-label="Ad Content">
+      <h2>Aside of A11y</h2>
+      <div role="ad">Click on this Ad!</div>
+
+    </aside>
+    <footer id="contact" role="search" aria-label="Contact Search">
+      <h2>Footer</h2>
+      <div role="image" aria-label="Aria is for Accessibility, the reason 11 is placed in the word is because there are 11 letters between A and Y in Accessibility with makes A 11 Y, aka Aria. ">
+        <img src="images/a11y.jpg">
+      </div>
+    </footer>
+  </body>
+</html>
