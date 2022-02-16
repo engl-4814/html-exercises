@@ -21,17 +21,11 @@
        The Bee and the Flowers
       </h1>
     </header>
-
     <main>
-      
-      <!-- Practice the <img /> Element -->
       <section id="img">
-
         <h2>The Bee and the Flowers in the <code>&lt;img&gt;</code> element</h2>
         
-        <!-- 
-          Practice the <img /> element with 1 file source
-        -->
+  
         <div id="img__basics">
           <h3>The Basics</h3>
           <p>
@@ -39,19 +33,11 @@
           </p>
           <img src="images/flowerpic.jpeg"
           alt="A hot pink flower with a yellow stem at its center."
-          width="994"
-          height="661">
-          <figcaption>
-            A hot pink flower with a yellow stem.
-          </figcaption>
-          
+          width="994px"
+          height="661px">
 
         </div>
 
-        <!-- 
-          Practice the <img /> element with multiple file sources
-          with the srcset attribute
-        -->
         <div id="img__srcset_and_sizes">
           <h3>Using srcset &amp; sizes</h3>
           <p>
@@ -59,24 +45,21 @@
           </p>
           <img src="images/flowerpic.jpeg"
           alt= "A hot pink flower with a yellow stem at its center."
-          width="994"
-          height="661"
-          srcset="images/flowerpic_497x330.jpg 497w,
+          width="994px"
+          height="661px"
+          srcset=
+          "images/flowerpic_497x330.jpg 497w,
                 images/flowerpic.jpeg 994w
                 images/flowerpic_1491x992.jpeg 1491w"
-              sizes="(max-width: 994px) 497px,
-              (max-width: 1988px) 994px,
-              (max-width: 2982px) 1491px">
-              <figcaption>
-                A hot pink flower with a yellow stem.
-              </figcaption>
-
-          <!-- Replace this comment with an img element -->
+              sizes=
+              "(max-width: 497px) 249px,
+              (max-width: 994px) 497px,
+              (max-width: 1491px) 994px, 1491px"
+            alt="Hot pink flower with yellow stem.">
         </div>
 
       </section>
       
-      <!-- Practice the <picture> Element -->
       <section id="picture__source">
         
         <h2>The Bee and the Flowers in the <code>&lt;picture&gt;</code> element</h2>
@@ -95,22 +78,20 @@
         <p>
           Be sure to reference the Simmons video for support. If you need more help, refer to the MDN page about the picture element and its attributes that I ask you to use above.
         </p>
-        <picture>
-          <source media="(min-width:600px)"
-                  srcset="images/flowerpic_1491x992.jpg">
-          <source srcset="images/flowerpic_497x330.jpg">
-          <img src="images/flowerpic.jpeg"
-           alt="A hot pink flower with a yellow stem at its center."
-           width="994"
-           height="661">
-           <figcaption>
-            A hot pink flower with a yellow stem.
-          </figcaption>
-          
-        </picture>
-      </section>
 
+        <picture>
+          <source media="(max-width:497px)"
+                  srcset="images/flowerpic_497x330">
+
+          <source media="(min-width: 994px")
+          srcset="images/flowerpic.jpeg">
+
+          <img src="images/flowerpic_1491x992.jpg"
+           alt="A hot pink flower with a yellow stem at its center.",>
+      
+        </picture>
+
+      </section>
     </main>
-    <!-- YOU MADE IT! -->
   </body>
 </html>
