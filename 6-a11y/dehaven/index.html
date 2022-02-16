@@ -6,28 +6,29 @@
     <meta charset="utf-8"/>
     <meta name="Aria Practice" content="6-a11y Homework"/>
   </head>
-  
+  <a href="#main" class="skip-to-link">Skip to main content</a>
   <body>
-<a href="#main" class="skip-to-link">Skip to main content</a>
+    <nav role="navigation" aria-label="Main navigation">
+    <ul>
+      <li>
+        <a href="index.html">Home Page</a>
+      </li>
+      <li>
+    <a href="about/index.html">About</a>
+      </li>
+      <li>
+        <a href="contact/index.html">Contact</a>
+      </li>
+    </ul>
+    </nav>
+ 
+
+<main id="main" role="main">
+  
 <header role="banner">
 <h1>Zenia's Favorite Pokémon Games</h1>
 </header>
 
-<nav role="navigation" aria-label="Main navigation">
-<ul>
-  <li>
-    <a href="index.html">Home Page</a>
-  </li>
-  <li>
-<a href="about/index.html">About</a>
-  </li>
-  <li>
-    <a href="contact/index.html">Contact</a>
-  </li>
-</ul>
-</nav>
-
-<main id="main" role="main">
 <h2>Do you want to hear a 20-something-year old rant about her 
   biased opinions? You've come to the right place!
 </h2>
@@ -93,9 +94,9 @@
 </section>
 </main>
 
-<aside>
+<aside aria-label="More Pokémon games">
   <h2>Other games that Zenia thinks are acceptable</h2>
-  <section id="Pokémon Ultra Sun and Ultra Moon" role="region" aria-labelldby="region4">
+  <section id="Pokémon Ultra Sun and Ultra Moon" role="complementary" aria-labelledby="comp1">
   <h3>Pokémon Ultra Sun and Ultra Moon</h3>
   <figure>
   <img src="https://giffiles.alphacoders.com/129/129795.gif" alt="Pokémon: Sun and Moon Gif" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb" data-noaft="1" 
@@ -113,7 +114,7 @@
      quam vulputate dignissim suspendisse in est ante.
 </p>
 </section>
-<section id="Pokémon Diamond and Pearl" role="region" aria-labelldby="region5">
+<section id="Pokémon Diamond and Pearl" role="complementary" aria-labelledby="comp2">
   <h3>Pokémon Diamond and Pearl</h3>
   <figure>
     <img src="https://i.pinimg.com/originals/ad/b7/03/adb70331271dea584f81e94f4f731ecc.gif" alt="Pokémon Diamond and Pearl gif" 
