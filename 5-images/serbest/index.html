@@ -5,7 +5,7 @@
   </head>
   <body>
     <header>
-      <img src="./images/.jpg" width="90px" height="70px">
+      <img src="./images/nova16.jpg" width="90px" height="70px">
       <h1>
         The Major Sports Teams of Philladelphia
       </h1>
@@ -31,10 +31,11 @@
 
       </section>
       
-      <!-- Practice the <picture> Element -->
+      <img srcset="./images/eagles18_400w.jpg 400w, ./images/eagles18_800w.jpg 800w"
+      sizes="(max-width: 400w) 400w, (max-width: 800w) 800w" alt="Eagles win Superbowl">
       <section id="picture__source">
         
-        <h2>[YOUR THEME HERE] in the <code>&lt;picture&gt;</code> element</h2>
+        <h2>Philly Champs in the <code>&lt;picture&gt;</code> element</h2>
         <p>
           Below, practice creating a picture element that:
         </p>
@@ -49,9 +50,11 @@
           </li>
         </ol>
         <p>
-          Be sure to reference the Simmons video for support. If you need more help, refer to the MDN page about the picture element and its attributes that I ask you to use above.
+          Be sure to reference the Simmons video for support. If you need more help, refer to the MDN page about the picture element and its attributes that I ask you to use above
         </p>
-        <!-- Replace this comment with your <picture> element -->
+        <source media="(max-width: 400px)" srcset="./images/eagles18_400w.jpg">
+        <source media="(max-width: 800px)" srcset="./images/eagles18_800w.jpg">
+        <img src="./images/eagles18_400w.jpg" alt="same image for eagles winning superbowl">
       </section>
     </main>
   </body>
