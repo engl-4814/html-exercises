@@ -2,12 +2,13 @@
 <html lang="en">
     <head>
         <title>Montgomery-Floyd Regional Library</title>
+        <meta charset="utf-8">
         <meta name="Author" content="Stephanie Sheets">
         <meta name="Description" content="This is a web page for Developing Online Content homework 7, review.">
     </head>
     <body>
         <a href="main" class="skip-to-link">Skip to main content</a>
-        <nav>
+        <nav role="navigation" aria-label="Account navigation">
             <ul>
                 <li><a href="./extra pages/login.html">Log in</a></li>
                 <li><a href="./extra pages/my-account.html">My account</a></li>
@@ -22,28 +23,64 @@
             <h1>Montgomery-Floyd Regional Library</h1>
             <h2><em>One stop, unlimited possibilities</em></h2>
         </header>
-        <nav>
+        <nav role="navigation" aria-label="Link to home page">
             <a href="./index.html">Home</a>
         </nav>
-        <aside>
-            <p><strong>Youth item checkouts are exempt from overdue fines</strong></p>
-            <p>Books, DVDs, CDs, and audiobooks from the Juvenile and Teen Collections do not accrue Overdue Fines.  Items are still subject to Lost and Damaged fees and are to be returned by their due dates.</p>
+        <aside role="complementary" aria-label="Fines and fees information">
+            <h3>Youth item checkouts are exempt from overdue fines</h3>
+            <p>Books, DVDs, CDs, and audiobooks from the Juvenile and Teen Collections do not accrue Overdue Fines. Items are still subject to Lost and Damaged fees and are to be returned by their due dates.</p>
         </aside>
-        <main>
-            <a href="https://placeholder.com"><img src="https://via.placeholder.com/200x280"></a>
-            <p>
-                Title: THE MIDNIGHT LIBRARY <br/>
-                Author: Matt Haig <br/>
-                ISBN: 9780525559474 <br/>
-                Rank (Last Week): 2 (1)
-            </p>
+        <main id="main" role="main" aria-labelledby="Main content">
+            <h3>New York Times Best-Seller Lists</h3>
+            <section role="group" aria-labelledby="Book 1">
+                <a href="https://placeholder.com"><img src="https://via.placeholder.com/200x280"
+                    alt="A book cover."></a>
+                <p>
+                    Title: THE MIDNIGHT LIBRARY <br/>
+                    Author: Matt Haig <br/>
+                    ISBN: 9780525559474 <br/>
+                    Rank (Last Week): 2 (1)
+                </p>
+            </section>
+            <section role="group" aria-labelledby="Book 2">
+                <a href="https://placeholder.com"><img src="https://via.placeholder.com/200x280"
+                    alt="A book cover."></a>
+                <p>
+                    Title: THE LINCOLN HIGHWAY <br/>
+                    Author: Amor Towles <br/>
+                    ISBN: 9780735222359 <br/>
+                    Rank (Last Week): 4 (4)
+                </p>
+            </section>
+            <section role="group" aria-labelledby="Book 3">
+                <a href="https://placeholder.com"><img src="https://via.placeholder.com/200x280"
+                    alt="A book cover."></a>
+                <p>
+                    Title: ABANDONED IN DEATH <br/>
+                    Author: J.D. Robb <br/>
+                    ISBN: 9781250278210 <br/>
+                    Rank (Last Week): 5 (1)
+                </p>
+            </section>
+            <section role="group" aria-labelledby="Book 4">
+                <a href="https://placeholder.com"><img src="https://via.placeholder.com/200x280"
+                    alt="A book cover."></a>
+                <p>
+                    Title: SIERRA SIX <br/>
+                    Author: Mark Greaney <br/>
+                    ISBN: 9780593098998 <br/>
+                    Rank (Last Week): 6 (Not Ranked)
+                </p>
+            </section>
         </main>
-        <aside>
+        <aside role="complementary" aria-label="Library card information">
             <h3>Register for a card online</h3>
             <p>Get a library card 24/7, and immediately utilize our ebook, eaudio, and other downloadable, searchable, and streaming resources.</p>
         </aside>
-        <footer>
-        
+        <footer role="complementary" aria-label="Links to extra information">
+            <a href="./extra pages/contact-us.html">Contact us</a>
+            <a href="./extra pages/information.html">Information</a>
+            <a href="./extra pages/locations-and-hours.html">Locations and hours</a>
         </footer>
     </body>
 </html>
