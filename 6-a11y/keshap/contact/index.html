@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>6-a11y HW</title>
+    <meta name="author" content="Emily Keshap">
+    <meta name="charset" content="utf-8">
+    <meta name="description" contemt="Contact Page">
+  </head>
+
+  <a href="#main" class="skip-to-link">Main Content</a>
+  
+  <body>
+    <nav role="navigation" aria-label="Content navigation">
+      <ul>
+        <li>
+          <a href="index.html">Home Page</a>
+        </li>
+        <li>
+          <a href="about/index.html">About Me</a>
+        </li>
+        <li>
+          <a href="contact/index.html">Contact Information</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main" role="main">
+      <header role="heading" aria-label="Header">
+        <h1>Contact Information</h1>
+      </header>
+
+      <section id="My Information" role="region" aria-labelledby="region1">
+        <h2 id="region1">Where to find me</h2>
+        <ul>
+          <li>Email: ekeshap@vt.edu</li>
+          <li>
+            <a href="https://www.linkedin.com/in/emilykeshap/" target="_blank">Linkedin</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/em.kliz/" target="_blank">Instagram</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
