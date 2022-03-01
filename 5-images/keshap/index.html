@@ -81,7 +81,16 @@
         <p>
           Be sure to reference the Simmons video for support. If you need more help, refer to the MDN page about the picture element and its attributes that I ask you to use above.
         </p>
-        <!-- Replace this comment with your <picture> element -->
+        <picture>
+          <source media="(max-width: 512px)" 
+                  srcset="images/sunset_512x512.jpeg">
+          
+          <source media="(min-width: 1536px)" 
+                  srcset="images/sunset_1536x1536.jpeg">
+  
+          <img src="images/sunset_512x512.jpeg"
+               alt="Cropped sunset"/>
+        </picture>
       </section>
 
     </main>
