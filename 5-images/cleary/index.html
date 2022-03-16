@@ -58,7 +58,11 @@
                         images/buckingham_orig.jpg 2048w,
                         images/buckingham_1830x1220 1830w"
                 sizes=" (max-width: 610px) 610px,
-                        (max-width: 1830px) 
+                        (max-width: 1830px) 960px,
+                        (max-width: 2048px) 1835px,
+                        2048px"
+                alt="Buckingham Palace, different takes"
+          />
         </div>
 
       </section>
@@ -66,7 +70,7 @@
       <!-- Practice the <picture> Element -->
       <section id="picture__source">
         
-        <h2>[YOUR THEME HERE] in the <code>&lt;picture&gt;</code> element</h2>
+        <h2>London in the <code>&lt;picture&gt;</code> element</h2>
         <p>
           Below, practice creating a picture element that:
         </p>
@@ -83,7 +87,15 @@
         <p>
           Be sure to reference the Simmons video for support. If you need more help, refer to the MDN page about the picture element and its attributes that I ask you to use above.
         </p>
-        <!-- Replace this comment with your <picture> element -->
+        <picture>
+          <source media="(max-width: 610px)"
+                  srcset="images/buckingham_610x407.jpg">
+
+          <source media="(min-width: 960px)"
+                  srcset="images/buckingham_1830x1220.jpg">
+          <img  src="images/buckingham_orig.jpg"
+                alt="Yes" />
+        </picture>
       </section>
 
     </main>
