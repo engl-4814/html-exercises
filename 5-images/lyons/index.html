@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Armor Flowers - Home Page</title>
+  </head>
+  <body>
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~
+      HEADER
+      Don't forget to personalize 
+      the content inside of this 
+      header.
+      ~~~~~~~~~~~~~~~~~~ -->
+    <header>
+      <img src="images/armor_logo.jpg">
+      <h1>
+        This is a combination of seemingly older-feeling designs.
+      </h1>
+    </header>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~
+      MAIN
+      Below, you'll find some
+      wicked cool prompts.
+      ~~~~~~~~~~~~~~~~~~ -->
+    <main>
+      
+      <!-- Practice the <img /> Element -->
+      <section id="img">
+
+        <h2>Armor Flowers</h2>
+        
+        <!-- 
+          Practice the <img /> element with 1 file source
+        -->
+        <div id="img__basics">
+          <h3>The Basics</h3>
+          <p>
+            After this paragraph element, use the one of your image files to render an image with the src, width, height, and alt attributes.
+          </p>
+          <img src="images/flowers_original.jpg" alt="Drawing of flowers. The drawing has text stating 'Swallowtail Garden Seeds.'" width="2048" height="1059">
+        </div>
+
+        <!-- 
+          Practice the <img /> element with multiple file sources
+          with the srcset attribute
+        -->
+        <div id="img__srcset_and_sizes">
+          <h3>Using srcset &amp; sizes</h3>
+          <p>
+            After this paragraph element, practice using the your set of 3 images by using the srcset and sizes attributes in the img element. Use the w (width) value for the srcset. Use the max-width attribute with the px (pixel) value for the sizes.
+          </p>
+          <img src="images/flowers_original.jpg" alt="The same drawing of flowers from previously." width="2048" height="1059" srcset="images/flowers_original.jpg 2048w, images/flowers_1024x1059.png 1024w, flowers_3072x1059.png 3072w">
+        </div>
+
+      </section>
+      
+      <!-- Practice the <picture> Element -->
+      <section id="picture__source">
+        
+        <h2>Armor Flowers</h2>
+        <p>
+          Below, practice creating a picture element that:
+        </p>
+        <ol>
+          <li>
+            uses the standard <code>&lt;img&gt;</code> as the default use of the smallest image file,</li>
+          <li>
+            but <code>&lt;picture&gt;</code> also uses the <code>&lt;source&gt;</code> element to tell the browser to use the next largest image at a specified minimum width (px) of your choice,
+          </li>
+          <li>
+            but the <code>&lt;picture&gt;</code> uses the <code>&lt;source&gt;</code> element to tell the browser to otherwise use the cropped version of your medium-sized file,
+          </li>
+        </ol>
+        <p>
+          Be sure to reference the Simmons video for support. If you need more help, refer to the MDN page about the picture element and its attributes that I ask you to use above.
+        </p>
+        <img src="images/flowers_1024x1059.png" picture="images/flowers_original.jpg 1200w">
+      </section>
+
+    </main>
+    <!-- YOU MADE IT! -->
+  </body>
+</html>
