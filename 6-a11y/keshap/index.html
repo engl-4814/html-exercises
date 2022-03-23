@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>6-a11y HW</title>
+    <meta name="author" content="Emily Keshap">
+    <meta name="charset" content="utf-8">
+    <meta name="description" contemt="6-a11y homework submission">
+  </head>
+
+  <a href="#main" class="skip-to-link">Main Content</a>
+  
+  <body>
+    <nav role="navigation" aria-label="Content navigation">
+      <ul>
+        <li>
+          <a href="index.html">Home Page</a>
+        </li>
+        <li>
+          <a href="about/index.html">About Me</a>
+        </li>
+        <li>
+          <a href="contact/index.html">Contact Information</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main" role="main">
+      <header role="heading" aria-label="Header">
+        <h1>Favorite Food Places in Blacksburg</h1>
+      </header>
+
+      <section id="Starbucks" role="region" aria-labelledby="region1">
+        <h2 id="region1">UCB Starbucks</h2>
+        <p>
+          My favorite place to get coffee in Blacksburg is at the UCB Starbucks. In my hometown, they don't have a drive through Starbucks, so that has been a nice thing to experience since coming to Blacksburg. I usually get a Venti Cappucino with an extra shot and 1 pump of SF Vanilla Syrup.
+        </p>
+      </section>
+
+      <section id="Your Pie" role="region" aria-labelledby="region2">
+        <h2 id="region2">Gluten Free Pizza at Your Pie</h2>
+        <img src="pizza.jpeg" aria-label="photo of Your Pie pizza" 
+             alt="Two pizzas on an assembly line with buckets of toppings"
+             style="width: 400px; height: 400px;">
+        <p>
+          Your Pie has some of the best gluten free pizza. It is a pizza restaurant that is kind of styled after a Chipotle, with the build it yourself line. I really love this, and it makes it a fun experience. They also have really great practices when it comes to gluten free food requests.
+        </p>
+      </section>
+    </main>
+
+    <aside aria-label="Bad places to eat">
+      <h2>Places that aren't so Gluten Free Friendly</h2>
+
+      <section id="McDonalds" role="region" aria-labelledby="region3">
+        <h3 id="region3">McDonalds</h3>
+        <p>
+          Unfortunately, almost everything at McDonald's contains gluten. You would think that the fries would be fine, but no. They have a wheat coating on them in order to make them extra crispy.
+        </p>
+      </section>
+
+      <section id="Campus Food" role="region" aria-labelledby="region4">
+        <h3 id="region4">Food on Campus</h3>
+        <p>
+          Only some food on campus is gluten free. That is why I usually don't eat on campus. It has been hard, but I have been able to find some good stuff. My personal favorite foods to get on campus that are gluten free include:
+        </p>
+        <ul>
+          <li>Qdoba Bowls</li>
+          <li>Salad from Soup Garden</li>
+          <li>French Fries from Chick-fil-a</li>
+          <li>Red Lentil Pasta from Bistro Firenze</li>
+        </ul>
+      </section>
+    </aside>
+
+    <footer id="Resources" role="contentinfo">
+      <h2>If you're interested in learning more about a gluten free diet and what it entails, use these resources!</h2>
+      <ul>
+        <li>
+          <a href="https://www.fda.gov/consumers/consumer-updates/gluten-free-means-what-it-says" target="_blank">FDA Definition</a>
+        </li>
+        <li>
+          <a href="https://www.google.com/search?q=gluten+free+restaurants+near+me&newwindow=1&rlz=1C5CHFA_enLK762LK762&sxsrf=APq-WBt_o0o8f80p4_1S7sakPMVZNjXFIA%3A1646168787020&ei=04oeYvtUk7HK0w-u3KR4&oq=gluten+free+restaurants+ne&gs_lcp=Cgdnd3Mtd2l6EAEYADIICAAQgAQQyQMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6CAgAELEDEJECOgUIABCRAjoICC4QsQMQkQI6DggAEIAEELEDEIMBEMkDOgsIABCxAxDJAxCRAjoICAAQgAQQsQNKBAhBGABKBAhGGABQ-QRYlRdguCBoAXABeACAAVGIAdcGkgECMTSYAQCgAQHAAQE&sclient=gws-wiz" target="_blank">Where to eat Gluten Free in Blacksburg</a>
+        </li>
+        <li>
+          <a href="https://www.everydayhealth.com/digestive-health/0313/surprising-products-that-contain-gluten.aspx" target="_blank">Surprising Items that Contain Gluten</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

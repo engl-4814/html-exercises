@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>6-a11y HW</title>
+    <meta name="author" content="Emily Keshap">
+    <meta name="charset" content="utf-8">
+    <meta name="description" contemt="About Page">
+  </head>
+
+  <a href="#main" class="skip-to-link">Main Content</a>
+  
+  <body>
+    <nav role="navigation" aria-label="Content navigation">
+      <ul>
+        <li>
+          <a href="../index.html">Home Page</a>
+        </li>
+        <li>
+          <a href="./index.html">About Me</a>
+        </li>
+        <li>
+          <a href="../contact/index.html">Contact Information</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main" role="main">
+      <header role="heading" aria-label="Header">
+        <h1>About Me</h1>
+      </header>
+
+      <section id="My Information" role="region" aria-labelledby="region1">
+        <h2 id="region1">My Information</h2>
+        <ul>
+          <li>Name: Emily Keshap</li>
+          <li>Major: English Pre-Law, Professional and Technical Writing</li>
+          <li>Minor: Strategic Communication</li>
+          <li>Year: Junior</li>
+          <li>Fun Fact: I've traveled to 19 countries and have lived in 3</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
