@@ -2,15 +2,53 @@
 <html lang="en">
 
 <head>
+  <!-- be sure to include the basic metadata here -->
 </head>
 
 <body>
   <header role="banner">
-
+    <!-- title is a meta tag for the head -->
     <Title>Airbnb website</Title>
     <h1>Airbnb</h1>
+    <!-- 
+      note how the header closing tag is red. 
+      It shows you that you have an error just 
+      before it. See the unclosed img tag.
+      Also, even if it's a logo, you need an
+      alt tag. Lookup again how to do alt tags
+      for decorative images.
+    -->
     <img src="images/airbnb_logo.png" width="70" height="70" </header>
+    <!-- 
+      note how there are 2 navs; one has the 
+      great a11y role and label there.
+
+      But, it's all empty. Be sure to complete
+      the navigation menu items with at least
+      empty links. It seems like you Check-In
+      Location, Check Out, etc. are not correctly
+      wrapped up in correct elements. Consider
+      how you're suggesting that these are main
+      landmark regions with content associated
+      with those headings. But, there isn'ts any,
+      so any user, esp. visually-impaired users,
+      will be confused as to why there are these
+      heading designations with no content.
+
+      Instead those are your nav items, so instead
+      of putting them into a main content area is 
+      misleading there too.
+
+      Review our nav assignment. Note how a ul
+      unordered list needs li list items. The
+      content of those list items need to be 
+      wrapped inside of anchor (a) tags with their
+      appropriate attributes, such as (href).
+    -->
     <nav>
+      <!-- 
+        Skip links are the first item inside the body 
+      -->
       <a href="#main" class="skip-to-link">skip to main content</a>
       <nav role="navigation" aria-label="main navigation">
       </nav>
@@ -29,9 +67,16 @@
         </ul>
         <article>
           <h3>Not sure where to go?</h3>
+          <!-- 
+            Turn on your editor's 'wrap' function,
+            so you don't need to create new lines
+            like this.
+          -->
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt tincidunt felis in vehicula. Nulla
             facilisi. In pellentesque orci quis sem fermentum ultricies. Maecenas auctor est nec congue condimentum.
             Maecenas varius nisi at libero posuere, varius efficitur enim pellentesque. Donec sed mattis ligula.</p>
+
+
           <section>
             <h4>Carolina Beach</h4>
             <img src="images/Carolina beach.jpg" <h5></h5>
