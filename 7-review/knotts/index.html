@@ -4,6 +4,10 @@
     <title>HTML Review Woo Hoo</title>
     <meta author="Bre Knotts"/>
     <meta charset="utf-8"/>
+    <!-- 
+      See this MDN page for how to use meta tags:
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#adding_an_author_and_description
+    -->
     <meta name="HTML Review" content="HTML Review Woo Hoo"/>
     <title>The Houseplant Guru</title>
   </head>
@@ -12,9 +16,38 @@
 </nav>
  </body>
   <section>
-    <nav id="Tips for growing plants" role="navigation"></nav>    
+    <!-- IDs and classes are written without spaces  -->
+    <!-- 
+      What content should be in the nav?
+      Refer back to our nav assignment, where we
+      used unordered lists with list items, wherein
+      the content was wrapped in an anchor tag.
+
+      Also, rememeber to apply aria labels with roles.
+    -->
+    <nav id="Tips for growing plants" role="navigation"></nav>  
+    
+    <!-- 
+      Consider how you should use a main element to wrap up
+      the main content, so you can target and distinguish
+      main content from other types of landmark regions:
+      aside, footer, section, etc.
+     -->
     <h1>The Houseplant Guru</h1>
+    <!-- if a subtitle, then consider a paragraph instead -->
     <h2>We all need a little green in our lives</h2>
+    <!-- 
+      skip links should be the very first element in the body,
+      since they help screenreader users skip to the main
+      content. In this case, there is no element with this 
+      'subscribe' id. 
+      
+      FTR, this would be considered a 
+      'dark pattern' in the industry, since you are creating
+      a skip link that goes directly to subscirbe content 
+      without first guiding a visually-impaired user to the
+      main content first.
+    -->
     <a href="#subscribe" class="skip-to-link"Skip to subscribe>
     </a>
   </section>
@@ -24,6 +57,7 @@
     <img src="./clipart/flower-clipart-6116806_1280.png">
   </section>
   <section>
+    <!-- double check indentation work -->
 <h3>Healthy, thriving houseplants</h3>
 <p>Learn about your favorite houseplants: Do you need fertilizer?</p>
 <img src="./clipart/tomato.png">
@@ -34,8 +68,16 @@
     <img src="./clipart/tree.png">
   </section>
   <footer>
+    <!-- 
+      Again, review how these landmark elements
+      should be used. Right now, your main is empty,
+      even though it is meant to wrap up the main
+      content.
+     -->
     <main id="subscribe" role="subscribe"></main>
     <section id="subscribe"></section>
     <h1>Subscribe for free</h1>
     <p>Subscribe to my newsletter and never miss a post.</p>
   </footer>
+
+  <!-- Be sure to close up everything -->
