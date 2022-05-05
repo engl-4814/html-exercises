@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ducks and a Tree</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header>
+    <img src="images/image1.jpg" 
+         width="93" height="98"
+         alt="" />
+    <h1>
+      Ducks and a Tree ^
+    </h1>
+  </header>
+  <main>
+    <section id="img">
+
+      <h2>Kittens in the <code>&lt;img&gt;</code> element</h2>
+
+      <div id="img__basics">
+        <h3>The Basics</h3>
+        <p>
+          Below, use the one of your image files to render an image with the src, width, height, and alt attributes.
+        </p>
+
+        <img src="images/duck_966x585.jpeg" 
+         width="966x" height="585px"
+         alt="Duck splashing in the water" />
+
+        
+      </div>
+
+      <div id="img__srcset_and_sizes">
+        <h3>Using srcset &amp; sizes</h3>
+        <p>
+          Below, practice using the your set of 3 images by using the srcset and sizes attributes in the img element. Use the w (width) value for the srcset. Use the max-width attribute with the px (pixel) value for the sizes.
+        </p>
+        <!-- 
+          3 SRCSET Attributes
+            1. An image path/filename
+            2. A space
+            3. The image's intrinsic width in pixels
+         -->
+
+
+        <img srcset="images/ducks_482x291.jpeg 482w,
+                     images/ducks_966x585.jpeg 966w,
+                     images/ducks_1447x876.jpeg 1447w"
+             sizes="(max-width: 482px) 320px,
+                    (max-width: 966px) 480px,
+                    (max-width: 1447px) 960px,
+                    1440px"
+             alt="All the ducks in a row!"   
+        />
+        <!-- 
+          3 SIZES Attributes
+            1. A media condition ((max-width: 480px)) - a media condition describes a possible state of a screen, e.g., "when the viewport width is 480 pixels or less".
+            2. A space
+            3. The width of the slot the image will fill when the media condition is true (479px)
+         -->
+      </div>
+
+    </section>
+
+    <section id="picture__source">
+
+      <h2>DUCKS! in the <code>&lt;picture&gt;</code> element</h2>
+      <p>
+        Below, practice creating a picture element that:
+      </p>
+      <ol>
+        <li>
+          uses the standard <code>&lt;img&gt;</code> as the default use of the smallest image file.
+        </li>
+        <li>
+          but <code>&lt;picture&gt;</code> also uses the <code>&lt;source&gt;</code> element to tell the browser to use the next largest image at a specified minimum width (px) of your choice.
+        </li>
+        <li>
+          but the <code>&lt;picture&gt;</code> uses the <code>&lt;source&gt;</code> element to tell the browser to otherwise use the cropped version of your medium-sized file.
+        </li>
+      </ol>
+      <picture>
+        <source media="(max-width: 480px)" 
+                srcset="images/ducks_482x291">
+        
+        <source media="(min-width: 960px)" 
+                srcset="images/kittens_960.jpg">
+
+        <img src="images/duck_482x291.jpeg"
+             alt="Duck" />
+      </picture>
+
+    </section>
+  </main>
+</body>
+</html>
