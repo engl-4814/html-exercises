@@ -32,10 +32,12 @@
     <section>
         <h2 id="Verity">Verity by Colleen Hoover</h2>
         <img 
-            srcset="assets/images/bouquet-display-luby-100x150.jpg 100w, assets/images/bouquet-display-luby-200x300.jpg 200w, assets/images/bouquet-display-luby-400x600.jpg 400w" 
-            sizes="(max-width: 300px) 100px"
             src="assets/images/bouquet-display-luby-200x300.jpg" 
-            alt="Bouquet displayed in on a pedestal" width="200" height="300"/>
+            alt="Bouquet displayed in on a pedestal" 
+            srcset="assets/images/bouquet-display-luby-100x150.jpg 100px, 
+                    assets/images/bouquet-display-luby-200x300.jpg 200px, 
+                    assets/images/bouquet-display-luby-400x600.jpg 400px" 
+            sizes="(min-width: 500px) 200px"/>
         <p>For: lovers of, fans of, etc.</p>
         <p>Book Blurb</p>
         <p><strong>Read More</strong></p>
@@ -55,9 +57,13 @@
     <section>
         <h2 id="three">Book 3 Title by Book 3 Author</h2>
         <picture>
-            <source media="(max-width: 400px)" srcset="assets/images/common-foxglove-luby-100x150.jpg"/>
-            <source media="(min-width: 401px)" srcset="assets/images/common-foxglove-luby-200x300.jpg"/>
-            <img src="assets/images/common-foxglove-luby-200x300.jpg" alt="Common foxglove on the side of a mountain trail with a mountain peak in the background" width="200" height="300"/>
+            <source 
+                srcset="assets/images/common-foxglove-luby-100x150.jpg"    
+                media="(max-width: 400px)" />
+            <source  
+                srcset="assets/images/common-foxglove-luby-200x300.jpg"
+                media="(min-width: 401px)"/>
+            <img src="assets/images/common-foxglove-luby-200x300.jpg" alt="Common foxglove on the side of a mountain trail with a mountain peak in the background"/>
         </picture>
         <p>For: lovers of, fans of, etc.</p>
         <p>Book Blurb</p>
