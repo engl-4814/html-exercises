@@ -7,6 +7,14 @@
     <title>Home - the Book Nest</title>
 </head>
 <body>
+  <!--
+    Overall feedback
+
+    - Love the landmark usage throughout. I would consider how to:
+
+      1. Simplify your structure. I note some things below, like using 2 mains, when there should be only one. But, I think I get lost in the article > section use in the first main, then the section > article reversal in the second main. I would choose one that you see as a pattern to use throughout your site to build consistency, which will help you when it comes to designing later.
+      2. Consider if some of this content is worthy of its own page. Since you have 2 mains, and it is getting a little long for the home page, consider breaking up your content a little and thinking about using your hone page as a method of introducing your content via findable features like card previews, etc.
+  -->
     <header>
       <nav>
         <a href="./index.html"><h1>Welcome to the Book Nest!</h1></a>
@@ -31,6 +39,7 @@
         </figcaption>
       </figure>
       <article>
+        <!-- Is this div needed right now, since it only is wrapping up one element? That's a good rule-of-thumb for genereic div elements. Ask yourself that question throughout the page. -->
         <div>
           <p>Summary goes here Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aspernatur adipisci vitae atque cupiditate ullam amet vel earum sunt, porro odio enim, nostrum veritatis necessitatibus perspiciatis odit omnis modi similique!</p>
         </div>
@@ -77,6 +86,7 @@
               </li>
             </ul>
           </div>
+          <!-- Usually, aside elements should be used sparingly and as a container alongside the larger landmarks, like main, header (of the page), etc. In this case, a <p> will work just fine. -->
           <aside>
             Learn about the differences between <a href="">manhwa, manga, and manhua</a>
           </aside>
@@ -92,7 +102,8 @@
           <p>read more reviews on my <a href="">reviews</a> page!</p>
         </section>
       </article>
-    </main>   
+    </main>
+    <!-- There should only be 1 main element; perhaps this content below should be on a dedicated page? -->
     <main>
       <h2>Just Thoughts</h2>
       <section>
