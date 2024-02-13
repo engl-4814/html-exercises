@@ -7,8 +7,9 @@
     <title>Home - the Book Nest</title>
 </head>
 <body>
-    <header>
-      <nav>
+  <a class="skip-to-link" href="#main">Skip to content</a>
+    <header role="heading">
+      <nav role="navigation">
         <ul>
           <li>
             <a href="./index.html"><h1>Welcome to the Book Nest!</h1></a>
@@ -16,21 +17,30 @@
           <li>
             <a href="./reviews/all-reviews.html">Reviews</a>
           </li>
+          <ul>
+            <li>
+              <a href="./reviews/mo-dao-zu-shi.html">Most Recent Review</a>
+            </li>
+          </ul>
           <li>
-            <a href="./reviews/mo-dao-zu-shi.html">Most Recent Review</a>
+            <a href="./thoughts-about-things/just-thoughts.html">Just Thoughts</a>
           </li>
-          <li>
-            <a href="./just-thoughts.html">Just Thoughts</a>
-          </li>
-        </ul>
+          <ul>
+            <li>
+              <a href="./thoughts-about-things/asian-comics.html">Manga, manhua, and manhwa</a>
+            </li>
+            <li>
+              <a href="./thoughts-about-things/on-fanfic.html">On Fanfiction</a>
+            </li>
+          </ul>
       </nav>
       <p>As a general spoiler disclaimer: There will be spoilers all over this website, so read at your own risk!</p>
     </header>
-    <main>
-      <section>
-        <h2>Most Recent Review</h2>
-        <article>
-          <h3>Grandmaster of Demonic Cultivation</h3>
+    <main role="main" aria-label="Recent stories">
+      <section role="region" aria-labelledby="new-review"">
+        <h2 id="new-review">Most Recent Review</h2>
+        <article role="region" aria-labelledby="review">
+          <h3 id="review">Grandmaster of Demonic Cultivation</h3>
           <figure>
             <img 
               src="./assets/images/mdzs-promo-poster-6Feb24-WinnieChanPinterest-1200x849.jpg" 
@@ -46,15 +56,15 @@
           </figure>
           <section>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id culpa vitae exercitationem nisi porro consectetur, debitis ea iure neque dolores veritatis voluptatum consequuntur maxime velit eaque animi quas dignissimos voluptate?</p>
-            <p><a href="./reviews.html">Continue Reading</a></p>
-            <p><a href="http://">Or read more of my other reviews</a></p>
+            <p><a href="./reviews/mo-dao-zu-shi.html">Continue Reading</a></p>
+            <p><a href="./reviews/all-reviews.html">Or check out my other reviews</a></p>
           </section>
         </article>
       </section>
-      <section>
-        <h2>Just Thoughts</h2>
-        <article>
-          <h3>Manga, manhwa, and manhua - What's the difference?</h3>
+      <section role="region" aria-labelledby="new-thoughts">
+        <h2 id="new-thoughts">Just Thoughts</h2>
+        <article role="region" aria-labelledby="thought-one">
+          <h3 id="thought-one">Manga, manhwa, and manhua - What's the difference?</h3>
           <figure>
             <img 
               src=""
@@ -69,12 +79,12 @@
           </figure>
           <section>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore asperiores, commodi aspernatur illum nostrum eos sequi accusantium omnis sapiente saepe libero reiciendis culpa nesciunt nemo. Facilis sunt magni dicta corporis!</p>
-            <p><a href="./miscellaneous.html">Continue Reading</a></p>
-            <p><a href="http://">More Thoughts</a></p>
+            <p><a href="./thoughts-about-things/asian-comics.html">Continue Reading</a></p>
+            <p><a href="./thoughts-about-things/just-thoughts.html">More Thoughts</a></p>
           </section>
         </article>
-        <article>
-          <h3>On Fanfic, the reading of</h3>
+        <article role="region" aria-labelledby="thought-two">
+          <h3 id="thought-two">On Fanfic, the reading of</h3>
           <img 
             src="" 
             srcset=""
@@ -82,12 +92,13 @@
           >
           <p>reading fanfic Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptates culpa totam odio laboriosam quae nesciunt voluptate atque temporibus perspiciatis obcaecati nihil dolorem, corporis sint dolorum, non aliquid ducimus quasi.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatem modi eos nisi maxime ad eaque sunt, commodi quisquam, molestias esse? Eveniet quas doloribus corporis quo ad eius quasi facere.</p>
-          <p><a href=""></a>Continue Reading</p>
+          <p><a href="./thoughts-about-things/on-fanfic.html">Continue Reading</a></p>
+          <p><a href="./thoughts-about-things/just-thoughts.html">More Thoughts</a></p>
         </article>
-     </section>
+      </section>
     </main>   
-    <footer>
-      <h2>About me!</h2>
+    <footer role="contentinfo" aria-labelledby="personal-information">
+      <h2 id="personal-information">About me!</h2>
         <p>info goes here Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis dolore nobis, iure eius alias praesentium reprehenderit error amet illo assumenda minus voluptates deserunt recusandae placeat quo porro qui repudiandae.</p>
         <section>
           <h3>contact info</h3>
