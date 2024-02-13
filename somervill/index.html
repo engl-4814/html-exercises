@@ -8,6 +8,23 @@
 </head>
 <body>
   <nav>
+    <!--
+      ON DIVs:
+      Consider how this div is not adding any grouping value; it's just repeating the work that the nav is already doing on a more meaningful level. So, the div, as is, is just adding unnecessary structural hierarchy.
+
+      Now, a div that contained your logo (img) and an h1—that would be a good use, because it would create 2 children of the nav as follows:
+      - nav
+        - ul
+          - li
+            - a
+        - div
+          - img
+          - h1
+
+      With this structure, you can now see 2 direct children of the nav: a list of links; and a logo+title combo
+
+      Consider if any of your other div elements should be removed or not, based on this idea.
+    -->
     <div>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -16,6 +33,7 @@
         <li><a href="publications.html">Publications</a></li>
         <li><a href="news.html">Lab News</a></li>
       </ul>
+      <!-- Your srcset paths are incorrect, as they are missing the file format ".png" in this case. Be sure to indent them, so you can spot those errors. Also, don't forget to apply the width and height attributes based on the src image-->
       <img 
         srcset="assets/images/logo_goldstein_research_bone_600x400.png, assets/images/logo_goldstein_research_bone_300x200, assets/images/logo_goldstein_research_bone_150x100"
         src="assets/images/logo_goldstein_research_bone_600x400.png" 
@@ -31,6 +49,7 @@
       <img src="assets/images/" alt="bone cells 2">
     </div>
   </header>
+  <!-- wrap these 2 sections in a main; you'll ALWAYS use a main somewhere to indicate the scope of the main content -->
   <section>
     <h2>Skeletal Tissue Engineering and Mechanobiology Research</h2>
     <img src="assets/images/bone_engineering_cells_research_387x386.png" alt="cells with flourescent staining, 1"/>
