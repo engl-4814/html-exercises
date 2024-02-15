@@ -34,10 +34,9 @@
         <img 
             src="assets/images/bouquet-display-luby-200x300.jpg" 
             alt="Bouquet displayed in on a pedestal" 
-            srcset="assets/images/bouquet-display-luby-100x150.jpg 100px, 
-                    assets/images/bouquet-display-luby-200x300.jpg 200px, 
-                    assets/images/bouquet-display-luby-400x600.jpg 400px" 
-            sizes="(min-width: 500px) 200px"/>
+            srcset="assets/images/bouquet-display-luby-100x150.jpg 100w, 
+                    assets/images/bouquet-display-luby-200x300.jpg 200w, 
+                    assets/images/bouquet-display-luby-400x600.jpg 400w"/>
         <p>For: lovers of, fans of, etc.</p>
         <p>Book Blurb</p>
         <p><strong>Read More</strong></p>
@@ -58,12 +57,13 @@
         <h2 id="three">Book 3 Title by Book 3 Author</h2>
         <picture>
             <source 
-                srcset="assets/images/common-foxglove-luby-100x150.jpg"    
-                media="(max-width: 400px)" />
+                media="(min-width: 200px)"    
+                srcset="assets/images/common-foxglove-luby-100x150.jpg"/>
             <source  
-                srcset="assets/images/common-foxglove-luby-200x300.jpg"
-                media="(min-width: 401px)"/>
-            <img src="assets/images/common-foxglove-luby-200x300.jpg" alt="Common foxglove on the side of a mountain trail with a mountain peak in the background"/>
+                media="(min-width: 400px)"    
+                srcset="assets/images/common-foxglove-luby-200x300.jpg"/>
+            <img src="assets/images/common-foxglove-luby-200x300.jpg" 
+                 alt="Common foxglove on the side of a mountain trail with a mountain peak in the background"/>
         </picture>
         <p>For: lovers of, fans of, etc.</p>
         <p>Book Blurb</p>
