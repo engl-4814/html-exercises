@@ -3,14 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- watch your indentation throughout -->
 	<meta name="author" content="Kayla Roberts">
     <title>Roberts</title>
 </head>
 <body>
+	<!--
+		## Headings
+			- Be careful about your heading level sequencing. Here's your structure right now:
+				h2
+						h4
+						h4
+						h4
+					h3
+						h4
+						h4
+						h4
+
+			- Based on your existing content, as is below, it should be ...
+				h1 More snappy title of your page or your name will do
+				h2 Overview
+					h3
+					h3
+				h2 Visual Introduction
+				h2 About Me
+					h3 Education
+					h3 Experience
+				h2 Contact Me
+
+		## Landmark / Sectioning Elements
+			- Note how you are currently only using the nav and footer elements to distinguish major landmarks of your page. Otherwise, you are using the generic div element to wrap everything else, when you should consider header, main, section, etc.
+	-->
 	<h2>Overview</h2>
 	<p>Welcome to my website!</p>
 	<div>
 		<h4>Website Purpose</h4>
+		<!-- Try structuring your paragraphs like this instead -->
 		<p>Here's why I made this website: Lorem ipsum dolor sit amet</p>
 
 		<h4>Where to Find Information</h4>
@@ -23,11 +51,16 @@
 	</div>
 	<div>
 		<h4>Visual Introduction</h4>
+		<!-- Is this a paragraph or another heading below? -->
 		<p>Headshot</p>
+		<!--
+			- Be sure to get those images in your project so you can use srcset
+			- Also, be sure to use the file-naming conventions discussed in the reading.
+		-->
 		<img src="assets/images/conference-photo.jpg"
 		alt="Photo of Kayla Roberts (right) and a classmate (left) at a conference."
 		width="2400" height="1600"
-		
+
 		/>
 		<!-- srcset="assets/images/conference-photo.jpg 480px,
 				assets/images/conference-photo.jpg 960px,
@@ -40,6 +73,7 @@
 			<li>High School Graduate - 2021</li>
 			<li>Associate Certificate in General Studies - 2022</li>
 			<li>Bachelor's Degree in English Literature - 2024</li>
+			<!-- ?? Be sure not to copy/paste code. I'm not sure if you are, but we haven't talked about class attributes yet, since we don't need to use them yet. -->
 			<ul class="minor">
 				<li>Minor in Professional and Technical Writing</li>
 			</ul>
