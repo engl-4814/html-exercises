@@ -6,8 +6,8 @@
     <meta name="author" content="Megan Luby">
     <title>Non-Reader Recommendations</title>
 </head>
-<header>
-    <nav>
+<header role="banner">
+    <nav role="navigation">
         <ul>
             <li><a href="">Home</a></li>
             <li><a href="">About Me</a></li>
@@ -18,19 +18,22 @@
     </nav>
 </header>
 <body>
-    <main>
-    <h1>Non-Reader Recommendations</h1>
+    <aside role="complementary">
+        <p>la di di who knows what i'll put in a sidebar</p>
+    </aside>
+    <main role="main" aria-labelledby="non-reader-recs">
+    <h1 id="non-reader-recs">Non-Reader Recommendations</h1>
     <p>Here I will introduce the page/explain its purpose</p>
-    <nav>
+    <nav role="navigation">
         <ul>
-            <li><a href="#Verity">Verity by Colleen Hoover</a></li>
-            <li><a href="#Book_2_Title">Book 2 Title by Book 2 Author</a></li>
+            <li><a href="#verity">Verity by Colleen Hoover</a></li>
+            <li><a href="#two">Book 2 Title by Book 2 Author</a></li>
             <li><a href="#three">Book 3 Title by Book 3 Author</a></li>
         </ul>
     </nav>
     <div><p>Maybe a paragraph here</p></div>
-    <section>
-        <h2 id="Verity">Verity by Colleen Hoover</h2>
+    <section role="region" aria-labelledby="verity">
+        <h2 id="verity">Verity by Colleen Hoover</h2>
         <img 
             src="assets/images/bouquet-display-luby-200x300.jpg" 
             alt="Bouquet displayed in on a pedestal" 
@@ -42,8 +45,8 @@
         <p><strong>Read More</strong></p>
         <hr>
     </section>
-    <section>
-        <h2 id="Book_2_Title">Book 2 Title by Book 2 Author</h2>
+    <section role="region" aria-labelledby="two">
+        <h2 id="two">Book 2 Title by Book 2 Author</h2>
         <figure>
             <img src="assets/images/fall-tree-leaves-luby-200x300.jpg" alt="Autumn leaves falling from a tree and covering the ground" width="200" height="300"/>
             <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, vitae!</figcaption>        
@@ -53,7 +56,7 @@
         <p><strong>Read More</strong></p>
         <hr>
     </section>
-    <section>
+    <section role="region" aria-labelledby="three">
         <h2 id="three">Book 3 Title by Book 3 Author</h2>
         <picture>
             <source 
@@ -71,7 +74,7 @@
         <hr>
     </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <p>Footer Stuff</p>
     </footer>
 </body>

@@ -7,7 +7,8 @@
     <title>Dr. Goldstein's Research Lab</title>
 </head>
 <body>
-  <nav>
+  <a href="#main" class="skip-to-link">Skip to content</a>
+  <nav role="navigation" aria-label="Main navigation">
     <div>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -16,43 +17,43 @@
         <li><a href="publications.html">Publications</a></li>
         <li><a href="news.html">Lab News</a></li>
       </ul>
-      <img 
-        srcset="assets/images/logo_goldstein_research_bone_600x400.png, assets/images/logo_goldstein_research_bone_300x200, assets/images/logo_goldstein_research_bone_150x100"
-        src="assets/images/logo_goldstein_research_bone_600x400.png" 
+      <img src="assets/images/logo_goldstein_research_bone_600x400.png" 
         alt="Logo for Goldstein's Research Lab"
-      >
+        width="600" height="400"
+        srcset="assets/images/logo_goldstein_research_bone_600x400.png 600px, 
+                assets/images/logo_goldstein_research_bone_300x200.png 300px, 
+                assets/images/logo_goldstein_research_bone_150x100.png 150px" 
+      />
     </div>
   </nav>
-  <header>
+  <header role="banner" aria-label="Home page banner for Goldsteins research website">
     <div>
-      <h1>Skeletal Tissue Engineering and Mechanobiology Lab</h1>
+      <h1 id="research-title">Skeletal Tissue Engineering and Mechanobiology Lab</h1>
       <h2>Virginia Tech - Goldstein Research Lab</h2>
-      <img src="assets/images/" alt="bone cells">
-      <img src="assets/images/" alt="bone cells 2">
+      <img src="assets/images/" alt="bone cells"/> <!-- fix dese gf-->
+      <img src="assets/images/" alt="bone cells 2"/> <!-- fix dese gf-->
     </div>
   </header>
-  <section>
-    <h2>Skeletal Tissue Engineering and Mechanobiology Research</h2>
-    <img src="assets/images/bone_engineering_cells_research_387x386.png" alt="cells with flourescent staining, 1"/>
-    <img src="assets/images/bone_tissue_cells_research_goldstein_385x385.png" alt="cells with flourescent staining, 2" />
+  <main id="main" role="main" aria-labelledby="Research-background">
+    <h2 id="Research-background">Skeletal Tissue Engineering and Mechanobiology Research</h2>
+    <img src="assets/images/bone_engineering_cells_research_387x386.png" alt="cells with flourescent staining, 1"/> <!-- fix dese gf-->
+    <img src="assets/images/bone_tissue_cells_research_goldstein_385x385.png" alt="cells with flourescent staining, 2" /> <!-- fix dese gf-->
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, eligendi sunt. Exercitationem sint eaque ratione illo quaerat nam voluptates harum minus ipsa dolor maiores ad corrupti iure expedita fuga fugiat, blanditiis, odit reiciendis est? Saepe doloribus dolorum deleniti illum voluptatum.</p>
+  </main>
+  <section role="region" aria-labelledby="research-interest">
+    <ul>
+      <li><!--Link to projects--></li>
+      <li><!--Link to group--></li>
+      <li><!--Link to publications--></li>
+      <li><!--Link to news--></li>
+    </ul>
+    <img src="assets/images/image" alt="change image for projects">
+    <img src="assets/images/image" alt="change image for groups">
+    <img src="assets/images/image" alt="change image for publications">
+    <img src="assets/images/image" alt="change image for news">
   </section>
-  <section>
-    <div>
-      <ul>
-        <li><!--Link to projects--></li>
-        <li><!--Link to group--></li>
-        <li><!--Link to publications--></li>
-        <li><!--Link to news--></li>
-      </ul>
-      <img src="assets/images/image" alt="change image for projects">
-      <img src="assets/images/image" alt="change image for groups">
-      <img src="assets/images/image" alt="change image for publications">
-      <img src="assets/images/image" alt="change image for news">
-    </div>
-  </section>
-  <footer>
-    <h2>Contact</h2>
+  <footer id="resources" role="contentinfo" aria-labelledby="research-resources">
+    <h2 id="research-resources">Contact</h2>
     <div>
       <h3>Interested in joining the team?</h3>
       <p>Contact Dr. Goldstein!</p>
