@@ -6,19 +6,18 @@
     <meta name="author" content="Kate Stanko"> 
     <title>Kate Stanko's Portfolio</title>
 </head>
-
 <body>
-    <nav>
+    <nav role="navigation" aria-label="Main menu">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="professional_work.html">Professional Work</a></li>
         </ul>
     </nav>
-    <header>
+    <header role="banner" aria-label="Home page banner">
         <h1>Welcome!</h1>
     </header>
-    <main>
+    <main role="main" aria-labelledby="Introduction to Kate">
         <div>
             <section>
                 <h2>About Me</h2>
@@ -33,7 +32,7 @@
                         assets/images/largecat3640x2226.jpeg 3640w"
                         alt="A small picture of a brown cat."
                     >
-                <figcaption>Fig 1. A picture of a brown cat from Wikipedia.</figcaption>
+                    <figcaption>Fig 1. A picture of a brown cat from Wikipedia.</figcaption>
                 </figure>
             </section>
             <section>
@@ -46,6 +45,9 @@
             </section> 
         </div>
     </main>
+    <footer role="contentinfo" aria-labelledby="Copyright statement">
+        © 2024, Kate Stanko
+    </footer>
 </body>
 </html>
 
