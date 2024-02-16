@@ -7,8 +7,9 @@
     <title>Home - the Book Nest</title>
 </head>
 <body>
-    <header>
-      <nav>
+  <a class="skip-to-link" href="#main">Skip to content</a>
+    <header role="banner" aria-label="navigation menu">
+      <nav role="navigation" aria-label="main navigation">
         <ul>
           <li>
             <a href="./index.html"><h1>Welcome to the Book Nest!</h1></a>
@@ -16,27 +17,38 @@
           <li>
             <a href="./reviews/all-reviews.html">Reviews</a>
           </li>
+          <ul>
+            <li>
+              <a href="./reviews/mo-dao-zu-shi.html">Most Recent Review</a>
+            </li>
+          </ul>
           <li>
-            <a href="./reviews/mo-dao-zu-shi.html">Most Recent Review</a>
+            <a href="./thoughts-about-things/just-thoughts.html">Just Thoughts</a>
           </li>
-          <li>
-            <a href="./just-thoughts.html">Just Thoughts</a>
-          </li>
-        </ul>
+          <ul>
+            <li>
+              <a href="./thoughts-about-things/asian-comics.html">Manga, manhua, and manhwa</a>
+            </li>
+            <li>
+              <a href="./thoughts-about-things/on-fanfic.html">On Fanfiction</a>
+            </li>
+          </ul>
       </nav>
       <p>As a general spoiler disclaimer: There will be spoilers all over this website, so read at your own risk!</p>
     </header>
-    <main>
-      <section>
-        <h2>Most Recent Review</h2>
-        <article>
-          <h3>Grandmaster of Demonic Cultivation</h3>
+    <main role="main" aria-label="Recent stories">
+      <section role="region" aria-labelledby="new-review"">
+        <h2 id="new-review">Most Recent Review</h2>
+        <article role="region" aria-labelledby="review">
+          <h3 id="review">Grandmaster of Demonic Cultivation</h3>
           <figure>
             <img 
               src="./assets/images/mdzs-promo-poster-6Feb24-WinnieChanPinterest-1200x849.jpg" 
               srcset="./assets/images/mdzs-promo-poster-6Feb24-WinnieChanPinterest-1200x849.jpg 1200w,
                       ./assets/images/mdzs-promo-poster-6Feb24-WinnieChanPinterest-600x425.jpg 600w,
                       ./assets/images/mdzs-promo-poster-6Feb24-WinnieChanPinterest-300x213.jpg 300w"
+              height="849"
+              width="1200"
               title="It was both weirdly difficult and not actually that hard to find an image that was 1200w"
               alt="Title written in Chinese showing a man with long dark hair, dressed in black and red traditional Chinese robes, playing a flute. Next to him is a man with tied up long black hair, dressed in white robes. The pair are surrounded by others, who are variously distressed or upset, with the very edges of the poster appearing to have been burned away by fire"
             >
@@ -46,21 +58,21 @@
           </figure>
           <section>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id culpa vitae exercitationem nisi porro consectetur, debitis ea iure neque dolores veritatis voluptatum consequuntur maxime velit eaque animi quas dignissimos voluptate?</p>
-            <p><a href="./reviews.html">Continue Reading</a></p>
-            <p><a href="http://">Or read more of my other reviews</a></p>
+            <p><a href="./reviews/mo-dao-zu-shi.html">Continue Reading</a></p>
+            <p><a href="./reviews/all-reviews.html">Or check out my other reviews</a></p>
           </section>
         </article>
       </section>
-      <section>
-        <h2>Just Thoughts</h2>
-        <article>
-          <h3>Manga, manhwa, and manhua - What's the difference?</h3>
+      <section role="region" aria-labelledby="new-thoughts">
+        <h2 id="new-thoughts">Just Thoughts</h2>
+        <article role="region" aria-labelledby="thought-one">
+          <h3 id="thought-one">Manga, manhwa, and manhua - What's the difference?</h3>
           <figure>
             <img 
               src=""
-              width=""
+              srcset=""
               height=""
-              srcset="" 
+              width="" 
               alt=""
             >
             <figcaption>
@@ -69,29 +81,35 @@
           </figure>
           <section>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore asperiores, commodi aspernatur illum nostrum eos sequi accusantium omnis sapiente saepe libero reiciendis culpa nesciunt nemo. Facilis sunt magni dicta corporis!</p>
-            <p><a href="./miscellaneous.html">Continue Reading</a></p>
-            <p><a href="http://">More Thoughts</a></p>
+            <p><a href="./thoughts-about-things/asian-comics.html">Continue Reading</a></p>
+            <p><a href="./thoughts-about-things/just-thoughts.html">More Thoughts</a></p>
           </section>
         </article>
-        <article>
-          <h3>On Fanfic, the reading of</h3>
+        <article role="region" aria-labelledby="thought-two">
+          <h3 id="thought-two">On Fanfic, the reading of</h3>
           <img 
-            src="" 
-            srcset=""
-            alt=""
-          >
+          src="./assets/images/archive-of-our-own-quora-15feb24-602x401.jpg" 
+          srcset="./assets/images/archive-of-our-own-quora-15feb24-602x401.jpg 602w
+                  ./assets/images/archive-of-our-own-quora-15feb24-302x201.jpg 302w
+                  ./assets/images/archive-of-our-own-quora-15feb24-125x83.jpg 125w"
+          height="401"
+          width="602"
+          alt="archive of our own logo, white on a red background"
+          title="I just realized that I have no idea what the Ao3 logo is supposed to be, so apologies for my terrible alt text"
+        >
           <p>reading fanfic Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptates culpa totam odio laboriosam quae nesciunt voluptate atque temporibus perspiciatis obcaecati nihil dolorem, corporis sint dolorum, non aliquid ducimus quasi.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatem modi eos nisi maxime ad eaque sunt, commodi quisquam, molestias esse? Eveniet quas doloribus corporis quo ad eius quasi facere.</p>
-          <p><a href=""></a>Continue Reading</p>
+          <p><a href="./thoughts-about-things/on-fanfic.html">Continue Reading</a></p>
+          <p><a href="./thoughts-about-things/just-thoughts.html">More Thoughts</a></p>
         </article>
-     </section>
+      </section>
     </main>   
-    <footer>
-      <h2>About me!</h2>
-        <p>info goes here Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis dolore nobis, iure eius alias praesentium reprehenderit error amet illo assumenda minus voluptates deserunt recusandae placeat quo porro qui repudiandae.</p>
+    <footer role="contentinfo" aria-labelledby="personal-information">
+      <h2 id="personal-information">About me!</h2>
+        <p>I'm the Devourer of Books. I prefer fantasy books, but sometimes I branch out to other things. Original inhabitant of Hawaii, though currently based in Virginia. I've been reading books for about 15 years or so - since I was literate - and Asian comics since high school.</p>
         <section>
-          <h3>contact info</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <h3>Questions?</h3>
+          <p>Contact me at phoebe22@vt.edu</p>
         </section>
         <p>Copyright 2024 All Rights Reserved</p>
     </footer>
