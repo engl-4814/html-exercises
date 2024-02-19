@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Watch out for the two titles here. There should only be one. -->
     <title> How to stay fit </title>
     <meta name="author" content="ELizabeth Wilson"> 
     <title> Stay fit </title>
 </head>
 <body>
+  <!-- fixed the indentation for the skip link. Also, the main element needs the id values of "main" for this to work, since the href value of #main will be looking for that particular ID on the page. -->
 <a href="#main" class="skip-to-link">Skip to content</a>
+  <!-- ARIA LABELS: Be sure to label your landmarks throughout -->
   <header role="banner">
     <h1>Staying Fit</h1>
   </header>
   <nav role="navigation">
     <ul>
+      <!-- Careful that you've linked the index.html file numerous times. If there's no page yet, just put a # for now. -->
       <li><a href="index.html">Home</a></li>
       <li><a href="index.html">About Me</a></li>
       <li><a href="practice/index.html">Workouts</a></li>
@@ -21,6 +25,7 @@
     </ul>
   </nav>
   <main role="main">
+    <!-- Too many regions here. Remember that landmarks are about the biggest pieces of content, so keep it simple by focusing on the two sections. -->
     <section role="region">
       <div role="region">
         <img src="assets/images/workout/strength-training-600x400.jpg" alt="Man and Woman Workingout"
@@ -30,11 +35,14 @@
                 assets/images/workout/strength-training-1200x800.jpg 1200w">
       </div>
       <div role="region">
+        <!-- Consider a more meaningful ID value with some context. Keep it simple. Something like id="workout" -->
         <h2 id="one"> Workout</h2>
         <p> 
           Lorem ipsum dolor sit amet consectetur adipisicing elit.      
         </p>
+        <!-- note how the href value will point to nothing. PLus, it should point to a file, which will have a file format. In this case, a .html file. -->
         <a href="Workout">Learn more about workouts</a>
+        <!-- Your width an height values should match the instrinsic size of the file pointed to in the src attribute. -->
         <img src="assets/images/workout/cardio-class-600x387.jpg" alt="Cardio"
         width="960"height="533"
         srcset="assets/images/workout/cardio-class-300x194.jpg 300w,
@@ -55,6 +63,7 @@
               assets/images/nutrition/food-heart-1200x750.jpg 1200w">
     </section>
   </main>
+<!-- Your body should not close here, since you have a footer, which is content. Every HTML page/file will end with a closing body tag, then a closing html root tag. -->
 </body>
 <footer role="contentinfo">
     <h4>Contact</h4>
