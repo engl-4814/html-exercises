@@ -18,12 +18,17 @@
         </ul>
     </nav>
 </header>
+<!-- BODY: All content goes in the body, so0 the header above should be inside the body. -->
 <body>
+    <!-- ASIDE: I'd add this as the last content, since it is the aside. Consider how if you define it here at the top, then it suggests it is top priority content—not an aside. -->
     <aside role="complementary">
         <p>Sidebar stuff</p>
     </aside>
+    <!-- HIERARCHY/INDENTATION: Review and fix your indentation throughout. What elements are inside of what? -->
     <main role="main" aria-labelledby="hp-main">
+    <!-- There should be only 1 h1, which is used for the title of the page; typically in the header like you have right now. -->
     <h1 id="hp-main">Speaking Volumes</h1>
+    <!-- Remember that you have the Emmet tool's Lorem ipsum placeholder text. -->
     <p>words words words</p>
     <section role="region" aria-labelledby="rotw">
         <h2 id="rotw">Review of the Week</h2>
@@ -34,22 +39,33 @@
                      assets/images/girl-work-cover-200x200.jpg 200px">
         <p>Girl Work by Zefyr Lisowski</p>
     </section>
+    <!-- I'd avoid these hr elements, since you'll learn how to apply borders, if you'd like something similar later. Otherwise, these horizontal rule lines will be more of a hinderance. -->
     <hr>
     <hr>
     <hr>
     <section role="region" aria-labelledby="verity">
         <h2 id="verity">Verity by Colleen Hoover</h2>
+        <!--
+            Good formatting for your images.
+            I switched it back to the 'w' metric. It works on my end. LMK if it isn't working on your end, so we can review the issue in class this week.
+        -->
         <img 
             src="assets/images/bouquet-display-luby-200x300.jpg" 
             alt="Bouquet displayed in on a pedestal" 
             srcset="assets/images/bouquet-display-luby-100x150.jpg 100w, 
                     assets/images/bouquet-display-luby-200x300.jpg 200w, 
                     assets/images/bouquet-display-luby-400x600.jpg 400w"/>
+
+        <!-- I would format paragraphs like the following example, which you can delete since it's just an example. -->
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae qui dolor voluptatibus veniam, esse consequatur odit. Sapiente voluptas error doloremque molestiae quidem at illo tempora culpa ab, libero vero maiores?
+        </p>
         <p>For: lovers of, fans of, etc.</p>
         <p>Book Blurb</p>
         <p><strong>Read More</strong></p>
         <hr>
     </section>
+    <!-- Consider a more meaningful ID value. Even just 'review-two' or 'book-review-2' adds much more meaningful context. -->
     <section role="region" aria-labelledby="two">
         <h2 id="two">Book 2 Title by Book 2 Author</h2>
         <figure>
@@ -63,6 +79,7 @@
     </section>
     <section role="region" aria-labelledby="three">
         <h2 id="three">Book 3 Title by Book 3 Author</h2>
+        <!-- You don't need to use picture, so you can revise this, if you'd like, for consistency -->
         <picture>
             <source 
                 media="(min-width: 200px)"    
@@ -75,10 +92,12 @@
         </picture>
         <p>For: lovers of, fans of, etc.</p>
         <p>Book Blurb</p>
+        <!-- I'd avoid using em or strong, since you can use CSS later. -->
         <p><strong>Read More</strong></p>
         <hr>
     </section>
     </main>
+    <!-- be sure to add a label here for the footer landmark -->
     <footer role="contentinfo">
         <p>Footer Stuff</p>
     </footer>
