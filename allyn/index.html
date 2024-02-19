@@ -6,9 +6,24 @@
     <title>Justine Allyn</title>
 </head>
 <body>
+    <!--
+        GENERAL Comments
+
+        The following comments are something to consider throughout the site.
+
+        A11Y Comments
+        - Be sure to add ARIA labels to your landmarks below
+
+        INDENTATION
+        - Be sure to really pay attention to the hierarchy of your elements: what's inside of what? Based on those relationships, your indentation must represent that relationship.
+
+        CONTENT
+        - Not too much content yet, so be sure to plan out some preliminary content/structure. You can use placeholder text (Lorem ipsum) for any longer parts. If you do so, even if you know that you will be revising it later, then you can practice and add your landmarks right now.
+    -->
     <header role="banner">
         <h1>Justine Allyn</h1>
     </header>
+    <!-- Be sure to remove.replace this button element, because it has a very specific use. -->
 <button aria-label="Menu"
     calss="Home">
 </button>
@@ -20,15 +35,16 @@
         <li><a href="idustry.html">Industry Projects</a></li>
     </ul>
 </nav>
+<!-- note how you've closed the body here -->
 </body>
 <main role="main">
     <section role="region">
         <h2>Welcome Into My Life!</h2>
         <picture>
             <source media="(max-width:200px)" srcset="assets/images/headshot400x600.jpg"/>
-            <img 
-            src="assets/images/headshot400x600.jpeg" 
-            width="400" height="600" 
+            <img
+            src="assets/images/headshot400x600.jpeg"
+            width="400" height="600"
             srcset="assets/images/headshot400x600.jpeg 400px,
                     assets/images/headshot100x150.jpeg 100px,
                     assets/images/headshot900x1350,jpeg 900px"
