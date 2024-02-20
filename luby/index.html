@@ -6,81 +6,49 @@
     <meta name="author" content="Megan Luby">
     <title>Speaking Volumes</title>
 </head>
-<header role="banner">
-    <h1>Speaking Volumes</h1>
-    <nav role="navigation">
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About Me</a></li>
-            <li><a href="">Rec Lists</a></li>
-            <li><a href="">A-Z Reviews</a></li>
-            <li><a href="">Search</a></li>
-        </ul>
-    </nav>
-</header>
 <body>
-    <aside role="complementary">
-        <p>Sidebar stuff</p>
-    </aside>
+    <header role="banner" aria-labelledby="speakingvolumes">
+        <h1 id="speakingvolumes">Speaking Volumes</h1>
+        <nav role="navigation">
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>About Me</a></li>
+                <li><a>Rec Lists</a></li>
+                <li><a>A-Z Reviews</a></li>
+                <li><a>Search</a></li>
+            </ul>
+        </nav>
+    </header>
     <main role="main" aria-labelledby="hp-main">
-    <h1 id="hp-main">Speaking Volumes</h1>
-    <p>words words words</p>
-    <section role="region" aria-labelledby="rotw">
-        <h2 id="rotw">Review of the Week</h2>
-        <img src="assets/images/girl-work-cover-800x800.jpg"
-             alt="Girl Work book cover" width="800" height="800"
-             srcset="assets/images/girl-work-cover-800x800.jpg 800px,
-                     assets/images/girl-work-cover-400x400.jpg 400px,
-                     assets/images/girl-work-cover-200x200.jpg 200px">
-        <p>Girl Work by Zefyr Lisowski</p>
-    </section>
-    <hr>
-    <hr>
-    <hr>
-    <section role="region" aria-labelledby="verity">
-        <h2 id="verity">Verity by Colleen Hoover</h2>
-        <img 
-            src="assets/images/bouquet-display-luby-200x300.jpg" 
-            alt="Bouquet displayed in on a pedestal" 
-            srcset="assets/images/bouquet-display-luby-100x150.jpg 100w, 
-                    assets/images/bouquet-display-luby-200x300.jpg 200w, 
-                    assets/images/bouquet-display-luby-400x600.jpg 400w"/>
-        <p>For: lovers of, fans of, etc.</p>
-        <p>Book Blurb</p>
-        <p><strong>Read More</strong></p>
-        <hr>
-    </section>
-    <section role="region" aria-labelledby="two">
-        <h2 id="two">Book 2 Title by Book 2 Author</h2>
-        <figure>
-            <img src="assets/images/fall-tree-leaves-luby-200x300.jpg" alt="Autumn leaves falling from a tree and covering the ground" width="200" height="300"/>
-            <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, vitae!</figcaption>        
-        </figure>
-        <p>For: lovers of, fans of, etc.</p>
-        <p>Book Blurb</p>
-        <p><strong>Read More</strong></p>
-        <hr>
-    </section>
-    <section role="region" aria-labelledby="three">
-        <h2 id="three">Book 3 Title by Book 3 Author</h2>
-        <picture>
-            <source 
-                media="(min-width: 200px)"    
-                srcset="assets/images/common-foxglove-luby-100x150.jpg"/>
-            <source  
-                media="(min-width: 400px)"    
-                srcset="assets/images/common-foxglove-luby-200x300.jpg"/>
-            <img src="assets/images/common-foxglove-luby-200x300.jpg" 
-                 alt="Common foxglove on the side of a mountain trail with a mountain peak in the background"/>
-        </picture>
-        <p>For: lovers of, fans of, etc.</p>
-        <p>Book Blurb</p>
-        <p><strong>Read More</strong></p>
-        <hr>
-    </section>
+        <h2 id="hp-main">Speaking Volumes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <section role="region" aria-labelledby="rotw">
+            <h3 id="rotw">Review of the Week</h3>
+            <figure>    
+                <img src="assets/images/girl-work-cover-400x400.jpg"
+                     alt="Girl Work book cover" width="400" height="400"
+                     srcset="assets/images/girl-work-cover-400x400.jpg 400w,
+                             assets/images/girl-work-cover-200x200.jpg 200w">
+                <figcaption>Girl Work by Zefyr Lisowski</figcaption>
+            </figure>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </section>
+        <section role="region" aria-labelledby="nonrrecs">
+            <h3 id="nonrrecs">5 Reads for </h3>
+
+        </section>
     </main>
-    <footer role="contentinfo">
-        <p>Footer Stuff</p>
+    <aside>
+        <section role="region" aria-labelledby="hp-aboutme">    
+            <h4 id="hp-aboutme">Meet Me</h4>
+                <img src="assets/images/girl-work-cover-400x400.jpg"
+                    alt="Girl Work book cover" width="400" height="400"
+                    srcset="assets/images/girl-work-cover-400x400.jpg 400w,
+                            assets/images/girl-work-cover-200x200.jpg 200w">
+        </section> 
+    </aside>
+    <footer role="contentinfo" aria-label="footer">
+        <p>copyright -symbol- 2024 speaking volumes</p>
     </footer>
 </body>
 </html>
