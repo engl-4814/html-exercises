@@ -6,18 +6,28 @@
     <title>Publications Goldstein's Research Lab</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="group.html">The Group</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="news.html">Lab News</a></li>
-        </ul>
-        <img src="" alt="Lorem"> <!--add image-->
+    <a href="#main" class="skip-to-link">Skip to content</a>
+    <nav role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="group.html">The Group</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="news.html">Lab News</a></li>
+      </ul>
+      <div>
+        <h1>Goldstein's Research Lab</h1>
+        <img src="assets/images/logo_goldstein_research_bone_600x400.png" 
+          alt="Logo for Goldstein's Research Lab"
+          width="600" height="400"
+          srcset="assets/images/logo_goldstein_research_bone_600x400.png 600w, 
+                  assets/images/logo_goldstein_research_bone_300x200.png 300w, 
+                  assets/images/logo_goldstein_research_bone_150x100.png 150w" 
+        />
+      </div>
     </nav>
-    <main>
-        <h1>Publications</h1>
+    <main role="main" aria-labelledby="research-publications">
+        <h2 id="research-publications">Publications</h2>
         <ol>
             <li>Gadalla D, A.S. Goldstein.  Improving the osteogenicity of PCL fiber surfaces by surface immobilization of bone morphogenic protein-2.  Annals Biomed Eng  433:1006-1015 2020.</li>
             <li>Wang R., P. Thayer, A. Goldstein, W.D. Wagner.   Interaction of a novel biofabricated elastomeric bone repair material with negative pressure to initiate differentiation of bone marrow derived stem cells and osteoblast proliferation.  J Tissue Eng Regen Med </li>
@@ -51,6 +61,15 @@
             <li>Kreke, M.R., L.A. Sharp, Y. Lee, and A.S. Goldstein. Effect of intermittent shear stress on mechanotransductive signaling and osteoblastic differentiation of bone marrow stromal cells. Tissue Eng.</li>
         </ol>
     </main>
-    <footer></footer>
+    <footer role="contentinfo" aria-labelledby="research-resources">
+        <h2 id="research-resources">Resources</h2> <!--resources for users 
+          to find more about goldstein and research at VT-->
+        <ul>
+          <li>goldst@vt.edu</li>
+          <li><a href="https://che.vt.edu/People/faculty/Goldstein.html">Virginia Tech Faculty Page</a></li>
+          <li>240 Kelly Hall, Blacksburg VA 24060</li> <!--fix this address is incorrect-->
+          <li><!--add link to undergrad research pages--></li>
+        </ul>
+    </footer>
 </body>
 </html>
