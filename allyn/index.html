@@ -6,32 +6,41 @@
     <title>Justine Allyn</title>
 </head>
 <body>
-    <header>
+    <header role="banner">
         <h1>Justine Allyn</h1>
     </header>
-<nav>
+<button aria-label="Menu"
+    calss="Home">
+</button>
+<nav role="navigation">
     <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="resume.html">Resume</a></li>
+        <li><a href="./resume.html">Resume</a></li>
         <li><a href="career.html">Career Goals</a></li>
         <li><a href="idustry.html">Industry Projects</a></li>
     </ul>
 </nav>
 </body>
-<main>
-    <section>
+<main role="main">
+    <section role="region">
         <h2>Welcome Into My Life!</h2>
         <picture>
-            <source media="(max-width:200px)" srcset="assets/images/headshot-200x300jpg"/>
-            <img src="assets/images/headshot-200x300.jpeg" alt="Justine infront of Hokie Stone" width= "200" height="300"/>
+            <source media="(max-width:200px)" srcset="assets/images/headshot400x600.jpg"/>
+            <img 
+            src="assets/images/headshot400x600.jpeg" 
+            width="400" height="600" 
+            srcset="assets/images/headshot400x600.jpeg 400px,
+                    assets/images/headshot100x150.jpeg 100px,
+                    assets/images/headshot900x1350,jpeg 900px"
+            alt="Justine infront of Hokie Stone">
         </picture>
-    </section>
-    <h3>Current Status</h3>
+        <h3>Current Status</h3>
     <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde delectus architecto quidem porro minus cum deserunt recusandae, quae ipsum? Exercitationem fugit tempora sunt tempore odio iure rem incidunt magnam repellendus.
     </p>
+    </section>
 </main>
-<footer>
+<footer role="contentinfo">
     <h3>Contact</h3>
     <ul>
         <li>Email: Jrallyn@vt.edu</li>

@@ -4,75 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Megan Luby">
-    <title>Non-Reader Recommendations</title>
+    <title>Speaking Volumes</title>
 </head>
-<header>
-    <nav>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About Me</a></li>
-            <li><a href="">Rec Lists</a></li>
-            <li><a href="">A-Z Reviews</a></li>
-            <li><a href="">Search</a></li>
-        </ul>
-    </nav>
-</header>
 <body>
-    <main>
-    <h1>Non-Reader Recommendations</h1>
-    <p>Here I will introduce the page/explain its purpose</p>
-    <nav>
-        <ul>
-            <li><a href="#Verity">Verity by Colleen Hoover</a></li>
-            <li><a href="#Book_2_Title">Book 2 Title by Book 2 Author</a></li>
-            <li><a href="#three">Book 3 Title by Book 3 Author</a></li>
-        </ul>
-    </nav>
-    <div><p>Maybe a paragraph here</p></div>
-    <section>
-        <h2 id="Verity">Verity by Colleen Hoover</h2>
-        <img 
-            src="assets/images/bouquet-display-luby-200x300.jpg" 
-            alt="Bouquet displayed in on a pedestal" 
-            srcset="assets/images/bouquet-display-luby-100x150.jpg 100px, 
-                    assets/images/bouquet-display-luby-200x300.jpg 200px, 
-                    assets/images/bouquet-display-luby-400x600.jpg 400px" 
-            sizes="(min-width: 500px) 200px"/>
-        <p>For: lovers of, fans of, etc.</p>
-        <p>Book Blurb</p>
-        <p><strong>Read More</strong></p>
-        <hr>
-    </section>
-    <section>
-        <h2 id="Book_2_Title">Book 2 Title by Book 2 Author</h2>
-        <figure>
-            <img src="assets/images/fall-tree-leaves-luby-200x300.jpg" alt="Autumn leaves falling from a tree and covering the ground" width="200" height="300"/>
-            <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, vitae!</figcaption>        
-        </figure>
-        <p>For: lovers of, fans of, etc.</p>
-        <p>Book Blurb</p>
-        <p><strong>Read More</strong></p>
-        <hr>
-    </section>
-    <section>
-        <h2 id="three">Book 3 Title by Book 3 Author</h2>
-        <picture>
-            <source 
-                srcset="assets/images/common-foxglove-luby-100x150.jpg"    
-                media="(max-width: 400px)" />
-            <source  
-                srcset="assets/images/common-foxglove-luby-200x300.jpg"
-                media="(min-width: 401px)"/>
-            <img src="assets/images/common-foxglove-luby-200x300.jpg" alt="Common foxglove on the side of a mountain trail with a mountain peak in the background"/>
-        </picture>
-        <p>For: lovers of, fans of, etc.</p>
-        <p>Book Blurb</p>
-        <p><strong>Read More</strong></p>
-        <hr>
-    </section>
+    <header role="banner" aria-labelledby="speakingvolumes">
+        <h1 id="speakingvolumes">Speaking Volumes</h1>
+        <nav role="navigation">
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>About Me</a></li>
+                <li><a>Rec Lists</a></li>
+                <li><a>A-Z Reviews</a></li>
+                <li><a>Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main" aria-labelledby="hp-main">
+        <h2 id="hp-main">Speaking Volumes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <section role="region" aria-labelledby="rotw">
+            <h3 id="rotw">Review of the Week</h3>
+            <figure>    
+                <img src="assets/images/girl-work-cover-400x400.jpg"
+                     alt="Girl Work book cover" width="400" height="400"
+                     srcset="assets/images/girl-work-cover-400x400.jpg 400w,
+                             assets/images/girl-work-cover-200x200.jpg 200w">
+                <figcaption>Girl Work by Zefyr Lisowski</figcaption>
+            </figure>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </section>
+        <section role="region" aria-labelledby="nonrrecs">
+            <h3 id="nonrrecs">5 Reads for </h3>
+
+        </section>
     </main>
-    <footer>
-        <p>Footer Stuff</p>
+    <aside>
+        <section role="region" aria-labelledby="hp-aboutme">    
+            <h4 id="hp-aboutme">Meet Me</h4>
+                <img src="assets/images/girl-work-cover-400x400.jpg"
+                    alt="Girl Work book cover" width="400" height="400"
+                    srcset="assets/images/girl-work-cover-400x400.jpg 400w,
+                            assets/images/girl-work-cover-200x200.jpg 200w">
+        </section> 
+    </aside>
+    <footer role="contentinfo" aria-label="footer">
+        <p>copyright -symbol- 2024 speaking volumes</p>
     </footer>
 </body>
 </html>
