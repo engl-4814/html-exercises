@@ -7,26 +7,25 @@
     <title>Speaking Volumes</title>
 </head>
 <body>
+    <a href="#main" class="skip-to-link">Skip to content</a>
     <header role="banner" aria-labelledby="speakingvolumes">
         <h1 id="speakingvolumes">Speaking Volumes</h1>
         <nav role="navigation">
-            <ul>
-                <li><a>Home</a></li>
-                <li><a>About Me</a></li>
-                <li><a>Rec Lists</a></li>
-                <li><a>A-Z Reviews</a></li>
-                <li><a>Search</a></li>
-            </ul>
+            <a href="">Home</a>
+            <a href="">About Me</a>
+            <a href="">Rec Lists</a>
+            <a href="">A-Z Reviews</a>
+            <a href="">Search</a>
         </nav>
     </header>
-    <main role="main" aria-labelledby="hp-main">
-        <h2 id="hp-main">Speaking Volumes</h2>
+    <main role="main" aria-labelledby="main">
+        <h2 id="main">Speaking Volumes</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <section role="region" aria-labelledby="rotw">
             <h3 id="rotw">Review of the Week</h3>
             <figure>    
                 <img src="assets/images/girl-work-cover-400x400.jpg"
-                     alt="Girl Work book cover" width="400" height="400"
+                     alt="Girl Work book cover" width="300" height="300"
                      srcset="assets/images/girl-work-cover-400x400.jpg 400w,
                              assets/images/girl-work-cover-200x200.jpg 200w">
                 <figcaption>Girl Work by Zefyr Lisowski</figcaption>
@@ -34,21 +33,51 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </section>
         <section role="region" aria-labelledby="nonrrecs">
-            <h3 id="nonrrecs">5 Reads for </h3>
-
+            <h3 id="nonrrecs">5 Bingeworthy Reads</h3>
+                <p>PLACEHOLDER TEXT</p> 
         </section>
     </main>
-    <aside>
+    <aside role="complementary" aria-label="rightsidebar">
+        <section role="region" aria-labelledby="socials"> 
+            <h2 id="socials">Find Me on Social Media</h2>   
+                <a href="goodreads.com">Goodreads</a>
+                <a href="instagram.com">Instagram</a>
+                <a href="tiktok.com">Tiktok</a>
+                <a href="twitter.com">Twitter</a>
+        </section>
         <section role="region" aria-labelledby="hp-aboutme">    
-            <h4 id="hp-aboutme">Meet Me</h4>
-                <img src="assets/images/girl-work-cover-400x400.jpg"
-                    alt="Girl Work book cover" width="400" height="400"
-                    srcset="assets/images/girl-work-cover-400x400.jpg 400w,
-                            assets/images/girl-work-cover-200x200.jpg 200w">
+            <h2 id="hp-aboutme">Meet Me</h2>
+                <img src="assets/images/self-ny-bookcase-189x252.jpg"
+                    alt="Girl Work book cover" width="189" height="252"
+                    srcset="assets/images/self-ny-bookcase-189x252.jpg 189w,
+                            assets/images/self-ny-bookcase-95x124.jpg 95w">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </section> 
     </aside>
+    <aside role="complementary" aria-label="leftsidebar">
+        <section role="region" aria-labelledby="currentread">
+            <h2 id="currentread">Currently Reading</h2>
+            <a href="https://www.goodreads.com/book/show/1885.Pride_and_Prejudice?ref=nav_sb_ss_1_5">
+                <figure>    
+                    <img src="assets/images/pride-and-prejudice-cover.jpg"
+                         alt="Pride and Prejudice book cover" width="150" height="210">
+                    <figcaption>Pride and Prejudice by Jane Austen</figcaption>
+                </figure>    
+            </a>       
+        </section>
+        <section role="region" aria-labelledby="justfin">
+            <h2 id="justfin">Just Finished</h2>
+            <a href="https://www.goodreads.com/book/show/123257687-assistant-to-the-villain?ref=nav_sb_ss_1_6">
+                <figure>    
+                    <img src="assets/images/assistant-to-the-villain-cover.jpeg"
+                         alt="Assistant to the Villain book cover" width="150" height="225">
+                    <figcaption>Assistant to the Villain by Hannah Nicole Maehrer</figcaption>
+                </figure>    
+            </a>
+        </section>
+    </aside>
     <footer role="contentinfo" aria-label="footer">
-        <p>copyright -symbol- 2024 speaking volumes</p>
+        <p>copyright © 2024 speaking volumes</p>
     </footer>
 </body>
 </html>
