@@ -7,49 +7,52 @@
     <title>Roberts</title>
 </head>
 <body>
-	<header role="banner" aria-label="Home page banner for Kayla Roberts's portfolio website">
+	<a href="#main" class="skip-to-link">skip to content</a>
+	<header role="banner" aria-labelledby="website-title">
 		<h1 id="website-title">Kayla Roberts: A Portfolio</h1>
 	</header>
-	<nav role="navigation" aria-label="Main navigation">
-		<p>A portfolio of Kayla's work may be found at the link below:</p>
+	<nav role="navigation" aria-label="Website">
+		<p>Portfolio of Kayla's Work:</p>
 		<ul>
 			<li> <a href="portfolio.html">Portfolio</a></li>
 		</ul>
 	</nav>
-	<main>
-		<section>
-			<h4>Website Purpose</h4>
+	<main id="main">
+		<section role="region" aria-labelledby="purpose">
+			<h2 id="purpose">Website Purpose</h2>
 				<p>Here's why I made this website: Lorem ipsum dolor sit amet</p>
 		</section>
-		<div>
-			<h4>Visual Introduction</h4>
+		<section role="region" aria-labelledby="photos">
+			<h2 id="photos">Visual Introduction</h2>
 				<p>Headshot</p>
-		<img src="assets/images/conference-photo-1200x800.jpg"
-			 alt="Photo of Kayla Roberts (right) and a classmate (left) at a conference."
-			 width="1200" height="800"
-			 srcset="assets/images/conference-photo-600x400.jpg 600w,
+			<img src="assets/images/conference-photo-1200x800.jpg"
+			 		alt="Photo of Kayla Roberts (right) and a classmate (left) at a conference."
+				 	width="1200" height="800"
+			 		srcset="assets/images/conference-photo-600x400.jpg 600w,
 					 assets/images/conference-photo-1200x800.jpg 1200w,
 					 assets/images/conference-photo-2400x1600.jpg 2400w"/>
-		</div>
-		<div>
-		<h3>About Me</h3>
-		<h4>Education</h4>
-		<ul>
-			<li>High School Graduate - 2021</li>
-			<li>Associate Certificate in General Studies - 2022</li>
-			<li>Bachelor's Degree in English Literature - 2024</li>
-			<ul class="minor">
-				<li>Minor in Professional and Technical Writing</li>
-			</ul>
-		</ul>
-		<h4>Experience</h4>
-		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-		</div>
+		</section>
+		<section role="region" aria-labelledby="biography">
+			<h2 id="biography">About Me</h2>
+				<h3>Education</h3>
+				<ul>
+					<li>High School Graduate - 2021</li>
+					<li>Associate Certificate in General Studies - 2022</li>
+					<li>Bachelor's Degree in English Literature - 2024</li>
+				<ul class="minor">
+					<li>Minor in Professional and Technical Writing</li>
+				</ul>
+				</ul>
+				<h3>Experience</h3>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+		</section>
 	</main>
-	<footer>
-		<h4>Contact Me</h4>
-		<p>Phone: 540-818-3481</p>
-		<p>Email: kaylaroberts2025@vt.edu</p>
+	<footer role="contentinfo">
+		<h2>Contact Me</h2>
+			<ul>
+				<li>Phone: 540-818-3481</li>
+				<li>Email: kaylaroberts2025@vt.edu</li>
+			</ul>
 	</footer>
 </body>
 </html>
