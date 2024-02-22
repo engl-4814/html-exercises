@@ -7,64 +7,62 @@
     <meta name="author" content="Elizabeth Wilson"> 
 </head>
 <body>
-  <!-- fixed the indentation for the skip link. Also, the main element needs the id values of "main" for this to work, since the href value of #main will be looking for that particular ID on the page. -->
-<a href="#main" class="skip-to-link">Skip to content</a>
-  <!-- ARIA LABELS: Be sure to label your landmarks throughout -->
-  <header role="banner">
+  <a href="#main" class="skip-to-link">Skip to content</a>
+  <header role="banner" id="main" aria-label="Staying Fit">
     <h1>Staying Fit</h1>
   </header>
-  <nav role="navigation">
+  <nav role="navigation" aria-label="main navigation">
     <ul>
       <li><a href="#">Home</a></li>
-      <li><a href="#">About Me</a></li>
-      <li><a href="#Workout">Workouts</a></li>
-      <li><a href="#Nutrition">Nutrition</a></li>
+      <li><a href="about-me.html">About Me</a></li>
+      <li><a href="#workout">Workouts</a></li>
+      <li><a href="#nutrition">Nutrition</a></li>
     </ul>
   </nav>
-  <main role="main">
-    <!-- Too many regions here. Remember that landmarks are about the biggest pieces of content, so keep it simple by focusing on the two sections. -->
-    <section role="region">
-      <div role="region">
-        <img src="assets/images/workout/strength-training-600x400.jpg" alt="Man and Woman Workingout"
-        width="600"height="400"
-        srcset="assets/images/workout/strength-training-300x200.jpg 300w,
+  <main role="main" id="main">
+    <div>
+      <img src="assets/images/workout/strength-training-600x400.jpg" alt="Man and Woman Workingout"
+           width="600"height="400"
+           srcset="assets/images/workout/strength-training-300x200.jpg 300w,
                 assets/images/workout/strength-training-600x400.jpg 600w,
                 assets/images/workout/strength-training-1200x800.jpg 1200w">
-      </div>
-      <div role="region">
-        <h2 id="Workout"> Workout</h2>
-        <p> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.      
-        </p>
-        <!-- note how the href value will point to nothing. PLus, it should point to a file, which will have a file format. In this case, a .html file. -->
-        <a href="index.html">Learn more about workouts</a>
-        <img src="assets/images/workout/cardio-class-600x387.jpg" alt="Cardio"
+    </div>
+    <section role="region" aria-labelledby="workout">
+        <h2 id="workout"> Workout</h2>
+         <p> 
+           Lorem ipsum dolor sit amet consectetur adipisicing elit.      
+         </p>
+        <img src="assets/images/workout/cardio-class-600x387.jpg" alt="Men and Women in Cardio Class"
         width="600"height="387"
         srcset="assets/images/workout/cardio-class-300x194.jpg 300w,
                 assets/images/workout/cardio-class-600x387.jpg 600w,
                 assets/images/workout/cardio-class-1200x774.jpg 1200w">
-      </div>
+        <p>
+         <a href="workout.html">Learn more about workouts</a>
+        </p>
     </section>
-    <section role="region">
-      <h2 id="Nutrition"> Nutrition</h2>
-      <p>
+    <section role="region" aria-labelledby="nutrition">
+      <h2 id="nutrition"> Nutrition</h2>
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </p>
-      <a href="index.html">More about nutrition</a>
+        </p>
       <img src="assets/images/nutrition/food-heart-600x375.jpg 600w" alt="Food in heart"
       width="600"height="375"
       srcset="assets/images/nutrition/food-heart-300x188.jpg 300w,
               assets/images/nutrition/food-heart-600x375.jpg 600w,
               assets/images/nutrition/food-heart-1200x750.jpg 1200w">
+      <p>
+        <a href="nutrition.html">Learn more about nutrition</a>
+      </p>
     </section>
   </main>
-<footer id="resources" role="contentinfo">
-    <h4>Contact</h4>
-    <ul>
-        <li>Email: elizabethw22@vt.edu</li>
-        <li>Phone: 703-576-7001</li>
-    </ul>
-    <p>Copyright. All rights reversed.</p>
-</footer>
+  <footer id="resources" role="contentinfo" aria-labelledby="footer">
+      <h4>Contact</h4>
+      <ul>
+          <li>Email: elizabethw22@vt.edu</li>
+          <li>Phone: 703-576-7001</li>
+      </ul>
+      <p>Copyright. All rights reversed.</p>
+  </footer>
 </body>
 </html>
