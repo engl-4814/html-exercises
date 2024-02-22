@@ -4,75 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Megan Luby">
-    <title>Non-Reader Recommendations</title>
+    <title>Speaking Volumes</title>
 </head>
-<header>
-    <nav>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About Me</a></li>
-            <li><a href="">Rec Lists</a></li>
-            <li><a href="">A-Z Reviews</a></li>
-            <li><a href="">Search</a></li>
-        </ul>
-    </nav>
-</header>
 <body>
-    <main>
-    <h1>Non-Reader Recommendations</h1>
-    <p>Here I will introduce the page/explain its purpose</p>
-    <nav>
-        <ul>
-            <li><a href="#Verity">Verity by Colleen Hoover</a></li>
-            <li><a href="#Book_2_Title">Book 2 Title by Book 2 Author</a></li>
-            <li><a href="#three">Book 3 Title by Book 3 Author</a></li>
-        </ul>
-    </nav>
-    <div><p>Maybe a paragraph here</p></div>
-    <section>
-        <h2 id="Verity">Verity by Colleen Hoover</h2>
-        <img 
-            src="assets/images/bouquet-display-luby-200x300.jpg" 
-            alt="Bouquet displayed in on a pedestal" 
-            srcset="assets/images/bouquet-display-luby-100x150.jpg 100w, 
-                    assets/images/bouquet-display-luby-200x300.jpg 200w, 
-                    assets/images/bouquet-display-luby-400x600.jpg 400w"/>
-        <p>For: lovers of, fans of, etc.</p>
-        <p>Book Blurb</p>
-        <p><strong>Read More</strong></p>
-        <hr>
-    </section>
-    <section>
-        <h2 id="Book_2_Title">Book 2 Title by Book 2 Author</h2>
-        <figure>
-            <img src="assets/images/fall-tree-leaves-luby-200x300.jpg" alt="Autumn leaves falling from a tree and covering the ground" width="200" height="300"/>
-            <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, vitae!</figcaption>        
-        </figure>
-        <p>For: lovers of, fans of, etc.</p>
-        <p>Book Blurb</p>
-        <p><strong>Read More</strong></p>
-        <hr>
-    </section>
-    <section>
-        <h2 id="three">Book 3 Title by Book 3 Author</h2>
-        <picture>
-            <source 
-                media="(min-width: 200px)"    
-                srcset="assets/images/common-foxglove-luby-100x150.jpg"/>
-            <source  
-                media="(min-width: 400px)"    
-                srcset="assets/images/common-foxglove-luby-200x300.jpg"/>
-            <img src="assets/images/common-foxglove-luby-200x300.jpg" 
-                 alt="Common foxglove on the side of a mountain trail with a mountain peak in the background"/>
-        </picture>
-        <p>For: lovers of, fans of, etc.</p>
-        <p>Book Blurb</p>
-        <p><strong>Read More</strong></p>
-        <hr>
-    </section>
+    <a href="#main" class="skip-to-link">Skip to content</a>
+    <header role="banner" aria-labelledby="speakingvolumes">
+        <h1 id="speakingvolumes">Speaking Volumes</h1>
+        <nav role="navigation">
+            <a href="">Home</a>
+            <a href="">About Me</a>
+            <a href="">Rec Lists</a>
+            <a href="">A-Z Reviews</a>
+            <a href="">Search</a>
+        </nav>
+    </header>
+    <main role="main" aria-labelledby="main">
+        <h2 id="main">Speaking Volumes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <section role="region" aria-labelledby="rotw">
+            <h3 id="rotw">Review of the Week</h3>
+            <figure>    
+                <img src="assets/images/girl-work-cover-400x400.jpg"
+                     alt="Girl Work book cover" width="300" height="300"
+                     srcset="assets/images/girl-work-cover-400x400.jpg 400w,
+                             assets/images/girl-work-cover-200x200.jpg 200w">
+                <figcaption>Girl Work by Zefyr Lisowski</figcaption>
+            </figure>
+                <p>Crossposted to Goodreads Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </section>
+        <section role="region" aria-labelledby="eyeopen">
+            <h3 id="eyeopen">Eye-Opening Reads</h3>
+                <a href="https://www.goodreads.com/book/show/54099549-incidents-in-the-life-of-a-slave-girl">
+                    <img src="assets/images/incident-life-slave-girl.jpeg"
+                         alt="Incidents in the Life of a Slave Girl by Harriet Jacobs"
+                         width="156" height="250">
+                </a> 
+                <a href="https://www.goodreads.com/book/show/30238842-human-acts">
+                    <img src="assets/images/human-acts-cover.jpeg"
+                         alt="Human Acts by Han Kang"
+                         width="164" height="250">
+                </a>
+                <a href="https://www.goodreads.com/book/show/35133922-educated">
+                    <img src="assets/images/educated-cover.jpeg"
+                         alt="Educated by Tara Westover"
+                         width="166" height="250">
+                </a>
+        </section>
     </main>
-    <footer>
-        <p>Footer Stuff</p>
+    <aside role="complementary" aria-label="leftsidebar">
+        <section role="region" aria-labelledby="currentread">
+            <h2 id="currentread">Currently Reading</h2>
+            <a href="https://www.goodreads.com/book/show/1885.Pride_and_Prejudice?ref=nav_sb_ss_1_5">
+                <figure>    
+                    <img src="assets/images/pride-and-prejudice-cover.jpg"
+                         alt="Pride and Prejudice book cover" width="150" height="210">
+                    <figcaption>Pride and Prejudice by Jane Austen</figcaption>
+                </figure>    
+            </a>       
+        </section>
+        <section role="region" aria-labelledby="justfin">
+            <h2 id="justfin">Just Finished</h2>
+            <a href="https://www.goodreads.com/book/show/123257687-assistant-to-the-villain?ref=nav_sb_ss_1_6">
+                <figure>    
+                    <img src="assets/images/assistant-to-the-villain-cover.jpeg"
+                         alt="Assistant to the Villain book cover" width="150" height="225">
+                    <figcaption>Assistant to the Villain by Hannah Nicole Maehrer</figcaption>
+                </figure>    
+            </a>
+        </section>
+    </aside>
+    <aside role="complementary" aria-label="rightsidebar">
+        <section role="region" aria-labelledby="socials"> 
+            <h2 id="socials">Find Me on Social Media</h2>   
+                <a href="goodreads.com">Goodreads</a>
+                <a href="instagram.com">Instagram</a>
+                <a href="tiktok.com">Tiktok</a>
+                <a href="twitter.com">Twitter</a>
+        </section>
+        <section role="region" aria-labelledby="meetme">    
+            <h2 id="meetme">Meet Me</h2>
+                <img src="luby/assets/images/self-ny-bookcase-3024x4032.jpg"
+                    alt="Girl holding book in front of bookcase" width="189" height="252"
+                    srcset="assets/images/self-ny-bookcase-3024x4032.jpg 3024w">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </section> 
+    </aside>
+    <footer role="contentinfo" aria-label="footer">
+        <p>Copyright © 2024 Speaking Volumes</p>
     </footer>
 </body>
 </html>
