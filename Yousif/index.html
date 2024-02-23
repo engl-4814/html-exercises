@@ -1,75 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+   
 <head>
- Engineering Nomad
-</head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, intial-scale=1.
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, intial-scale=1.
  0">
- <meta name="author" content="Ahmed Yousif">
- <title></title>
-<body>
-  <main>
-  <a her="#main" class="skip-to-link">Skip to content</a> 
- <aria-label>="Enter description here"</aria-label>
- <aria-labelledby>="My ID value here"</aria-labelledby>
-  <div>
+  <meta name="author" content="Ahmed Yousif">
+  <title>Engineering Nomad</title>
+</head>
+
+ <body>
+  <a href =”#main” class=”skip-to-link”>Skip to content</a>
+  <header>
     <h1>Engineering Disciplines</h1>
+  </header>
+
+  <nav role="navigation" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>  
+      <li><a href="content.html">Content</a></li>
+      <li><a href="additional.html">Additional</a></li>
+    </ul>
+  </nav>
+<!--Adding Image at Header-->
+  <img src="./images/header-pic.jpg"
+  width="400" height="250"
+  alt="picture-engineering-theme"
+/>
+ 
+  <main role="main" aria-labelledby="discription">
+  
+    <h2 id="discription">Discription</h2>
     <p>
-      "Content Here"
+      Engineering Majors
     </p>
      <ul>
         <li>
-            Major 1
+           Electrical Engineering
+           <p>"Content"</p>
         </li>
         <li>
-            Major 2
+           Civil Engineering
+           <p>"Content"</p>
         </li>
         <li>
-          Major 3
+           Chemical Engineering
+           <p>"Content"</p>
         </li>
         <li>
-          Major 4
+           Areospace Engineering
+           <p>"Content"</p>
         </li>
         <li>
-          Major 5
+           Biomedical Engineering
+           <p>"Content"</p>
         </li>
      </ul>
-  </div> 
+
+ <!--Image Here-->
  <img src="./images/circuit-board-1.jpeg"
-     width="300px" height="250"
-    alt="Electric Design"
-   
-<div>
+     width="300" height="250"
+    alt="Electric Design" />
+
+<section role="region" aria-labelledby="in-depth">
     <header>
-<h1>In Depth</h1>
+     <h2 id="in-depth">In Depth</h2>
     </header>
     <p>
-     "Content here"
+     "The study of engineering, why its important, interesting facts, requierments and prerequiesties for students...etc"
     </p>
-</div>
+</section>
 
-<div>
+<section role="region" aria-labelledby="differences">
     <header>
-<h1>Differences</h1>
+<h2 id="differences">Differences</h2>
     </header>
     <p>
-     "Content Here"
+     "This section lists the differences of engineering majors within academics and also industry/career planning"
     </p>
-</div>
+</section>
 
-  <header>
-    <h2>Student Experience as an Engineering Major</h2>
-  </header>
-  <p>"Content Here"</p>
-    <h2>Additional Content Sector</h2>
-    <p>
-      "Content Here"
-    </p>
-    <section>
-      <h3></h3>
-      <p></p>
-    </section>
+  <section role="region" aria-labelledby="student-experience-as-an-engineering-major">
+     <h3 id="student-experience-as-an-engineering-major">Student Experience as an Engineering Major</h3>
+     <p>"Based on current students and alumni, their experiences trails and advice for incomming students"</p>
+  </section>
+
+  <section role="region" aria-labelledby="additional-content-sector">
+     <header> <h3 id="additional-content-sector">Additional Content Sector</h3> </header>
+     <p>"Resources and articles that would benefit engineering majors"</p>
+     <p>"From university resources to different companies publications that would showcase the career side of engineering fields"</p>
+  </section>
   </main>
-</body>
+
+   <footer role="contentinfo" aria-labelledby="copyright-info">
+     <p id="copyright-info">@Copyright info</p>
+   </footer>
+ </body>
 </html> 
