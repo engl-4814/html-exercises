@@ -20,6 +20,9 @@
     </header>
     <main role="main" aria-labelledby="main">
         <h2 id="main">Speaking Volumes</h2>
+        <!-- INDENTATION
+            No need to indent after the headings like this throughout, since they're on the same level of the hierarchy
+        -->
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <section role="region" aria-labelledby="rotw">
             <h3 id="rotw">Review of the Week</h3>
@@ -35,14 +38,19 @@
         </section>
         <section role="region" aria-labelledby="eyeopen">
             <h3 id="eyeopen">Eye-Opening Reads</h3>
-                <a href="https://www.goodreads.com/book/show/54099549-incidents-in-the-life-of-a-slave-girl">
-                    <img src="assets/images/incidents-life-slave-girl-cover-156x250.jpeg"
-                         alt="Incidents in the Life of a Slave Girl by Harriet Jacobs book cover"
-                         width="156" height="250" 
-                         srcset="assets/images/incidents-life-slave-girl-cover-312x500.jpeg 312w, 
-                                 assets/images/incidents-life-slave-girl-cover-156x250.jpeg 156w, 
-                                 assets/images/incidents-life-slave-girl-cover-78x125.jpeg 78w">
-                </a> 
+            <!-- INDENTATION
+                Same as previous comment. I'll fix the first one here.
+
+                Also, it isn't typically best practice to only use images as links for A11Y purposes. We didn't discuss this in class, but you may want to revise the idea a smidge upon return, so that you use some textual content in a "card" format.
+            -->
+            <a href="https://www.goodreads.com/book/show/54099549-incidents-in-the-life-of-a-slave-girl">
+                <img src="assets/images/incidents-life-slave-girl-cover-156x250.jpeg"
+                        alt="Incidents in the Life of a Slave Girl by Harriet Jacobs book cover"
+                        width="156" height="250"
+                        srcset="assets/images/incidents-life-slave-girl-cover-312x500.jpeg 312w,
+                                assets/images/incidents-life-slave-girl-cover-156x250.jpeg 156w,
+                                assets/images/incidents-life-slave-girl-cover-78x125.jpeg 78w">
+            </a>
                 <a href="https://www.goodreads.com/book/show/30238842-human-acts">
                     <img src="assets/images/human-acts-cover-original-171x250.jpeg"
                          alt="Human Acts by Han Kang book cover"
@@ -61,6 +69,9 @@
                 </a>
         </section>
     </main>
+    <!-- A11Y LAbels
+        Your label for the aside is a bit generic. What is the main purpose for your audience, rather than its technical/design semantic function?
+    -->
     <aside role="complementary" aria-label="left-side-bar">
         <section role="region" aria-labelledby="currentread">
             <h2 id="currentread">Currently Reading</h2>
