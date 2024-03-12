@@ -41,6 +41,27 @@
     <p>As a general spoiler disclaimer: There will be spoilers all over this website, so read at your own risk!</p>
   </header>
   <main role="main" aria-label="Recent stories">
+    <!-- SUGGESTION
+      You're overapplying region roles and labels, but I love what you're doing here. You've got a great instinct for this!
+
+      I suggest the following revision to your structure:
+
+      CURRENT:
+        section
+          - h2
+          - section
+            - h3
+            - figure
+            - article
+
+      SUGGESTED:
+        section (only apply aria role and label here)
+          - h2
+          - article
+            - h3
+            - figure
+            - div
+    -->
     <section role="region" aria-labelledby="new">
       <h2 id="new">Most Recent Review</h2>
       <section role="region" aria-labelledby="review">
