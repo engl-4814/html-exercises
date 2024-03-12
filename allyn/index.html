@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justine Allyn</title>
+    <!-- be sure to add some more of those metadata (2-3) -->
 </head>
+<!-- OVERALL FEEDBACK
+
+    Indentation
+    - Still needs some major attention, which means that you need to really consider the nesting of your elements: what elements are containing what other elements?
+
+    HTML Elements
+    You have some simple but very important mistakes to make sure that you check for, such as:
+    - Note how the body closes to early. The body contains ALL of the visible content on a page.
+    - Element choices, such as the button
+    - I rec using the img element with the srcset (among the other attrs), since we didn't cover the picture element. You should also have at least two images at this point for the midterm.
+    - You image srcset is using "px" instead of "w" metric. "px" is not able to read your info by using "px".
+
+    A11Y
+    - I'm not seeing any labels for your landmarks, but your landmark roles look good!
+
+-->
 <body>
     <header role="banner">
         <h1>Justine Allyn</h1>
     </header>
+<!-- Remember to remove this button element. I recall letting you know that this is reserved for specific functions related to <form> elements. Otherwise it impacts A11Y in similar ways as incorrect use of heading levels. -->
 <button aria-label="Menu"
     calss="Home">
 </button>
@@ -20,6 +38,7 @@
         <li><a href="idustry.html">Industry Projects</a></li>
     </ul>
 </nav>
+<!-- note how you are closing the body here -->
 </body>
 <main role="main">
     <section role="region">
