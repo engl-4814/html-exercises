@@ -5,14 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
-
+<!--
+  HEAD vs BODY
+  - Note how this is in the head instead of the body. The body contains all of the page content, whereas the head contains the metadata and resources.
+  - It also seems like the closing </section> and opening <section role="region" aria-labelledby="Portfolio page banner"> are supposed to be deleted, perhaps?
+-->
 </section>
 <section role="region" aria-labelledby="Portfolio page banner">
+<!--
+  Also, the header should be formatted like the following:
+
+  <header role="banner" aria-label="Portfolio page banner">
+    <h1>Ella's Portfolio</h1>
+  </header>
+-->
 <header role="banner" aria-label="Portfolio page banner"> <h1><p>
   Ella's Portfolio</p></h1> </header>
 
 </head>
 <body>
+  <!--
+    INDENTATION
+    - All throughout there are lots of issues with indentation, which are indicative of not knowing what elements are contained by what. Be sure to resolve those issues throughout.
+    - I highly recommend setting up a time with me to review your project together. It should take about 20 minutes to make sure that your on the same page conceptually and technically, as we move forward in the semester.
+
+    ELEMENT CHOICE
+    - Consider your approach to headings with paragraphs within them: does the paragraph need to be there? What semantics does that suggest to have a paragraph within a heading? Perhaps, there's a use case for it, but the h# > p structure is arguably just the typical and simpler approach, where no <p> tag is needed.
+    - Note many of your <h#> elements throughout. They are functionally more like <p> paragraphs. Consider any of the longer text below as not being headings, but paragraphs instead. Headings announce what is below, while paragraphs include the relevant content defined/announced/declared by the heading.
+  -->
   <a href="main" class="skip-to-link">Skip to content</a>
 <main id="main" role="main" aria-labelledby="Creative Writing">
   <nav role="navigation" aria-label="Main navigation">
@@ -42,6 +62,12 @@
      <h5> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus odit dolor provident vero! Accusantium, alias eum nisi ullam molestiae quasi deserunt dolorum ut, reiciendis qui perspiciatis! Est, quibusdam? Ducimus, corporis!</h5>
     <h/5></li></ul>
     </section>
+    <!-- Seems like a section should be wrapping up this content, based on the above. -->
+    <!--
+      ID ATTRIBUTES
+      id attribute values need to be all one string of text, where different words can be hyphenated, such as: "prof-tech-writing-work"
+      Avoid special characteres like the ampersand (&)
+    -->
     <h2 id="Professional & Technical Writing Work">
       <p> Professional & Technical Writing Work
       </p></h2>
@@ -60,7 +86,7 @@
        <li><h4>PTW Example 3</h4>
        <h5> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus odit dolor provident vero! Accusantium, alias eum nisi ullam molestiae quasi deserunt dolorum ut, reiciendis qui perspiciatis! Est, quibusdam? Ducimus, corporis!</h5>
       <h/5></li></ul>
-
+      <!-- Again, it seems like a section should be wrapping up this content, based on the above. -->
       <h2 id="Graphic Design Work">
         <p> Graphic Design Work
         </p></h2>
@@ -69,7 +95,9 @@
         </p></h3>
         <ul>
         <li><h4>Halloween PSA Poster</h4>
+          <!-- Just a note: If you want to have a visible caption, this figure is the way to go. But, if not, then an img element is sufficient -->
           <figure>
+            <!-- ASIDE: Some very cool designs here! :-) -->
             <img
                 src="assets/images/halloween-poster-small-200x112.jpg"
                 width="200" height="112"
@@ -114,6 +142,10 @@
         <h/5></li></ul>
 </main>
 <footer id="footer" role="contentinfo" aria-labelledby="Copyright-statement">
+  <!--
+    The rule-of-thumb for heading levels is to use the number level that shares the explicit or implicit structure. So, in this case, the footer is on the same level as the main, where the initial heading for the main is an h2. So, the footer's first heading level should also be an h2.
+    Also, the copyright content is more of a regular copy, than a heading to announce what is contained in a segment of the page. So, that's a case where the <p> element comes into play.
+  -->
   <h6 id="Copyright-statement">
     2024, Ella Schnittger
   </h6>
