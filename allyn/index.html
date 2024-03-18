@@ -19,6 +19,10 @@
             <li><a href="idustry.html">Industry Projects</a></li>
         </ul>
     </nav>
+    <!--
+        A11Y FB
+        - Labels: Your roles look good, but none of your landmarks below are labelled. Be sure to name them, as this provides useful contextual info for ARIA tech users.
+    -->
     <main role="main">
         <section role="region">
             <h2>Welcome Into My Life!</h2>
@@ -27,6 +31,11 @@
             </p>
             <picture>
             <source media="(max-width:200px)" srcset="assets/images/headshot400x600.jpg"/>
+            <!--
+                IMAGES
+                - Error: Check your last path o the srcset here and in the second image too. File formats must use a dot (.): .jpeg
+                - Naming: Your file names could use some help. Recall how they operate as keywords for search engine indexers. Also, use hyphens to separate parts of the filename.
+            -->
             <img 
             src="assets/images/headshot400x600.jpeg" 
             width="400" height="600" 
@@ -39,6 +48,7 @@
             <p>
                 I am a Junior at Virginia Tech studying Agribusiness Management with a minor in both Organizational Leadership and Professional and Technical Writing. I plan to graduate from Virginia Tech in May 2025. Upon my graduation, I aspire to attend law school with a specialization in agricultural law. In order to work towards this goal, I am currently an undergraduate research assistant working on extension publications regarding land leasing. Aside from education, I own and show registered Holstein dairy cattle all over North America alongside my parents, owners and operators of Allyndale Holsteins. I take part in daily management, show preperation, breeding selection, and marketing/sale.
             </p>
+            <!-- Is this really a subsection of "Current Status"? If not, then it should be an h3 -->
             <h4>How I Created This Site</h4>
             <p>
                 As mentioned apart of my education, I have a minor in Professional and Technical Writing. I enrolled in a Online Developement course Spring 2024 and was tasked with creating a website using html. Being completely alien to any coding content, I am growing my experience and skills with html and technological accessability. 
@@ -46,6 +56,7 @@
         </section>
     </main>
     <aside role="complementary">
+        <!-- Consider how this is a new landmark on the same level as main, so this h4 is actually an h2 -->
         <h4>Recent Activities!</h4>
         <p>
             <strong>Spring Semester 2024</strong> enrolled in 19 credits along with undergraduate research assistance with Professor Jen Freidel. 
@@ -62,6 +73,7 @@
         alt="Luncrest Unix Bright 2488 Reserve Junior All-American Spring Yearling Exhibtor Justine Allyn, Canaan, CT Breeder Luncrest Farms LLC, Granville, NY Professional Side Profile Photo">
         </picture>
     </aside>
+    <!-- Ended the body too soon, as it contains ALL content, including the footer. -->
 </body>
 <footer role="contentinfo">
     <h3>Contact</h3>
