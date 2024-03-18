@@ -3,14 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Be sure to adda few of those meta tags we reviewed -->
+    <!-- Any chance that you could describe your site with a more goal-oriented title? -->
     <title>Maia's Site</title>
 </head>
 <body>
+    <!-- skip link goes here, and needs to point to an id defined on the main element -->
+    <!-- Note your indentation straight away: the main is a bit off of you 4-space scheme. Easy fix is to select all of the lines you want to indent either left or right and press ctrl-[ (indent left) or ctrl-] (indent right) -->
+    <!--
+        A11Y
+        - None of your landmarks are defined with ARIA roles and labels. Be sure to do so.
+    -->
  <main>
+    <!-- Is this div and p actually the header? If so, then it should be before the main and wrapped in the header element -->
     <div>
         <h1>This is the Home Page of my Site. </h1>
         <p>Text that gets the viewer excited.</p>
-       
+
+        <!-- Use hypehns instead of underscores to separate words in your filenames -->
+        <!-- Also, you should have at least 2 images -->
         <img src="assets/images/what_html_feels_like_meme_1170w1155h.jpg" 
             width="1170" height="1155"
             alt="A funny meme image of racoons about coding being hard"
@@ -18,17 +29,20 @@
                     assets/images/what_html_feels_like_meme_878w866h.jpg 878w,
                     assets/images/what_html_feels_like_meme_1170w1155h.jpg 1170w">
     </div>
+    <!-- Doing great, Maia! -->
     <p>
         This is my image placeholder. Dr. Lindgren pls have mercy this is hard I am trying I swear
     </p>
 <section>
     <div>
         <h2>Stuff to Get Hype About:</h2>
+        <!-- This ul is a child of div like the h2, so they should be on the same level of the hierarchy indentation-wise -->
             <ul>
                 <li>Thing!</li>
                 <li>Another Thing!</li>
                 <li>Yet Another Thing!</li>
             </ul>
+            <!-- Ok, lots of indentation work to resolve throughout. Be sure to indent based on the parent-child relationships -->
     <p>Told you it was cool.</p>
     </div>
      <strong>BUT WAIT</strong>
