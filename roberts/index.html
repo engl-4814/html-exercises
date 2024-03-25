@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- watch out for some of these spots where the indenation's off a bit. -->
 	<meta name="author" content="Kayla Roberts">
+		<!-- Consider a more descriptive title, such as the one in your current h1 -->
     <title>Roberts</title>
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -20,10 +22,24 @@
 	</nav>
 	<main id="main">
 		<section role="region" aria-labelledby="purpose">
+			<!-- I know this is draft content, but consider some more context-driven and descriptive headings. And, in this case, do you need a heading here? You might actually consider a brief bio about you, your specialities, and if you're available for hire. Those are common moves on portfolio sites. In short, connect with you audience and give them the ESPN highlight reel here. -->
 			<h2 id="purpose">Website Purpose</h2>
+				<!-- again, watch out for and ammend these slips in indentation. This h2 and p are currently at the same level in the hieararchy. -->
 				<p>Here's why I made this website: Lorem ipsum dolor sit amet</p>
 		</section>
 		<section role="region" aria-labelledby="photos">
+			<!--
+				I think the images in this section could actually work well later as part of your bio above. You could design a component that has your images on one side, and your bio on the other side. That said, you could create the following structure:
+
+				section class="bio_container"
+				- div class="bio_images"
+					- img
+					- img
+				- div class="bio_text"
+					- h2
+					- p
+					- CTA anchor (a) to help guide your readers to content that you'd like them to check out.
+			-->
 			<h2 id="photos">Visual Introduction</h2>
 			  <img src="https://placehold.co/300x200" alt="placeholder">
 				<p>Headshot</p>
@@ -35,21 +51,30 @@
 					 assets/images/english-conference-literature-kayla-roberts-2400x1600.jpg 2400w"/>
 				<p>Pictured above: Virginia Tech English Undergraduate Excellence Conference 2023</p>
 		</section>
+		<!--
+			I'd rename this section region as "education". Then, you can create another separate section below it as "Experience".
+		-->
 		<section role="region" aria-labelledby="biography">
 			<h2 id="biography">About Me</h2>
 				<h3>Education</h3>
 				<ul>
 					<li>High School Graduate - 2021</li>
 					<li>Associate Certificate in General Studies - 2022</li>
-					<li>Bachelor's Degree in English Literature - 2024</li>
-				<ul class="minor">
-					<li>Minor in Professional and Technical Writing</li>
-				</ul>
+					<li>
+						Bachelor's Degree in English Literature - 2024
+						<!--
+							I changed this up to show you that you can nest lists. But, you could also arguably just make this minor as a new list item after the EL degree. Also, it's typically a convention to 1) list your most recent education and experience first, and 2) just write the abbreviation of your degree, e.g., B.A. English
+						-->
+						<ul class="minor">
+							<li>Minor in Professional and Technical Writing</li>
+						</ul>
+					</li>
 				</ul>
 				<h3>Experience</h3>
 					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
 		</section>
 	</main>
+	<!-- Consider an aria label that uses that h2. There can be multiple footers, and this one nicely has your contact info, so you could label it as such.  -->
 	<footer role="contentinfo">
 		<h2>Contact Me</h2>
 			<ul>
