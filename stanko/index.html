@@ -18,13 +18,20 @@
     <header role="banner" aria-label="Home page banner for Kate Stanko's Portfolio">
         <h1>Welcome!</h1>
     </header>
+    <!-- This ID isn't available, so the main isn't labeled right now. -->
     <main id="main" role="main" aria-labelledby="kate-introduction">
+        <!-- Consider how this div isn't doing any work beyond what the main is doing right now. It would be different if the div was separating, let's say, the first section from the next two sections for some reason related to styling. -->
         <div>
             <section role="region" aria-labelledby="about-me">
+                <!-- How come you didn't use your headshot? -->
                 <h2 id="about-me">About Me</h2>
                 <p>I'm Kate Stanko, a junior double majoring in communication and professional & technical writing with a minor in human-computer interaction. 
                 Click around on this website to learn more about me and my work!</p>
                 <figure>
+                    <!--
+                        I'd use the medium sized version for the default src value
+                        small thing: be sure to hyphenate the words in your filenames.
+                    -->
                     <img 
                         src="assets/images/smallcat386x214.png" 
                         width="386" height="214"
@@ -33,9 +40,11 @@
                         assets/images/largecat3640x2226.jpeg 3640w"
                         alt="A small picture of a brown cat."
                     >
+                    <!-- FFR, if it's something pulled from another site, and it's openly licensed for you to use, then you can also link to the OG version. In this case, I'm wondering, "Why a cat?!" for your portfolio. :-) -->
                     <figcaption>Fig 1. A picture of a brown cat from Wikipedia.</figcaption>
                 </figure>
             </section>
+            <!-- Would have liked to see you apply at least one more image on your site, and I imagine you'll be adding more content later. -->
             <section role="region" aria-labelledby="about-my-interests">
                 <h2 id="about-my-interests">About My Interests</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, est.</p>
@@ -46,6 +55,9 @@
             </section> 
         </div>
     </main>
+    <!--
+        Incorrect role here for the footer. Should be 'contentinfo'. Also, for this landmark, consider just adding an aria-label like "Copyright information"
+    -->
     <footer id="footer" role="footer" aria-labelledby="copyright-statement">
         <h3 id="copyright-statement">
             © 2024, Kate Stanko
