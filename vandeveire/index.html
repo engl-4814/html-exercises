@@ -36,9 +36,15 @@
 </head>
 
 <body>
+    <!-- Close-up all of those whitespaces before and after the html attribute-values; also remove those inline styles -->
     <a href = "#main" class = "skip-to-link" style = "background-color: #000000; color: #fff; padding: 4px 8px;">Skip to content</a>
 
+    <!-- Incorrect application of labelledby; be sure to review that technique -->
     <header role = "banner" aria-labelledby = "Home page banner for Knee Rehabilitation website">
+        <!--
+            Note how this div is not needed.There is no other content within header right now except for the h1.
+            Also, the spanned content, if you use the screenreader to test sounds clunky to those users, so consider how to rethink that design where they are not within the heading/h1 itself. This is a good case why it is important to test with screenreaders.
+        -->
         <div class = "title-background">
             <h1>
                 <span class = "material-symbols-outlined"> health_and_safety </span> 
@@ -48,12 +54,13 @@
             </h1>
         </div> 
     </header>
-
+    <!-- Nav menus do not need a heading. Also, headings should always be contained/at the same level as the content they introduce. -->
     <h2 id = "navigation menu">
         Nav <abbr title = "Nav is short for Navigation"> </abbr> Menu 
     </h2>
 
     <nav role="navigation" aria-label="Main navigation">
+        <!-- Please be careful when copy-pasting code in this class. I don't mind a little bit of that work, but we haven't covered enough content to make sure that you understand the code you're bringing into your project. -->
         <ul>
             <!-- List item 1: Overview -->
             <li id = "bullet0" class = "listlinks">
@@ -86,8 +93,17 @@
         </ul>
     </nav>
 
-
+    <!--
+        A11Y
+        - Check all of your ARIA labels throughout. They are not going to work, because they are not applied properly.
+    -->
     <main id="main" role="main" aria-labelledby = "overview">
+        <!--
+            As is, you have ONE GIANT SECTION in the main, so you're not really sectioning the main into its explicit levels.
+            Consider the following suggestion:
+                - The h2 and p could be contained by a header for the main
+                - Then, each new h3 becomes a distinctly defined section/region of the main.
+        -->
         <section role = "region">
             <h2 class="section-margin"> Knee Rehabilitation for Health and Safety </h2>
             <p class="paragraph-indent"> This article highlights key components to strengthen and stretch your knee muscles to promote recovery and prevent future injuries. If you’re recovering from a knee injury or surgery, a well-structured knee conditioning program can help you regain strength, flexibility, and range of motion. The following content are some key points to consider: </p>
@@ -101,6 +117,10 @@
                 <li> <p> Gluteus medius & Gluteus maximus </p> </li>
             </ul>
 
+            <!--
+                Those filenames should be revised to consider (1) more keyword-based words, (2) use hyphens rather than underscores, and (3) append the WxH values at the end
+                - The alt value should be revised. Consider how there's no need to write "Picture of ..." Try to get to the crux of the photo, and write some good descriptive info that partners well with the source order of the content around the image.
+            -->
             <img
                 src = "assets/images/rehabpic.jpg"
                 srcset="assets/images/rehabpic_small.jpg 400w, 
@@ -112,6 +132,8 @@
             />
 
             <h3 class="subsection-margin"> Flexibility </h3>
+            <!-- This span (inline element) is actually semantically a <p> (block element) -->
+            <!-- Also, There's a WAY better way to manage these spacings throughout your site without dedicated classes that you need to aplpy to ALL paragraphs, every.single.time. That's why I'd like you to hold off on the CSS until a little later. LMK if you want to review how to better apply a spacing scheme. We actually reviewed this technique in the typography scheme assignment. I wish you were there, Matthew. -->
             <span class="paragraph-indent"> Stretching the muscles you strengthen is essential for restoring range of motion and preventing injury. After strength exercises, gently stretch to reduce muscle soreness and maintain flexibility. </span>
 
             <h3 class="subsection-margin"> Warmup </h3>
@@ -119,6 +141,14 @@
             
 
             <h3 class="subsection-margin"> Exercises: </h3>
+            <!--
+                Some suggestions with this pattern.
+                I think the h4 is a bit excessive in this case. This is an opinion, as it could be and h4. But, arguably you should be explaining and setting up this list with a paragraph before it. That said, here's some ideas to consider:
+                    - After the h3, you need a intro paragraph.
+                    - The h4s should be outside of the ols, and a paragraph should be after the h4, setting up the list.
+                    - Then, the list is just that: A list with list items.
+                    - Finally, the paragraphs aren't necessary in the lis
+            -->
             <ol> 
                 <h4> Helcord Stretch: </h4>
                 <li> <p> Stand facing a wall with your unaffected leg forward and a slight bend at the knee. </p> </li>
