@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Website Title</title>
+    <!-- Be sure to apply a few more meta tags that we learned in class -->
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
 
+    <!-- ALLY
+        Be sure to really test your site with the screenreader. All of these issues would have been caught with regular use of the tool.
+
+        - main and footer are missing labels
+        - nav menu label in the footer is a bit odd. Consider the content as a guide to write this value. In this case, it's social media links. I'd actually argue, however, that this isn't a nave menu, but simply an unordered list of links. Also, the nav is empty, and you're using a div, when the ul is sufficient here. ul, ol, and li selements are all blocks, so they don't need to be wrapped by a div, unless you're trying to bundle that ul with some more content.
+
+        - The linked social media have aria-labels, but that's not needed here. Those should just be the content contained by the anchor (a). That's also sufficient for A11Y.
+
+        - Throughout, the aria-labelledby technique needs thorough revision.
+            1. the attribute on the banner isn't correct
+            2. All of the values are incorrect. The value functions as a linked ID reference
+            3. All of your sections need to have a role of region
+    -->
     <header role="banner" arialabelledby="Header is Yogi Training and Classes: Everything is possible ">
         <h1>Yogi Training and Classes: Everything is possible</h1>
         <nav role="navigation" aria-label="Main Page leading to links">
@@ -19,7 +33,6 @@
             </ul>
         </nav>
     </header>
-
     <main id="main" role="main">
         <section aria-labelledby="main section containing yoga images and information about us">
             <h2 id="About Us">About Us</h2>
