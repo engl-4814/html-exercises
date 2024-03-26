@@ -4,7 +4,8 @@
 <head>
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
-    <link rel = "icon" href = "favicon/pticon.ico" type = "image/x-icon">
+    <meta name = "author" content = "matthew vandeveire">
+    <link rel = "icon" href = "assets/favicon/pticon.ico" type = "image/x-icon">
     <title> Knee Rehabilitation Home Page </title>
 
     <style>
@@ -13,7 +14,7 @@
         body { background-color: #f5f5dc; }
         
         .title-background {
-        background-image: url("images/kneeback.jpg");
+        background-image: url("assets/images/kneeback.jpg");
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -37,7 +38,7 @@
 <body>
     <a href = "#main" class = "skip-to-link" style = "background-color: #000000; color: #fff; padding: 4px 8px;">Skip to content</a>
 
-    <header role = "banner" aria-label = "Home page banner for Knee Rehabilitation website">
+    <header role = "banner" aria-labelledby = "Home page banner for Knee Rehabilitation website">
         <div class = "title-background">
             <h1>
                 <span class = "material-symbols-outlined"> health_and_safety </span> 
@@ -86,7 +87,7 @@
     </nav>
 
 
-    <main id="main" role="main" aria-labelledby = "navigation menu">
+    <main id="main" role="main" aria-labelledby = "overview">
         <section role = "region">
             <h2 class="section-margin"> Knee Rehabilitation for Health and Safety </h2>
             <p class="paragraph-indent"> This article highlights key components to strengthen and stretch your knee muscles to promote recovery and prevent future injuries. If you’re recovering from a knee injury or surgery, a well-structured knee conditioning program can help you regain strength, flexibility, and range of motion. The following content are some key points to consider: </p>
@@ -100,9 +101,18 @@
                 <li> <p> Gluteus medius & Gluteus maximus </p> </li>
             </ul>
 
+            <img
+                src = "assets/images/rehabpic.jpg"
+                srcset="assets/images/rehabpic_small.jpg 400w, 
+                        assets/images/rehabpic_medium.jpg 800w, 
+                        assets/images/rehabpic_large.jpg 1200w"
+                alt = "Picture of a person messaging his knee."
+                width = "400"
+                height = "400" 
+            />
+
             <h3 class="subsection-margin"> Flexibility </h3>
             <span class="paragraph-indent"> Stretching the muscles you strengthen is essential for restoring range of motion and preventing injury. After strength exercises, gently stretch to reduce muscle soreness and maintain flexibility. </span>
-
 
             <h3 class="subsection-margin"> Warmup </h3>
             <p class="paragraph-indent"> Before starting exercises, warm up with 5 to 10 minutes of low-impact activity like walking or stationary cycling. </p>
