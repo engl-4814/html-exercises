@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- remove those whitespaces in the title. Also, there needs to be only one title. -->
     <title> How to stay fit </title>
     <meta name="author" content="ELizabeth Wilson"> 
     <title> Stay fit </title>
 </head>
 <body>
-<a href="#main" class="skip-to-link">Skip to content</a>
+  <!-- indented your skip link for you -->
+  <a href="#main" class="skip-to-link">Skip to content</a>
+  <!--
+    A11Y Comments
+    - Roles look good overall
+    - You currently do not have any labels, so your landmarks aren't contextualized for folks who use ARIA tech
+    - Overapplying "region" role. See comment below
+  -->
   <header role="banner">
     <h1>Staying Fit</h1>
   </header>
   <nav role="navigation">
     <ul>
+      <!-- I know you don't have these pages right now, but be sure to update this later. -->
       <li><a href="index.html">Home</a></li>
       <li><a href="index.html">About Me</a></li>
       <li><a href="practice/index.html">Workouts</a></li>
@@ -22,6 +31,7 @@
   </nav>
   <main role="main">
     <section role="region">
+      <!-- these two divs need not be "region" role, since the landmark is the section -->
       <div role="region">
         <img src="assets/images/workout/strength-training-600x400.jpg" alt="Man and Woman Workingout"
         width="960"height="533"
@@ -48,6 +58,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </p>
       <a href="Nutrition">More about nutrition</a>
+      <!-- The src attribute does NOT use the metric value like srcset. Just the path. -->
       <img src="assets/images/nutrition/food-heart-600x375.jpg 600w" alt="Food in heart"
       width="960"height="533"
       srcset="assets/images/nutrition/food-heart-300x188.jpg 300w,
@@ -55,6 +66,7 @@
               assets/images/nutrition/food-heart-1200x750.jpg 1200w">
     </section>
   </main>
+  <!-- body encompasses ALL content, so the footer should be inside of it. -->
 </body>
 <footer role="contentinfo">
     <h4>Contact</h4>
