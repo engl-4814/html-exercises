@@ -3,97 +3,127 @@
    
 <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, intial-scale=1.
- 0">
-  <meta name="author" content="Ahmed Yousif">
+   <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <meta name="author" content="Author">
+ 
+  
   <title>Engineering Nomad</title>
 </head>
 
- <body>
-  <a href =”#main” class=”skip-to-link”>Skip to content</a>
-  <header>
-    <h1>Engineering Disciplines</h1>
+<body>
+   <a href ="nav" class="skip-to-link">Skip to content</a>
+   <header role="banner" aria-labelledby="engineeringdisciplines">
+     <h1 id="engineeringdisciplines">Engineering Disciplines</h1>
+     <nav role="navigation">
+        <li><a href="index.html">Home</a></li>  
+        <li><a href="content.html">Content</a></li>
+        <li><a href="additional.html">Additional</a></li>
+    </nav>
   </header>
 
-  <nav role="navigation" aria-label="Main navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>  
-      <li><a href="content.html">Content</a></li>
-      <li><a href="additional.html">Additional</a></li>
-    </ul>
-  </nav>
-<!--Adding Image at Header-->
-  <img src="./images/header-pic.jpg"
-  width="400" height="250"
-  alt="picture-engineering-theme"
-/>
+ <!--Adding Image at Header-->
+  <img src="./assets/images/header-pic-400x267.jpg"
+       width="400" height="267"
+       srcset="./assets/images/header-pic-400x267.jpg 400w,
+               ./assets/images/header-pic-300x200.jpg 300w,
+               ./assets/images/header-pic-200x133.jpg 200w"
+       alt="picture engineering theme engineering education" />
+
  
-  <main role="main" aria-labelledby="discription">
-  
-    <h2 id="discription">Discription</h2>
-    <p>
-      Engineering Majors
-    </p>
+  <main role="region" aria-labelledby="engineeringmajors">
+    <h2 id="engineeringmajors">Engineering Majors</h2>
+    <p>discription of engineering majors</p>
+    <section role="region" aria-labelledby="discription of engineering majors" >
      <ul>
         <li>
            Electrical Engineering
-           <p>"Additional Content"</p>
+           <p>"The creativity of electrical engineers has revolutionized our world. They create the methods and devices to detect, gauge, 
+              transform, transmit, manage, and receive both energy and information. In their work, electrical engineers tackle projects ranging 
+              from  tiny robots the size of mosquitoes to overseeing enormous structures spanning millions of miles, like the country's power 
+              network"
+            </p>
         </li>
         <li>
            Civil Engineering
-           <p>"Content"</p>
+           <p>"Civil engineers are the principal designers, constructors, operators, and maintainers of many of the constructed facilities in our 
+               society."
+           </p>
         </li>
         <li>
            Chemical Engineering
-           <p>"Content"</p>
+           <p>
+            "Chemical engineers have contributed to advancements in atomic science, polymers, paper, dyes, medications, plastics, fertilizers, food 
+            products, petrochemicals, vaccines, novel approaches for carbon capture, and many other areas."
+          </p>
         </li>
         <li>
            Areospace Engineering
-           <p>"Content"</p>
+           <p>
+            "The aerospace engineering program covers topics such as aerodynamics, flight dynamics and controls, propulsion, and aerospace 
+            structures. It concludes with a senior-level design sequence that is nationally recognized, focusing on the analysis and design of 
+            aircraft, spacecraft, and associated technologies."
+          </p>
         </li>
         <li>
            Biomedical Engineering
-           <p>"Content"</p>
+           <p>
+            "Biomedical engineers concentrate on merging technology and medical science to create innovative devices and apparatus aimed at 
+            enhancing human health. They may, for instance, develop software to operate medical devices or use computer simulations to evaluate 
+            novel drug treatments."
+          </p>
         </li>
      </ul>
-
- <!--Image Here-->
- <img src="./images/circuit-board-1.jpeg"
-     width="300" height="250"
-    alt="Electric Design" />
-
-<section role="region" aria-labelledby="in-depth">
-    <header>
-     <h2 id="in-depth">In Depth</h2>
-    </header>
-    <p>
-     "The study of engineering, why its important, interesting facts, requierments and prerequiesties for students...etc"
+    </section>
+   <!--Image Here, width="600" height="300"-->
+   <img src="./assets/images/Students_pic-400x225.png"
+      alt="Collborating Students pic gathered and working on a group project related to engineering"
+      width="400" height="225"
+      srcset="./assets/images/Students_pic-400x225.png 400w,
+              ./assets/images/Students_pic-300x169.png 300w,
+              ./assets/images/Students_pic-200x112.png 200w"
+      />
+    <p> 
+      (2 Cents)
+       Engineering can be a very daunting field, but with the right planning and studying 
+       I strongly believe anyone would be able to succeed in this field. 
     </p>
-</section>
+    <section role="region" aria-label="in depth">
+      <header>
+       <h2 id="in-depth">In Depth</h2>
+      </header>
+      <p>
+       "The study of engineering, why its important, interesting facts, requierments and prerequiesties for students...etc"
+      </p>
+    </section>
 
-<section role="region" aria-labelledby="differences">
-    <header>
-<h2 id="differences">Differences</h2>
-    </header>
-    <p>
-     "This section lists the differences of engineering majors within academics and also industry/career planning"
-    </p>
-</section>
+   <section role="region" aria-label="differences between engineering majors labeling keypoints">
+     <header>
+       <h2 id="differences">Differences</h2>
+     </header>
+     <p>"This section lists the differences of engineering majors within academics and also industry/career planning"</p>
+   </section>
+ </main>
 
-  <section role="region" aria-labelledby="student-experience-as-an-engineering-major">
-     <h3 id="student-experience-as-an-engineering-major">Student Experience as an Engineering Major</h3>
+ <aside role="region" aria-label="additional keypoints">
+   <section role="region" aria-labelledby="note on student experience as an engineering major">
+     <h2 id="student-experience-as-an-engineering-major">keypoints</h2>
+     <h3>Student Experience as an Engineering Major</h3>
      <p>"Based on current students and alumni, their experiences trials and advice for incomming students"</p>
-  </section>
+   </section>
 
-  <section role="region" aria-labelledby="additional-content-sector">
-     <header> <h3 id="additional-content-sector">Additional Content Sector</h3> </header>
-     <p>"Resources and articles that would benefit engineering majors"</p>
-     <p>"From university resources to different companies publications that would showcase the career side of engineering fields"</p>
-  </section>
-  </main>
-
-   <footer role="contentinfo" aria-labelledby="copyright-info">
-     <p id="copyright-info">@Copyright info</p>
+   <section role="region" aria-labelledby="additional content sector that label additional links and helpful resources">
+     <h2 id="additional-content-sector">Additional Content Sector</h2>
+     <h3>helpful resources from articles</h3>
+      <p>"Resources and articles that would benefit engineering majors"</p>
+      <p>"From university resources to different companies publications that would showcase the career side of engineering fields"</p>
+    </section>
+  </aside>
+   
+ <aside role="region" aria-label="copyright footer">
+   <footer role="copyrightinfo" aria-labelledby="footer">
+     <h2>copyrights</h2>
+     <p>@Copyright info</p>
    </footer>
- </body>
+ </aside>
+</body>
 </html> 
