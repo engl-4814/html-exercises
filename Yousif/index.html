@@ -2,6 +2,7 @@
 <html lang="en">
    
 <head>
+  <!-- Note the indentation issues in the head here -->
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, intial-scale=1.0">
   <meta name="author" content="Author">
@@ -11,7 +12,9 @@
 </head>
 
 <body>
+  <!-- Make sure to review the slides about this material. Skip links are hidden visually and help ARIA tech users "skip to" the main content by providing an ID name in the href attribute. For example, if you put an ID of "majors" on the main element, then you could write "#majors" as the inbound page link value for href for the skip link. -->
    <a href ="nav" class="skip-to-link">Skip to content</a>
+   <!-- hyphenate your IDs: "engineering-disciplines" -->
    <header role="banner" aria-labelledby="engineeringdisciplines">
      <h1 id="engineeringdisciplines">Engineering Disciplines</h1>
      <nav role="navigation">
@@ -21,6 +24,7 @@
     </nav>
   </header>
 
+  <!-- If this image is part of the header, it should be contained by it. Right now, it is "orphaned" from other containers and only a child of the body. -->
  <!--Adding Image at Header-->
   <img src="./assets/images/header-pic-400x267.jpg"
        width="400" height="267"
@@ -29,7 +33,12 @@
                ./assets/images/header-pic-200x133.jpg 200w"
        alt="picture engineering theme engineering education" />
 
- 
+
+  <!-- ALLY COMMENTS
+    - Main's role is not region. Double check your work here.
+    - Looks like your using region everywhere. Please make sure to review the readings, as they even have helpful guides and tabulated terms and definitions for these role attributes. My slides also review how to implement the labels.
+    - Throughout check how you're using aria-labelledby, since its incorrect.
+  -->
   <main role="region" aria-labelledby="engineeringmajors">
     <h2 id="engineeringmajors">Engineering Majors</h2>
     <p>discription of engineering majors</p>
@@ -74,6 +83,7 @@
         </li>
      </ul>
     </section>
+    <!-- Again, I'm not sure I think this is the best placement for the image. Usually, you want to place it in relationship with the content that it is in association with. Also, your filenames should follow the recommendations made in the reading for that week. -->
    <!--Image Here, width="600" height="300"-->
    <img src="./assets/images/Students_pic-400x225.png"
       alt="Collborating Students pic gathered and working on a group project related to engineering"
@@ -114,6 +124,7 @@
    <section role="region" aria-labelledby="additional content sector that label additional links and helpful resources">
      <h2 id="additional-content-sector">Additional Content Sector</h2>
      <h3>helpful resources from articles</h3>
+     <!-- I've spotted a few places where the indentation is a bit off, like below. Make sure to review your code for those issues. -->
       <p>"Resources and articles that would benefit engineering majors"</p>
       <p>"From university resources to different companies publications that would showcase the career side of engineering fields"</p>
     </section>
