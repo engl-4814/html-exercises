@@ -2,36 +2,33 @@
 <html lang="en">
    
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
   <meta name="author" content="Author">
- 
-  
   <title>Engineering Nomad</title>
 </head>
 
 <body>
-   <a href ="nav" class="skip-to-link">Skip to content</a>
-   <header role="banner" aria-labelledby="engineeringdisciplines">
-     <h1 id="engineeringdisciplines">Engineering Disciplines</h1>
-     <nav role="navigation">
+  <a href ="#main" class="skip-to-link">Skip to content</a>
+   <header role="banner" aria-label="engineering-disciplines">
+     <h1 id="engineering-disciplines">Engineering Disciplines</h1>
+
+     <nav role="navigation" aria-label="Main Navigation">
         <li><a href="index.html">Home</a></li>  
         <li><a href="content.html">Content</a></li>
         <li><a href="additional.html">Additional</a></li>
-    </nav>
-  </header>
-
- <!--Adding Image at Header-->
-  <img src="./assets/images/header-pic-400x267.jpg"
-       width="400" height="267"
-       srcset="./assets/images/header-pic-400x267.jpg 400w,
-               ./assets/images/header-pic-300x200.jpg 300w,
-               ./assets/images/header-pic-200x133.jpg 200w"
-       alt="picture engineering theme engineering education" />
-
+     </nav>
+      <!--Adding Image at Header-->
+     <img src="./assets/images/header-pic-engineering-theme-400x267.jpg"
+          width="400" height="267"
+          srcset="./assets/images/header-pic-engineering-theme-400x267.jpg 400w,
+                  ./assets/images/header-pic-engineering-theme300x200.jpg 300w,
+                  ./assets/images/header-pic-engineering-theme200x133.jpg 200w"
+         alt="picture engineering theme engineering education" />
+   </header>
  
-  <main role="region" aria-labelledby="engineeringmajors">
-    <h2 id="engineeringmajors">Engineering Majors</h2>
+  <main role="main" aria-label="engineering majors">
+    <h2 id="engineering-majors">Engineering Majors</h2>
     <p>discription of engineering majors</p>
     <section role="region" aria-labelledby="discription of engineering majors" >
      <ul>
@@ -74,19 +71,21 @@
         </li>
      </ul>
     </section>
-   <!--Image Here, width="600" height="300"-->
-   <img src="./assets/images/Students_pic-400x225.png"
-      alt="Collborating Students pic gathered and working on a group project related to engineering"
-      width="400" height="225"
-      srcset="./assets/images/Students_pic-400x225.png 400w,
-              ./assets/images/Students_pic-300x169.png 300w,
-              ./assets/images/Students_pic-200x112.png 200w"
-      />
+
+   <section role="region" aria-label="course work among engineering students">
+   <h2 id="collaboration">Collaboration within Engineering</h2>
     <p> 
-      (2 Cents)
-       Engineering can be a very daunting field, but with the right planning and studying 
-       I strongly believe anyone would be able to succeed in this field. 
+      Engineering work among students and its experiences. How collaboration would lead 
+      to success in such a difficult field. 
     </p>
+     <img src="./assets/images/students-workshop-collaboration-800x450.png"
+          alt="Collborating Students pic gathered and working on a group project related to engineering"
+          width="800" height="450"
+          srcset="./assets/images/students-workshop-collaboration-800x450.png 800w,
+                  ./assets/images/students-workshop-collaboration-300x169.png 300w,
+                  ./assets/images/students-workshop-collaboration-200x112.png 200w"/>
+    </section>
+    
     <section role="region" aria-label="in depth">
       <header>
        <h2 id="in-depth">In Depth</h2>
@@ -96,7 +95,7 @@
       </p>
     </section>
 
-   <section role="region" aria-label="differences between engineering majors labeling keypoints">
+   <section role="region" aria-label="differences between engineering-majors labeling keypoints">
      <header>
        <h2 id="differences">Differences</h2>
      </header>
@@ -104,14 +103,13 @@
    </section>
  </main>
 
- <aside role="region" aria-label="additional keypoints">
+ <aside role="complementary" aria-label="additional keypoints">
    <section role="region" aria-labelledby="note on student experience as an engineering major">
-     <h2 id="student-experience-as-an-engineering-major">keypoints</h2>
-     <h3>Student Experience as an Engineering Major</h3>
+     <h2 id="student-experience-as-an-engineering-major">Student Experience as an Engineering Major</h2>
      <p>"Based on current students and alumni, their experiences trials and advice for incomming students"</p>
    </section>
 
-   <section role="region" aria-labelledby="additional content sector that label additional links and helpful resources">
+   <section role="region" aria-label="additional content sector that label additional links and helpful resources">
      <h2 id="additional-content-sector">Additional Content Sector</h2>
      <h3>helpful resources from articles</h3>
       <p>"Resources and articles that would benefit engineering majors"</p>
@@ -119,11 +117,10 @@
     </section>
   </aside>
    
- <aside role="region" aria-label="copyright footer">
-   <footer role="copyrightinfo" aria-labelledby="footer">
+ <footer id="copyright"  role="contentinfo" aria-label="footer">
      <h2>copyrights</h2>
      <p>@Copyright info</p>
-   </footer>
- </aside>
+ </footer>
+
 </body>
 </html> 
