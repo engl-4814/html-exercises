@@ -1,0 +1,92 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=WindSong:wght@400;500&display=swap');
+
+/* TOC ============
+  1. ROOT
+  2. TYPOGRAPHY
+  3. BASE STYLES
+  4. GRID LAYOUTS
+  5. FLEX COMPONENTS
+  6. @MEDIA QUERIES */
+
+/* ROOT & BODY */
+:root {
+  font-size: 18px;
+
+  --backgroundColor: #D8D8D8;
+  --foregroundColor: #010A1F;
+
+  --primaryColor: #FF0000;
+  --primaryShade1: #D52323;
+  --primaryShade2: #E20000;
+  --primaryShade3: #332B2B;
+  --primaryShade4: #553939;
+  --primaryShade5: #804040;
+
+  --secondaryColor: #012978;
+  --secondaryShade1: #0246CF;
+  --secondaryShade2: #023CB1;
+  --secondaryShade3: #013293;
+  --secondaryShade4: #012877;
+  --secondaryShade5: #011F5B;
+
+  --accentColor: #D9D9D9;
+  --accentShade1: #E3E3E3;
+  --accentShade2: #C7C7C7;
+  --accentShade3: #BCBCBC;
+  --accentShade4: #A9A9A9;
+  --accentShade5: #525252;
+
+  --accent2Color: #333333;
+  --accent2Shade1: #5A5A5A;
+  --accent2Shade2: #3E3E3E;
+  --accent2Shade3: #5A5A5A;
+  --accent2Shade4: #202020;
+  --accent2Shade5: #222222;
+
+  --accent3Color: #BCBCBC;
+  --accent3Shade1: #F8F8F8;
+  --accent3Shade2: #B4B4B4;
+  --accent3Shade3: #929292;
+  --accent3Shade4: #707070;
+  --accent3Shade5: #4E4E4E;
+
+  --neutralShade1: #A73131;
+  --neutralShade2: #CB3B3B;
+  --neutralShade3: #AE3333;
+  --neutralShade4: #922A2A;
+  --neutralShade5: #762222;
+  --neutralShade6: #5A1A1A;
+  --neutralShade7: #3E1212;
+  --neutralShade8: #220A0A;
+
+  --grayColor: #999;
+  --lightGrayColor: #ddd;
+
+  /* Font Families */
+  --headingFamily: "Windsong";
+  --subtitleFamily: "Josefin Slab", serif;
+  --copyFamily: "Nunito", sans serif;
+}
+
+body {
+  font-family: var(--copyFamily);
+  color: var(--foregroundColor);
+}
+
+/* 2. TYPOGRAPHY - STYLE LINKS */
+h1 { font-family: var(--headingFamily); }
+h2, h3 { font-family: var(--subtitleFamily); }
+
+/* FONT SIZING */
+h1 { font-size: 4rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+
+/* FONT COLORS 
+double check accessibility of colors*/
+h1 { color: var(--secondaryShade5); }
+h2 { color: var(--neutralShade8); }
+h3 { color: var(--accentShade5); }
+p { color: var(--foregroundColor); }
