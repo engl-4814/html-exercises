@@ -13,7 +13,7 @@
 :root {
   font-size: 18px;
 
-  --backgroundColor: #D8D8D8;
+  --backgroundColor: #F2F2F2;
   --foregroundColor: #010A1F;
 
   --primaryColor: #FF0000;
@@ -44,12 +44,12 @@
   --accent2Shade4: #202020;
   --accent2Shade5: #222222;
 
-  --accent3Color: #BCBCBC;
-  --accent3Shade1: #F8F8F8;
-  --accent3Shade2: #B4B4B4;
-  --accent3Shade3: #929292;
-  --accent3Shade4: #707070;
-  --accent3Shade5: #4E4E4E;
+  --accent3Color: #F2E7BB;
+  --accent3Shade1: #F2D9BB;
+  --accent3Shade2: #D9B79A;
+  --accent3Shade3: #A6836F;
+  --accent3Shade4: #735E51;
+  --accent3Shade5: #0D0D0D;
 
   --neutralShade1: #A73131;
   --neutralShade2: #CB3B3B;
@@ -72,16 +72,43 @@
 body {
   font-family: var(--copyFamily);
   color: var(--foregroundColor);
+  background-color: var(--backgroundColor);
 }
 
-/* 2. TYPOGRAPHY - STYLE LINKS */
+/* 2. TYPOGRAPHY ============*/
 h1 { font-family: var(--headingFamily); }
 h2, h3 { font-family: var(--subtitleFamily); }
 
+/* LINKS */
+a {
+  text-decoration: none;
+  color: var(--secondaryShade1);
+  text-decoration: none;
+  transition: 0.25s;
+
+  &:hover {
+    text-decoration: solid;
+    background-color: var(--secondaryShade4);
+    color: var(--backgroundColor);
+    transition: 0.25s;
+  }
+
+  &.header-link {
+    font-size: 1.1rem;
+    color: var(--accent3Shade4);
+
+    &:hover {
+      color: var(--accent3Color);
+      background-color: var(--primaryShade5);
+    }
+  }
+}
+
+
 /* FONT SIZING */
-h1 { font-size: 4rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.5rem; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
 
 
 /* FONT COLORS 
@@ -90,3 +117,59 @@ h1 { color: var(--secondaryShade5); }
 h2 { color: var(--neutralShade8); }
 h3 { color: var(--accentShade5); }
 p { color: var(--foregroundColor); }
+
+
+
+
+/* 3. BASE STYLES============ */
+/* IMAGES */
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* SKIP TO LINK */
+a.skip-to-link {
+  position: absolute;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  top:auto;
+}
+
+a.skip-to-link:focus {
+  color: black;
+  display: inline-block;
+  height: auto;
+  width: auto;
+  position: static;
+  margin: auto;
+}
+
+
+
+/* 4. GRID LAYOUTS============ */
+/* GRID CONTAINER RULES (HEADING) */
+.header-grid {
+  .left-one {grid-area: left; }
+  .left-two { grid-area: second; }
+  .left-three { grid-area: third; }
+  .right-one { grid-area: middle; }
+  .right-two { grid-area: right; }
+}
+
+/* HEADER */
+.header-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "left left"
+    "second third"
+    "second third"
+    "middle right"
+    "middle right";
+  background-color: var(--accentColor);
+}
+
+/* 5. FLEX COMPONENTS */
