@@ -1,3 +1,21 @@
+/*skip link*/
+a.skip-to-link {
+  position: absolute;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+}
+
+a. skip-to-link:focus {
+  color: black;
+  display: inline-block;
+  height: auto;
+  width: auto;
+  position: static;
+  margin: auto;
+}
+
 /*FONT IMPORT*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
@@ -124,12 +142,15 @@
     border-bottom: 2px dashed;
     cursor: pointer;
     transition: 0.4s;
+    text-decoration: none;
+    border-bottom-style: none;
   }
   a:hover {
     color: var(--neutralShade1);
     background-color: var(--primaryColor);
-    border-bottom: 3px solid var(--primaryShade5);
     transition: 0.4s;
+    text-decoration: none;
+    border-bottom-style: none;
   }
   
   /* primary color links */
@@ -138,6 +159,8 @@
     border-bottom: 2px dashed;
     cursor: pointer;
     transition: 0.4s;
+    text-decoration: none;
+    border-bottom-style: none;
   }
   a.primary:hover {
     color: var(--primaryShade1);
@@ -152,6 +175,7 @@
     border-bottom: 2px dashed;
     cursor: pointer;
     transition: 0.4s;
+    text-decoration: none;
   }
   a.secondary:hover {
     color: var(--secondaryShade1);
@@ -167,3 +191,7 @@
   }
 
 /*  3. GENERAL BASE LAYOUTS */
+.navbar > li {
+  display: inline-block;
+  padding: 5px 10px;
+}
