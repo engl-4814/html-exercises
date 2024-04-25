@@ -57,6 +57,8 @@ $RECYCLE.BIN/
 # Code editors
 *.workspace
 *.vscode
+.vscode
+.vs
 
 # Other files
 feedback.txt
