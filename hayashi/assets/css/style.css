@@ -114,8 +114,8 @@ h3 { font-size: 1.25rem; }
 /* FONT COLORS 
 double check accessibility of colors*/
 h1 { color: var(--secondaryShade5); }
-h2 { color: var(--neutralShade8); }
-h3 { color: var(--accentShade5); }
+h2 { color: var(--neutralShade3); }
+h3 { color: var(--accent3Shade5); }
 p { color: var(--foregroundColor); }
 
 
@@ -147,29 +147,30 @@ a.skip-to-link:focus {
   margin: auto;
 }
 
+/* FOOTER */
+footer {
+  background-color: var(--lightGrayColor);
+}
+
+
+/* LIST STYLE */
+li { list-style-type: none; }
 
 
 /* 4. GRID LAYOUTS============ */
-/* GRID CONTAINER RULES (HEADING) */
-.header-grid {
-  .left-one {grid-area: left; }
-  .left-two { grid-area: second; }
-  .left-three { grid-area: third; }
-  .right-one { grid-area: middle; }
-  .right-two { grid-area: right; }
-}
 
-/* HEADER */
-.header-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
-    "left left"
-    "second third"
-    "second third"
-    "middle right"
-    "middle right";
-  background-color: var(--accentColor);
-}
 
 /* 5. FLEX COMPONENTS */
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+/* @MEDIA QUERIES */
+@media screen and (min-width: 600px) {
+  .nav-menu {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
