@@ -58,10 +58,11 @@
 /* GENERAL COLOR SCHEME
 ======================*/
 body {
-  margin: 0;
-  background: .theme {
-    color: #36b3aa;
-    background-color: #130e24;
+  margin: 1rem;
+  background: #fff;
+  color: var(--neutralShade8);
+  font-family: var(--copyFonts);
+}
   };
   color: var(--neutralShade8);
   font-family: var(--copyFonts);
@@ -133,3 +134,4 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
