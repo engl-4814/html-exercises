@@ -110,6 +110,7 @@ a. skip-to-link:focus {
     line-height: 1.2;
     text-transform: capitalize;
     color: var(--secondaryColor);
+    font-weight: bold;
   }
   h3 {
     font-weight: 500;
@@ -214,7 +215,8 @@ header {
 
   h2{
     font-family: var(--copyFontFamily);
-    text-shadow: 0px 2px 4px #75787b;
+    text-shadow: 0px 2px 4px #111111;
+    font-size: xxx-large;
   }
 }
 
