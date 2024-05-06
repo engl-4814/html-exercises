@@ -7,7 +7,7 @@ a.skip-to-link {
   top: auto;
 }
 
-a. skip-to-link:focus {
+a.skip-to-link:focus {
   color: black;
   display: inline-block;
   height: auto;
@@ -78,6 +78,7 @@ a. skip-to-link:focus {
     body {
         background: var(--backgroundColor);
         color: var(--neutralShade8);
+        margin: 0;
       }
 }
   
@@ -134,12 +135,10 @@ a. skip-to-link:focus {
     font-size: 1.05rem;
     line-height: 1.2;
   }
-  
-  a { font-weight: 500; }
-  
+    
   /* default links */
   a {
-    color: var(--neutralShade8);
+    color: var(--foregroundColor);
     border-bottom: 2px dashed;
     cursor: pointer;
     transition: 0.4s;
@@ -147,7 +146,7 @@ a. skip-to-link:focus {
     border-bottom-style: none;
   }
   a:hover {
-    color: var(--neutralShade1);
+    color: var(--primaryColor);
     transition: 0.4s;
     text-decoration: none;
     border-bottom-style: none;
@@ -155,7 +154,7 @@ a. skip-to-link:focus {
   
   /* primary color links */
   a.primary {
-    color: var(--primaryColor);
+    color: var(--backgroundColor);
     border-bottom: 2px dashed;
     cursor: pointer;
     transition: 0.4s;
@@ -163,10 +162,10 @@ a. skip-to-link:focus {
     border-bottom-style: none;
   }
   a.primary:hover {
-    color: var(--primaryShade1);
-    background-color: var(--primaryShade4);
-    border-bottom: 3px solid var(--secondaryColor);
+    color: var(--primaryColor);
     transition: 0.4s;
+    text-decoration: none;
+    border-bottom-style: none;
   }
   
   /* secondary color links */
@@ -210,7 +209,6 @@ header {
     font-weight: bold;
     padding: 15px 50px 15px 50px;
     background-color: rgba(255, 255, 255, 0.75);
-    width: 100%;
   }
 
   h2{
@@ -227,6 +225,8 @@ header {
   font-size: 16px;
   justify-content: space-between;
   padding: 5px;
+  font-weight: 500;
+  color: var(--foregroundColor);
 }
 
 .navbar {
@@ -256,4 +256,66 @@ nav {
 /*spacing after nav*/
 header, main {
   margin-top: 70px;
+}
+
+/*footer grid names*/
+.footerinfo {grid-area: finfo;}
+.footerimg1 {grid-area: fimg1;}
+.footerimg2 {grid-area: fimg2;}
+.footercc {grid-area: fcc;}
+
+.fimgs {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "fimg1"
+  "fimg2";
+}
+
+/*footer style*/
+footer {
+  padding-top: 35px;
+  background: #111111;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  img {
+    max-width: 150px;
+    height: 100%;
+    padding: 5px;
+  }
+  p, h2 {
+    margin: 0;
+    padding-bottom: 25px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  h2 {
+    color: #fff;
+    font-family: var(--copyFontFamily);
+  }
+  p {
+    font-size: small;
+    padding-top: 50px;
+  }
+
+  div {
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      display: block;
+    }
+  }
+}
+
+.footermain {
+  margin: auto;
 }
