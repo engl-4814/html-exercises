@@ -131,6 +131,33 @@ main {
     justify-items: left;
 }
 
+.education {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: left;
+    border-top: 5px solid var(--primaryColor);
+    border-bottom: 5px solid var(--primaryColor);
+}
+
+.experience {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: left;
+    border-bottom: 5px solid var(--primaryColor);
+}
+
+.Positions {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: left;
+}
+
+.ed-logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: flex-end;
+}
+
 /*flex*/
 .nav-menu {
     display: flex;
@@ -148,6 +175,7 @@ aside {
 /*Footer*/
 footer {
     background-color: var(--accent2Color);
+    border: 5px solid var(--foregroundColor);
 }
 
 /*@media queries*/
