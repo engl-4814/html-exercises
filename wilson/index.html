@@ -6,25 +6,28 @@
     <title> How to stay fit </title>
     <meta name="author" content="Elizabeth Wilson"> 
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald" 
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito" 
+    rel="stylesheet">
 </head>
 <body>
-  <a href="#main" class="skip-to-link">Skip to content</a>
+  <a hidden href="#main" class="skip-to-link">Skip to content</a>
+
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="about-me.html">About Me</a>
+    <a href="workout.html">Workouts</a>
+    <a href="nutrition.html">Nutrition</a>
+  </div>
+
   <header role="banner" id="main" aria-label="Staying Fit">
     <h1>Staying Fit</h1>
   </header>
-  <nav role="navigation" aria-label="main navigation">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="about-me.html">About Me</a></li>
-      <li><a href="#workout">Workouts</a></li>
-      <li><a href="#nutrition">Nutrition</a></li>
-    </ul>
-  </nav>
-  <main role="main" id="main">
-    <header>
+
+
+  <main role="main" id="main" class="flex">
+    <header class="displayFirst">
       <img src="assets/images/workout/strength-training-600x400.jpg" alt="Man and Woman Workingout"
            width="600"height="400"
            srcset="assets/images/workout/strength-training-300x200.jpg 300w,
@@ -32,7 +35,7 @@
                 assets/images/workout/strength-training-1200x800.jpg 1200w">
     </header>
     <section role="region" aria-labelledby="workout">
-     <div>   
+     <div class="displaySecond">   
       <h2 id="workout"> Workout</h2>
          <p> 
            All about workouts      
@@ -42,16 +45,17 @@
         srcset="assets/images/workout/cardio-class-300x194.jpg 300w,
                 assets/images/workout/cardio-class-600x387.jpg 600w,
                 assets/images/workout/cardio-class-1200x774.jpg 1200w">
-     </div>
-     <div>
+
         <p>
-         <a href="workout.html">Learn more about workouts</a>
+          <a href="workout.html">Learn more about workouts</a>
         </p>
      </div>
     </section>
+
+
     <section role="region" aria-labelledby="nutrition">
-     <div>
-      <h2 id="nutrition"> Nutrition</h2>
+     <div class="displaySecond">
+      <h2 id="nutrition" > Nutrition</h2>
         <p>
           All about nutrition
         </p>   
@@ -60,14 +64,14 @@
       srcset="assets/images/nutrition/food-heart-300x188.jpg 300w,
               assets/images/nutrition/food-heart-600x375.jpg 600w,
               assets/images/nutrition/food-heart-1200x750.jpg 1200w">
-     </div>
-     <div>
-      <p>
-        <a href="nutrition.html">Learn more about nutrition</a>
-      </p>
+        <p>
+          <a href="nutrition.html">Learn more about nutrition</a>
+        </p>
      </div> 
     </section>
   </main>
+
+
   <aside role="complementary" aria-labelledby="calculator">
     <h2 id="calculator"> Calculator </h2> 
     <p>
@@ -76,11 +80,11 @@
   </aside>
   <footer id="resources" role="contentinfo" aria-labelledby="footer">
       <h3>Contact</h3>
-      <ul>
-          <li>Email: elizabethw22@vt.edu</li>
-          <li>Phone: 703-576-7001</li>
-      </ul>
-      <p>Copyright. All rights reversed.</p>
+      <p>
+          Email: elizabethw22@vt.edu<br>
+          Phone: 703-576-7001
+      <p>
+      <p>Copyright. All rights reserved.</p>
   </footer>
 </body>
 </html>
