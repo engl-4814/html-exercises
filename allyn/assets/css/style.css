@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap');
+:root {
+    font-size: 16px;
+    --backgroundColor: #fbfcc7;
+    --foregroundColor: #0d242f;
+
+    --primaryColor: #022f49;
+    --primaryShade1: #03567c;
+    --primaryShade2: #19aef3;
+    --primaryShade3: #4fc3f7;
+    --primaryShade4: #acd7ee;
+    --primaryShade5: #f5f7f8;
+
+    --secondaryColor: #f1dda5;
+    --secondaryShade1: #fae4a8;
+    --secondaryShade2: #f8b569;
+    --secondaryShade3: #efc39a;
+    --secondaryShade4: #d3792f;
+    --secondaryShade5: #e7a456;
+
+    --accentColor: #b5f0ff;
+    --accentShade1: #88bcf8;
+    --accentShade2: #ebf5f8;
+    --accentShade3: #fffbf2;
+    --accentShade4: #b6dde9;
+    --accentShade5: #b2dfdb;
+
+    --accent2Color: #ff9046;
+    --accent2Shade1: #f7d7ae;
+    --accent2Shade2: #f7d7b3;
+    --accent2Shade3: #f5b75b;
+    --accent2Shade4: #f3ae76;
+    --accent2Shade5: #866841;
+
+    --neutralShade1: #f2f2f2;
+    --neutralShade2: #e8e9e9;
+    --neutralShade3: #d1d3d4;
+    --neutralShade4: #babdbf;
+    --neutralShade5: #808488;
+    --neutralShade6: #666a6d;
+    --neutralShade7: #4d5052;
+    --neutralShade8: #212122;
+
+    --grayColor: #999;
+    --lightGrayColor: #ddd;
+
+  /*Font Families*/  
+  --headingfontfamily: "Dancing Script", serif;
+  --copyfamily: "Oswald", sans serif;
+}
+
+/*typography*/
+body {
+    font-family: var(--copyfamily);
+    color: var(--foregroundColor);
+    background-color: var(--secondaryColor);
+}
+
+h1,h2,h3,h4 {
+    font-family: var(--headingfontfamily);
+}
+
+/*Links*/
+a {
+    text-decoration: none;
+    color: var(--primaryShade1);
+
+    &.header {
+        font-size: 1.2rem;
+        color: var(--primaryColor);
+    }
+}
+
+a:hover {
+    color: var(--neutralShade8);
+    background-color: var(--primaryShade5);
+    border-bottom: 3px solid var(--primaryShade5);
+    transition: 0.5s;
+}
+
+/*Font Sizing*/
+h1 { font-size: 3.5rem;}
+h2 { font-size: 3rem;}
+h3 {font-size: 2.5rem;}
+h4 {font-size: 2.25rem;}
+p {font-size: 20px;}
+aside { font-size: 1rem;}
+
+/*Font Colors*/
+h1 { color: var(--primaryColor);}
+h2 { color: var(--primaryShade1);}
+h3 { color: var(--primaryShade1);}
+h4 { color: var(--primaryShade1);}
+p { color: var(--foregroundColor);}
+
+/*grid*/
+header {
+    display: grid;
+    place-items: center;
+}
+
+body {
+    display: grid;
+}
+
+main {
+    display: grid;
+    align-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+.headshot {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    padding: 2rem;
+    border: 5px solid var(--foregroundColor);
+    box-shadow: 6px 7px 1px 0px var(--neutralShade4);
+    background-color: var(--accent2Shade2);
+}
+
+.currently {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: left;
+}
+
+/*flex*/
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Aside*/
+aside {
+    width: 75%;
+    float: left;
+    padding: 2rem;
+    border: 5px solid var(--foregroundColor);
+    background-color: var(--accentShade1);
+}
+/*Footer*/
+footer {
+    background-color: var(--accent2Color);
+}
+
+/*@media queries*/
+@media screen and (min-width: 600px) {
+    .nav-menu {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
