@@ -178,13 +178,29 @@ a.skip-to-link {
   }
 
 /* Media Queries */
-.projects {
-    display: grid;
-    grid-template-columns: 1fr;
+
+/* Medium Screens */
+@media only screen and (min-width: 600px) {
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .work {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
 }
 
-.work {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+/* Large Screens */
+@media only screen and (min-width: 1000px) {
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .work {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
 }
