@@ -1,0 +1,259 @@
+/*skip link*/
+a.skip-to-link {
+  position: absolute;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+}
+
+a. skip-to-link:focus {
+  color: black;
+  display: inline-block;
+  height: auto;
+  width: auto;
+  position: static;
+  margin: auto;
+}
+
+/*FONT IMPORT*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* TOC =========
+    1. ROOT & BODY
+    2. TYPOGRAPHY
+    3. GENERAL BASE STYLES
+    4. GRID LAYOUTS
+    5. FLEX LAYOUTS
+    6. @media QUERIES
+*/
+
+/*  1. ROOT & BODY */
+:root {
+    --backgroundColor: #fff;
+    --foregroundColor: #111111;
+
+    /*vt maroon*/
+    --primaryColor: #861F41;
+    --primaryShade1: #ecd3db;
+    --primaryShade2: #d4a5b5;
+    --primaryShade3: #bb5879;
+    --primaryShade4: #67112d;
+    --primaryShade5: #520720;
+  
+    /*vt orange*/
+    --secondaryColor: #E5751F;
+    --secondaryShade1: #edddd2;
+    --secondaryShade2: #d5b59d;
+    --secondaryShade3: #d08348;
+    --secondaryShade4: #bf5707;
+    --secondaryShade5: #642b00;
+  
+    /*hokie stone*/
+    --accentColor: #75787b;
+    --accentShade1: #e6eaef;
+    --accentShade2: #c0c7ce;
+    --accentShade3: #84898f;
+    --accentShade4: #575a5e;
+    --accentShade5: #393b3c;
+  
+    --neutralShade1: #f2f2f2;
+    --neutralShade2: #e8e9e9;
+    --neutralShade3: #d1d3d4;
+    --neutralShade4: #babdbf;
+    --neutralShade5: #808488;
+    --neutralShade6: #666a6d;
+    --neutralShade7: #4d5052;
+    --neutralShade8: #212122;
+  
+    --grayColor: #999;
+    --lightGrayColor: #ddd;
+  
+    /* Fonts */
+    --copyFontFamily: "Roboto", sans-serif;
+    --headingFontFamily: "Cormorant Garamond", serif;
+    font-size: 18px;
+
+    /*General Color Scheme*/
+    body {
+        background: var(--backgroundColor);
+        color: var(--neutralShade8);
+      }
+}
+  
+/*  2. TYPOGRAPHY */
+  
+  /* Font Families */
+  h1,body { font-family: var(--copyFontFamily); }
+  h2,h3 { font-family: var(--headingFontFamily); }
+  
+  /* Emphasis and Bolding */
+  strong { font-weight: 500; }
+  em { font-style: italic; }
+  
+  /* Font Weight, Sizing & Spacing */
+  body {
+    font-weight: 300;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: clamp(1.1rem,1.25rem,1.5rem);
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: var(--primaryColor)
+  }
+  h2 {
+    font-weight: 500;
+    font-size: clamp(1.75rem,2rem,2.5rem);
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: var(--secondaryColor);
+    font-weight: bold;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: clamp(1.25rem,1.5rem,1.75rem);
+    line-height: 1.2;
+    text-transform: capitalize;
+  }
+  h4 {
+    font-weight: 300;
+    font-size: clamp(1.25rem,1.5rem,1.75rem);
+    line-height: 1.2;
+    font-style: italic;
+  }
+  h5 {
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+  h6 {
+    font-weight: 200;
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+  
+  a { font-weight: 500; }
+  
+  /* default links */
+  a {
+    color: var(--neutralShade8);
+    border-bottom: 2px dashed;
+    cursor: pointer;
+    transition: 0.4s;
+    text-decoration: none;
+    border-bottom-style: none;
+  }
+  a:hover {
+    color: var(--neutralShade1);
+    transition: 0.4s;
+    text-decoration: none;
+    border-bottom-style: none;
+  }
+  
+  /* primary color links */
+  a.primary {
+    color: var(--primaryColor);
+    border-bottom: 2px dashed;
+    cursor: pointer;
+    transition: 0.4s;
+    text-decoration: none;
+    border-bottom-style: none;
+  }
+  a.primary:hover {
+    color: var(--primaryShade1);
+    background-color: var(--primaryShade4);
+    border-bottom: 3px solid var(--secondaryColor);
+    transition: 0.4s;
+  }
+  
+  /* secondary color links */
+  a.secondary {
+    color: var(--secondaryShade5);
+    border-bottom: 2px dashed;
+    cursor: pointer;
+    transition: 0.4s;
+    text-decoration: none;
+  }
+  a.secondary:hover {
+    color: var(--secondaryShade1);
+    background-color: var(--secondaryShade5);
+    border-bottom: 3px solid var(--primaryColor);
+    transition: 0.4s;
+  }
+  
+  main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem;
+  }
+
+/*  3. GENERAL BASE LAYOUTS */
+
+/*header*/
+header {
+  background-image: url(assets/images/goldstein_group_photo_4032x3024.png);
+  background-size: cover;
+  height: 90vh;
+  min-width: fit-content;
+  background-attachment: fixed;
+  z-index: 0;
+
+  h2, h3 {
+    max-width: 1000px;
+    margin: auto;
+    text-align: right;
+    position: relative;
+    top: 15vh;
+    font-weight: bold;
+    padding: 15px 50px 15px 50px;
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 100%;
+  }
+
+  h2{
+    font-family: var(--copyFontFamily);
+    text-shadow: 0px 2px 4px #111111;
+    font-size: xxx-large;
+  }
+}
+
+/*navigation*/
+.navbar > li {
+  display: inline-flex;
+  align-items: end;
+  font-size: 16px;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.navbar {
+  padding-inline-start: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  overflow: auto;
+  height: auto;
+  background-color: #fff;
+  align-items: baseline;
+  box-shadow: 0px 4px 6px #111111;
+  z-index: 1;
+  h1 {
+    padding: 7px 5px 7px 10px;
+  }
+}
+
+/*spacing after nav*/
+header, main {
+  margin-top: 70px;
+}
