@@ -98,7 +98,6 @@ a {
   }
 
   &.header-link {
-    font-size: 2rem;
     color: var(--neutralShade1);
 
     &:hover {
@@ -209,6 +208,10 @@ footer {
     padding: 10%;
   }
 
+  h1 { font-size: 4rem; }
+  
+  a.header-link { font-size: 2rem; }
+
   /* GRID LAYOUTS============ */
   .page-section {
     display: grid;
@@ -247,7 +250,7 @@ footer {
 
 @media screen and (min-width: 900px) {
   /* FONT SIZING */
-  h1 { font-size: 2.5rem; }
+  h1 { font-size: 5rem; }
   h2 { 
     font-size: 4rem; 
     margin-block-start: 0px;
