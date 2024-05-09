@@ -184,9 +184,7 @@ a.skip-to-link:focus {
   }
   
   main {
-    max-width: 1000px;
     margin: auto;
-    padding: 1rem;
   }
 
 /*  3. GENERAL BASE LAYOUTS */
@@ -255,7 +253,7 @@ nav {
 
 /*spacing after nav*/
 header, main {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 /*footer grid names*/
@@ -324,18 +322,61 @@ footer {
 
 /*Home Page*/
 .aboutus {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.aboutimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.homecontent {
+  position: relative;
+  z-index: 0;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  p {
+    color: #fff;
+  }
+}
+
+.homebottom {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Trying something diff
+.aboutus {
+  margin: 0;
   .aboutimg {
     width: 100%;
-    height: 50px;
-    object-fit: contain;
+    object-fit: cover;
     margin: 0;
     padding: 0;
     position: relative;
   }
 }
 
+.homecontent {
+
+}*/
+
 /*Group Page*/
 .group {
+  margin-top: 70px;
+  padding: 20px;
+  max-width: 1000px;
+
   img {
     display: block;
     max-width: 80%;
@@ -387,4 +428,25 @@ footer {
     overflow: hidden; 
     border-radius: 50%;
   }
+}
+
+/*Research Page*/
+.researchpage {
+  margin-top: 70px;
+  padding: 20px;
+  max-width: 1000px;
+}
+
+/*publications*/
+.pubs {
+  margin-top: 70px;
+  padding: 20px;
+  max-width: 1000px;
+}
+
+/*news*/
+.newspage {
+  margin-top: 70px;
+  padding: 20px;
+  max-width: 1000px;
 }
