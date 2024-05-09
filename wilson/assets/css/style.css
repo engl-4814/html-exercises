@@ -134,17 +134,23 @@ p,ul,ol {
 }
 
 .topnav a {
-  float: left;
+  /* float: left; */
+  /* should be using your variables here for colors */
   color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+  color: var(--neutralShade1);
+  /* text-align: center;
+  padding: 14px 16px; */
+  padding: 1rem;
   text-decoration: none;
-  font-size: 17px;
+  /* font-size: 17px; */
 }
 
 .topnav a:hover {
+  /* Again, why not use your vars? */
   background-color: #5bbef3;
   color: #322076;
+  background-color: var(--accent3Shade1);
+  color: var(--accent3Shade5);
 }
 
 .topnav a.active {
@@ -160,6 +166,8 @@ img {
   height: 100%;
 }
 
+
+/* You should change this comment/heading to suite your context. */
 /* GRID WORK, YO!
 ==================*/
 
@@ -167,9 +175,10 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-#main {
+/* I would refrain from centering all the text, as per the CRAP design assignment */
+/* #main {
   text-align: center;
- }
+ } */
 
 .flex {
   display: flex;
@@ -178,37 +187,92 @@ main {
   padding-right: 10%;
   
 }
+.flex__main_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /*use this instead of padding for uniformity*/
 
-.displayFirst{
+  /* Two flex items are sections */
+  &> section {
+    flex: 1 1 250px;
+
+    .flex_item__main_img_container {
+      /* fixed height for the cover effect */
+      height: 400px;
+
+      img { object-fit: cover; }
+    }
+  }
+}
+
+/*
+
+These weren't doing much, which the inspection tool would help you see.
+
+The width 500px was tripping you pu however, because those absolute values will break out of any screen or container less than 500px
+
+*/
+/* .displayFirst{
   width: 100%;
 }
 
 
 .displaySecond {
-  /* flex-wrap: wrap; */
   display: inline-block;
   width: 500px;
   position: center;
   padding-left: 20%;
+} */
+
+
+/* In your case, I think things look pretty good until a large to larger screen size. After about 1000-1100px, the banner gets a bit too large IMO. In that case, you could create a class to put on the body tag, so all of the landmarks could become grid items to place in a different manner. */
+
+/* mobile-first design uses mainly min-width checks to scale up from the mobile sizing */
+@media screen and (min-width: 1050px) {
+  /* grid item areas */
+  .grid__large_page_layout {
+    &> nav { grid-area: nav; }
+    &> header { grid-area: hdr; }
+    &> main { grid-area: main; }
+    &> aside { grid-area: asd; }
+    &> footer { grid-area: ftr; }
+  }
+
+  .grid__large_page_layout {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+    "nav hdr hdr hdr hdr hdr"
+    "nav hdr hdr hdr hdr hdr"
+    "nav main main main main main"
+    "nav main main main main main"
+    "nav asd asd ftr ftr ftr"
+    ;
+  }
+
+  /* Adjust the nav items to new context */
+  .topnav a {
+    display: block;
+    text-align: left;
+  }
 }
 
-
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   .displaySecond {
     position: center;
     width: 400px;
     padding-left: 10%;
     padding-right: 15%;
   }
-}
+} */
 
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
   .displaySecond {
     position: center;
     width: 200px;
     padding-left: 10%;
     padding-right: 15%;
   }
-}
+} */
 

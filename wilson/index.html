@@ -14,77 +14,105 @@
 <body>
   <a hidden href="#main" class="skip-to-link">Skip to content</a>
 
-  <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="about-me.html">About Me</a>
-    <a href="workout.html">Workouts</a>
-    <a href="nutrition.html">Nutrition</a>
-  </div>
+  <div class="grid__large_page_layout">
 
-  <header role="banner" id="main" aria-label="Staying Fit">
-    <h1>Staying Fit</h1>
-  </header>
+    <!-- This nav is definitely copy-pasted code. We reviewed how to structure nav menus with HTML; esp. with the nav element. Plus, I noted how the flexbox work can be useful here. In a learning environment, please be cautious about such actions, as this really does border on plagiarism, since you do not know how this functions. -->
+    <!-- <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="about-me.html">About Me</a>
+      <a href="workout.html">Workouts</a>
+      <a href="nutrition.html">Nutrition</a>
+    </div> -->
+    <nav role="navigation" aria-label="Primary navigation" class="topnav">
+      <!-- #home goes to the inbound ID of 'home'. This is meant to be a path back to the main home page of index.html instead -->
+      <!-- <a class="active" href="#home">Home</a> -->
+      <a class="active" href="index.html">Home</a>
+      <a href="about-me.html">About Me</a>
+      <a href="workout.html">Workouts</a>
+      <a href="nutrition.html">Nutrition</a>
+    </nav>
 
-
-  <main role="main" id="main" class="flex">
-    <header class="displayFirst">
-      <img src="assets/images/workout/strength-training-600x400.jpg" alt="Man and Woman Workingout"
-           width="600"height="400"
-           srcset="assets/images/workout/strength-training-300x200.jpg 300w,
-                assets/images/workout/strength-training-600x400.jpg 600w,
-                assets/images/workout/strength-training-1200x800.jpg 1200w">
+    <header role="banner" id="main" aria-label="Staying Fit">
+      <h1>Staying Fit</h1>
+      <!-- That image is really a hero banner, so it belongs semantically within the banner of the page. The div also affords you some more control over its sizing -->
+      <div>
+        <img src="assets/images/workout/strength-training-600x400.jpg"
+            alt="Man and Woman Workingout"
+            width="600"height="400"
+            srcset="assets/images/workout/strength-training-300x200.jpg 300w,
+                    assets/images/workout/strength-training-600x400.jpg 600w,
+                    assets/images/workout/strength-training-1200x800.jpg 1200w">
+      </div>
     </header>
-    <section role="region" aria-labelledby="workout">
-     <div class="displaySecond">   
-      <h2 id="workout"> Workout</h2>
-         <p> 
-           All about workouts      
-         </p>
-        <img src="assets/images/workout/cardio-class-600x387.jpg" alt="Men and Women in Cardio Class"
-        width="600"height="387"
-        srcset="assets/images/workout/cardio-class-300x194.jpg 300w,
-                assets/images/workout/cardio-class-600x387.jpg 600w,
-                assets/images/workout/cardio-class-1200x774.jpg 1200w">
 
+    <!-- You'll want to be more specific with your class names. I noted how you can hyphenate or use underscores to separate some words. The basic scheme was function+context, so flex__main_container is an example -->
+    <!-- <main role="main" id="main" class="flex"> -->
+    <main role="main" id="main" class="flex__main_container">
+      <!-- <header class="displayFirst">
+        <img src="assets/images/workout/strength-training-600x400.jpg" alt="Man and Woman Workingout"
+            width="600"height="400"
+            srcset="assets/images/workout/strength-training-300x200.jpg 300w,
+                  assets/images/workout/strength-training-600x400.jpg 600w,
+                  assets/images/workout/strength-training-1200x800.jpg 1200w">
+      </header> -->
+      <section role="region" aria-labelledby="workout">
+        <!-- <div class="displaySecond">    -->
+        <h2 id="workout"> Workout</h2>
+        <p>
+          All about workouts
+        </p>
+        <div class="flex_item__main_img_container">
+          <img src="assets/images/workout/cardio-class-600x387.jpg" alt="Men and Women in Cardio Class"
+          width="600"height="387"
+          srcset="assets/images/workout/cardio-class-300x194.jpg 300w,
+                  assets/images/workout/cardio-class-600x387.jpg 600w,
+                  assets/images/workout/cardio-class-1200x774.jpg 1200w">
+        </div>
         <p>
           <a href="workout.html">Learn more about workouts</a>
         </p>
-     </div>
-    </section>
+        <!-- </div> -->
+      </section>
 
 
-    <section role="region" aria-labelledby="nutrition">
-     <div class="displaySecond">
-      <h2 id="nutrition" > Nutrition</h2>
+      <section role="region" aria-labelledby="nutrition">
+        <!-- <div class="displaySecond"> -->
+        <h2 id="nutrition" > Nutrition</h2>
         <p>
           All about nutrition
-        </p>   
-      <img src="assets/images/nutrition/food-heart-600x375.jpg 600w" alt="Food in heart"
-      width="600"height="375"
-      srcset="assets/images/nutrition/food-heart-300x188.jpg 300w,
-              assets/images/nutrition/food-heart-600x375.jpg 600w,
-              assets/images/nutrition/food-heart-1200x750.jpg 1200w">
-        <p>
-          <a href="nutrition.html">Learn more about nutrition</a>
         </p>
-     </div> 
-    </section>
-  </main>
+        <div class="flex_item__main_img_container">
+          <img src="assets/images/nutrition/food-heart-600x375.jpg 600w" alt="Food in heart"
+        width="600"height="375"
+        srcset="assets/images/nutrition/food-heart-300x188.jpg 300w,
+                assets/images/nutrition/food-heart-600x375.jpg 600w,
+                assets/images/nutrition/food-heart-1200x750.jpg 1200w">
+        </div>
 
+          <p>
+            <a href="nutrition.html">Learn more about nutrition</a>
+          </p>
+        <!-- </div> -->
+      </section>
+    </main>
 
-  <aside role="complementary" aria-labelledby="calculator">
-    <h2 id="calculator"> Calculator </h2> 
-    <p>
-      <a href="https://www.verywellfit.com/recipe-nutrition-analyzer-4157076" target="_blank"> calculator </a>
-    </p>
-  </aside>
-  <footer id="resources" role="contentinfo" aria-labelledby="footer">
+    <aside role="complementary" aria-labelledby="calculator">
+      <h2 id="calculator">Calculator</h2>
+      <p>
+        <a href="https://www.verywellfit.com/recipe-nutrition-analyzer-4157076" target="_blank">Calculator</a>
+      </p>
+    </aside>
+
+    <!-- There's no element with the ID of "footer" for the labelledby -->
+    <footer id="resources" role="contentinfo" aria-labelledby="footer">
+      <!-- should be an h2, since it's in a new context -->
       <h3>Contact</h3>
       <p>
-          Email: elizabethw22@vt.edu<br>
-          Phone: 703-576-7001
+          Email: test@vt.edu<br>
+          Phone: 555-555-555
       <p>
       <p>Copyright. All rights reserved.</p>
-  </footer>
+    </footer>
+  </div>
 </body>
 </html>
