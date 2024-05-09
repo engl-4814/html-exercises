@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Kayla Roberts">
-    <title>Roberts</title>
+    <title>Kayla Roberts: A Portfolio</title>
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 	<a href="#main" class="skip-to-link">skip to content</a>
@@ -20,34 +21,35 @@
 	<main id="main">
 		<section role="region" aria-labelledby="purpose">
 			<h2 id="purpose">Website Purpose</h2>
-				<p>Here's why I made this website: Lorem ipsum dolor sit amet</p>
+				<p>Kayla created this website as part of her final technical writing class at Virginia Tech. In addition to showcasing her creative and technical works, this website is itself a prime example of the skills she developed in her undergraduate studies.</p>
 		</section>
 		<section role="region" aria-labelledby="photos">
 			<h2 id="photos">Visual Introduction</h2>
+			  <img src="https://placehold.co/300x200" alt="placeholder">
 				<p>Headshot</p>
-			<img src="assets/images/conference-photo-1200x800.jpg"
-			 		alt="Photo of Kayla Roberts (right) and a classmate (left) at a conference."
+			  <img src="assets/images/conference-photo-1200x800.jpg"
+			 		alt="Photo of Kayla Roberts (right) and a classmate (left) at an English conference."
 				 	width="1200" height="800"
-			 		srcset="assets/images/conference-photo-600x400.jpg 600w,
-					 assets/images/conference-photo-1200x800.jpg 1200w,
-					 assets/images/conference-photo-2400x1600.jpg 2400w"/>
+			 		srcset="assets/images/english-conference-literature-kayla-roberts-600x400.jpg 600w,
+					 assets/images/english-conference-literature-kayla-roberts-1200x800.jpg 1200w,
+					 assets/images/english-conference-literature-kayla-roberts-2400x1600.jpg 2400w"/>
+				<p>Pictured above: Virginia Tech English Undergraduate Excellence Conference 2023</p>
 		</section>
-		<section role="region" aria-labelledby="biography">
+		<section role="region" aria-labelledby="education">
 			<h2 id="biography">About Me</h2>
 				<h3>Education</h3>
 				<ul>
-					<li>High School Graduate - 2021</li>
+					<li>B.A. English Literature - 2024</li>
+					<li>Minor in Professional and Technical Writing - 2024</li>
 					<li>Associate Certificate in General Studies - 2022</li>
-					<li>Bachelor's Degree in English Literature - 2024</li>
-				<ul class="minor">
-					<li>Minor in Professional and Technical Writing</li>
-				</ul>
+					<li>High School Graduate - 2021</li>
 				</ul>
 				<h3>Experience</h3>
 					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
 		</section>
 	</main>
-	<footer role="contentinfo">
+	<!-- Consider an aria label that uses that h2. There can be multiple footers, and this one nicely has your contact info, so you could label it as such.  -->
+	<footer role="contentinfo" aria-label="contact-info">
 		<h2>Contact Me</h2>
 			<ul>
 				<li>Phone: 540-818-3481</li>

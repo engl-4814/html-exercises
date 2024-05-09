@@ -1,0 +1,176 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=WindSong:wght@400;500&display=swap');
+
+/* TOC ============
+  1. ROOT
+  2. TYPOGRAPHY
+  3. BASE STYLES
+  4. GRID LAYOUTS
+  5. FLEX COMPONENTS
+  6. @MEDIA QUERIES */
+
+/* ROOT & BODY */
+:root {
+  font-size: 18px;
+
+  --backgroundColor: #F2F2F2;
+  --foregroundColor: #010A1F;
+
+  --primaryColor: #FF0000;
+  --primaryShade1: #D52323;
+  --primaryShade2: #E20000;
+  --primaryShade3: #332B2B;
+  --primaryShade4: #553939;
+  --primaryShade5: #804040;
+
+  --secondaryColor: #012978;
+  --secondaryShade1: #0246CF;
+  --secondaryShade2: #023CB1;
+  --secondaryShade3: #013293;
+  --secondaryShade4: #012877;
+  --secondaryShade5: #011F5B;
+
+  --accentColor: #D9D9D9;
+  --accentShade1: #E3E3E3;
+  --accentShade2: #C7C7C7;
+  --accentShade3: #BCBCBC;
+  --accentShade4: #A9A9A9;
+  --accentShade5: #525252;
+
+  --accent2Color: #333333;
+  --accent2Shade1: #5A5A5A;
+  --accent2Shade2: #3E3E3E;
+  --accent2Shade3: #5A5A5A;
+  --accent2Shade4: #202020;
+  --accent2Shade5: #222222;
+
+  --accent3Color: #F2E7BB;
+  --accent3Shade1: #F2D9BB;
+  --accent3Shade2: #D9B79A;
+  --accent3Shade3: #A6836F;
+  --accent3Shade4: #735E51;
+  --accent3Shade5: #0D0D0D;
+
+  --neutralShade1: #A73131;
+  --neutralShade2: #CB3B3B;
+  --neutralShade3: #AE3333;
+  --neutralShade4: #922A2A;
+  --neutralShade5: #762222;
+  --neutralShade6: #5A1A1A;
+  --neutralShade7: #3E1212;
+  --neutralShade8: #220A0A;
+
+  --grayColor: #999;
+  --lightGrayColor: #ddd;
+
+  /* Font Families */
+  --headingFamily: "Windsong";
+  --subtitleFamily: "Josefin Slab", serif;
+  --copyFamily: "Nunito", sans serif;
+}
+
+body {
+  font-family: var(--copyFamily);
+  color: var(--foregroundColor);
+  background-color: var(--backgroundColor);
+}
+
+/* 2. TYPOGRAPHY ============*/
+h1 { font-family: var(--headingFamily); }
+h2, h3 { font-family: var(--subtitleFamily); }
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: var(--secondaryShade1);
+  text-decoration: none;
+  transition: 0.25s;
+
+  &:hover {
+    text-decoration: solid;
+    background-color: var(--secondaryShade4);
+    color: var(--backgroundColor);
+    transition: 0.25s;
+  }
+
+  &.header-link {
+    font-size: 1.1rem;
+    color: var(--accent3Shade4);
+
+    &:hover {
+      color: var(--accent3Color);
+      background-color: var(--primaryShade5);
+    }
+  }
+}
+
+
+/* FONT SIZING */
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+
+
+/* FONT COLORS 
+double check accessibility of colors*/
+h1 { color: var(--secondaryShade5); }
+h2 { color: var(--neutralShade3); }
+h3 { color: var(--accent3Shade5); }
+p { color: var(--foregroundColor); }
+
+
+
+
+/* 3. BASE STYLES============ */
+/* IMAGES */
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* SKIP TO LINK */
+a.skip-to-link {
+  position: absolute;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  top:auto;
+}
+
+a.skip-to-link:focus {
+  color: black;
+  display: inline-block;
+  height: auto;
+  width: auto;
+  position: static;
+  margin: auto;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--lightGrayColor);
+}
+
+
+/* LIST STYLE */
+li { list-style-type: none; }
+
+
+/* 4. GRID LAYOUTS============ */
+
+
+/* 5. FLEX COMPONENTS */
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+/* @MEDIA QUERIES */
+@media screen and (min-width: 600px) {
+  .nav-menu {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
