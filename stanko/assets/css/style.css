@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Yeseva+One&display=swap');
+
+:root {
+--copyFontFamily: "Open Sans", sans-serif;
+--headingFontFamily: "Yeseva One", serif;
+font-size: 20px;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 55px;
+}
+
+.home_flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 3000px;
+}
+
+.about_me {
+    max-width: 545px;
+    align-self: center;
+}
+
+.headshot {
+    align-items: center;
+}
+
+.interests {
+    max-width: 545px;
+    align-self: center;
+}
+
+.contact {
+    max-width: 545px;
+    align-self: center;
+}
+
+.resume_flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 3000px;
+}
+
+.my_resume {
+    align-self: center;
+}
+
+body {font-family: var(--copyFontFamily); }
+h1, h2, h3 {font-family: var(--headingFontFamily);}

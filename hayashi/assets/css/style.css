@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=WindSong:wght@400;500&display=swap');
 
 /* TOC ============
-  1. ROOT
+  1. ROOT & BODY
   2. TYPOGRAPHY
   3. BASE STYLES
   4. GRID LAYOUTS
@@ -73,7 +73,9 @@ body {
   font-family: var(--copyFamily);
   color: var(--foregroundColor);
   background-color: var(--backgroundColor);
+  padding: 1%;
 }
+
 
 /* 2. TYPOGRAPHY ============*/
 h1 { font-family: var(--headingFamily); }
@@ -94,8 +96,7 @@ a {
   }
 
   &.header-link {
-    font-size: 1.1rem;
-    color: var(--accent3Shade4);
+    color: var(--neutralShade1);
 
     &:hover {
       color: var(--accent3Color);
@@ -111,11 +112,10 @@ h2 { font-size: 1.5rem; }
 h3 { font-size: 1.25rem; }
 
 
-/* FONT COLORS 
-double check accessibility of colors*/
+/* FONT COLORS */
 h1 { color: var(--secondaryShade5); }
-h2 { color: var(--neutralShade3); }
-h3 { color: var(--accent3Shade5); }
+h2 { color: var(--secondaryShade4); }
+h3 { color: var(--neutralShade7); }
 p { color: var(--foregroundColor); }
 
 
@@ -150,6 +150,12 @@ a.skip-to-link:focus {
 /* FOOTER */
 footer {
   background-color: var(--lightGrayColor);
+  padding: 10%;
+}
+
+/* HEADER */
+header {
+  background-color: var(--lightGrayColor);
 }
 
 
@@ -157,20 +163,121 @@ footer {
 li { list-style-type: none; }
 
 
-/* 4. GRID LAYOUTS============ */
+/* 4. GRID LAYOUTS============  */
+/* GRID AREA NAMES */
+.main-heading { grid-area: vertical-heading; }
+.title { grid-area: main-heading; }
+.image { grid-area: thumbnail; }
+.review { grid-area: words; }
 
 
-/* 5. FLEX COMPONENTS */
+.page-section {
+  display: grid;
+  grid-template-columns: 4fr;
+  grid-template-areas: 
+    "vertical-heading"
+    "main-heading"
+    "thumbnail"
+    "words";
+}
+
+
+/* 5. FLEX COMPONENTS============  */
 .nav-menu {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
-/* @MEDIA QUERIES */
+footer { 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+/* 6. @MEDIA QUERIES============  */
 @media screen and (min-width: 600px) {
+
+  h2 { 
+    writing-mode: vertical-lr; 
+    font-size: 3rem;
+    padding: 10%;
+  }
+
+  h1 { font-size: 4rem; }
+  
+  a.header-link { font-size: 2rem; }
+
+  /* GRID LAYOUTS============ */
+  .page-section {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+      "vertical-heading main-heading"
+      "vertical-heading thumbnail"
+      "vertical-heading words";
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+
+    /* DEFINE GRID AREA & MARGINS */
+    h2 { grid-area: title; }
+    div { grid-area: body; }
+    section { grid-area: contact; }
+    p { 
+      grid-area: copyright; 
+      margin-inline: 12px;
+    }
+
+    grid-template-areas: 
+      "title body"
+      "copyright contact";
+  }
+
+  /* FLEX COMPONENTS */
   .nav-menu {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  /* FONT SIZING */
+  h1 { font-size: 5rem; }
+  h2 { 
+    font-size: 4rem; 
+    margin-block-start: 0px;
+  }
+  h3 { font-size: 1.75rem; }
+  p { font-size: 1.25rem; }
+
+
+  /* GRID LAYOUTS============ */
+  body {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 1%;
+
+    header {
+      grid-column: 1 / -1;
+    }
+  }
+
+  .page-section {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+
+
+  /* FOOTER */
+  #personal-information { writing-mode: horizontal-tb; }
+
+  footer {
+    display: flex;
+    align-items: start;
   }
 }

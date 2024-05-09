@@ -166,4 +166,41 @@ a.secondary:hover {
   transition: 0.4s;
 }
 
+/*==========
+  Skip To Link
+===========*/
+a.skip-to-link {
+    position: absolute;
+    left: -999px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+  }
+
 /* Media Queries */
+
+/* Medium Screens */
+@media only screen and (min-width: 600px) {
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .work {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Large Screens */
+@media only screen and (min-width: 1000px) {
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .work {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
