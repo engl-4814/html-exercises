@@ -67,8 +67,6 @@
   --headingFamily: "Windsong";
   --subtitleFamily: "Josefin Slab", serif;
   --copyFamily: "Nunito", sans serif;
-
-  /* CODE IN STRONG & EM */
 }
 
 body {
@@ -114,8 +112,7 @@ h2 { font-size: 1.5rem; }
 h3 { font-size: 1.25rem; }
 
 
-/* FONT COLORS 
-double check accessibility of colors*/
+/* FONT COLORS */
 h1 { color: var(--secondaryShade5); }
 h2 { color: var(--secondaryShade4); }
 h3 { color: var(--neutralShade7); }
