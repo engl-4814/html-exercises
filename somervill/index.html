@@ -11,7 +11,7 @@
 </head>
 <body>
   <a href="#main" class="skip-to-link">Skip to content</a>
-  <nav class="nav" role="navigation" aria-label="Main navigation">
+  <nav class= "nav" role="navigation" aria-label="Main navigation">
     <ul class="navbar">
       <li><a href="index.html">Home</a></li>
       <li><a href="group.html">Group Members</a></li>
@@ -37,8 +37,8 @@
     </div>
   </header>
   <main role="main" aria-labelledby="research-background">
-    <div>
-      <h2 id="research-background">About our Research</h2>
+    <div class="aboutus">
+      <!--only one image
       <img src="assets/images/bone_engineering_cells_research_387x386.png" 
         alt="image of bone cells with flourescent staining"
         width="387" height="386"
@@ -46,34 +46,43 @@
                 assets/images/bone_engineering_cells_research_201x200.png 200w,
                 assets/images/bone_engineering_cells_research_116x116.png 116w"
       />
-      <img src="assets/images/bone_tissue_cells_research_goldstein_385x385.png" 
+      -->
+      <img class="aboutimg" src="assets/images/bone_tissue_cells_research_goldstein_385x385.png" 
         alt="second image of bone cells with flourescent staining after some period of time"
         width="385" height="385"
         srcset="assets/images/bone_tissue_cells_research_goldstein_385x385.png 385w,
                 assets/images/bone_tissue_cells_research_goldstein_200x200.png 200w,
                 assets/images/bone_tissue_cells_research_goldstein_116x116.png 116w"
       />
-      <p>
-        An estimated 2.2 million orthopedic procedures involving bone grafts are performed annually worldwide. While small breaks can heal on their own, severe injuries cannot and require surgical intervention. Current solutions, such as autologous and allogenic grafts, have inherent limitations due to supply and risks associated with disease. Goldstein's research group aims to create a bioactive, tissue engineered scaffold &#40;TENGS&#41; that will aid in the regeneration process and overcome current challenges. Current projects investigate poly&#40;1,8 octane-diol&#41; co-citric acid, polyurethanes, and poly&#40;glycerol sebacate&#41;. We are creating 3-dimensional TENGS in addition to micro-fibrous meshes for varying orthopedic applications. Once the scaffols are fabricated, the students are able to test their mechanical, biological, and chemical properties using methods such as tensile tests, DSC, cell culturing, etc. 
-      </p>
-      <!--what is the proper way to add citations??-->
+      <div class="homecontent">
+        <h2 id="research-background">About</h2>
+        <p>
+          An estimated 2.2 million orthopedic procedures involving bone grafts are performed annually worldwide. While small breaks can heal on their own, severe injuries cannot and require surgical intervention. Current solutions, such as autologous and allogenic grafts, have inherent limitations due to supply and risks associated with disease. Goldstein's research group aims to create a bioactive, tissue engineered scaffold &#40;TENGS&#41; that will aid in the regeneration process and overcome current challenges. Current projects investigate poly&#40;1,8 octane-diol&#41; co-citric acid, polyurethanes, and poly&#40;glycerol sebacate&#41;. We are creating 3-dimensional TENGS in addition to micro-fibrous meshes for varying orthopedic applications. Once the scaffols are fabricated, the students are able to test their mechanical, biological, and chemical properties using methods such as tensile tests, DSC, cell culturing, etc. 
+        </p>  
+        <h2>Interested in joining the team?</h2>
+        <p>
+          Contact Dr. Goldstein at <a href="goldst@vt.edu">goldst@vt.edu</a>
+        </p> 
+      </div>
     </div>
-    <section role="region" aria-labelledby="research-interest">
-      <h2>Interested in joining the team?</h2>
-      <p>
-        Contact Dr. Goldstein at goldst@vt.edu <!--make his email a link for the students to click on-->
-      </p>  
-    </section>
+     
   </main>
   <footer role="contentinfo" aria-labelledby="research-resources">
     <h2 id="research-resources">Resources</h2> <!--resources for users to find more about goldstein and research at VT-->
-    <ul>
-      <li>goldst@vt.edu</li>
-      <li><a href="https://che.vt.edu/People/faculty/Goldstein.html">Virginia Tech Faculty Page</a></li>
-      <li>240 Kelly Hall, Blacksburg VA 24060</li> <!--fix this address is incorrect-->
-      <li><!--add link to undergrad research pages--></li>
-    </ul>
-    <p>2024 Copyright</p>
+    <div class="footermain">
+      <div class="footerinfo">
+        <ul>
+          <li>240 Kelly Hall, Blacksburg VA 24060</li>
+          <li><a class="primary" href="https://che.vt.edu/People/faculty/Goldstein.html">Virginia Tech Faculty Page</a></li>
+          <li>goldst@vt.edu</li>
+        </ul>
+      </div>
+      <div class="fimgs">
+        <img class="footerimg1" src="assets/images/logo-white-black.svg" alt="vtlogo">
+        <img class="footerimg2" src="assets/images/vt-campuses.svg" alt="vt diagram">
+      </div>
+    </div>
+    <p class="footercc">© 2024 Lucy Somervill. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
