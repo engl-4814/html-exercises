@@ -12,12 +12,12 @@
     --primaryShade4: #acd7ee;
     --primaryShade5: #f5f7f8;
 
-    --secondaryColor: #f1dda5;
-    --secondaryShade1: #fae4a8;
+    --secondaryColor: #d2792f;
+    --secondaryShade1: #e7a456;
     --secondaryShade2: #f8b569;
     --secondaryShade3: #efc39a;
-    --secondaryShade4: #d3792f;
-    --secondaryShade5: #e7a456;
+    --secondaryShade4: #fae4a8;
+    --secondaryShade5: #f1dda5;
 
     --accentColor: #b5f0ff;
     --accentShade1: #88bcf8;
@@ -27,11 +27,11 @@
     --accentShade5: #b2dfdb;
 
     --accent2Color: #ff9046;
-    --accent2Shade1: #f7d7ae;
-    --accent2Shade2: #f7d7b3;
-    --accent2Shade3: #f5b75b;
-    --accent2Shade4: #f3ae76;
-    --accent2Shade5: #866841;
+    --accent2Shade1: #f5b75b;
+    --accent2Shade2: #f3ae76;
+    --accent2Shade3: #866841;
+    --accent2Shade4: #f7d7b3;
+    --accent2Shade5: #f7d7ae;
 
     --neutralShade1: #f2f2f2;
     --neutralShade2: #e8e9e9;
@@ -54,7 +54,7 @@
 body {
     font-family: var(--copyfamily);
     color: var(--foregroundColor);
-    background-color: var(--secondaryColor);
+    background-color: var(--secondaryShade5);
 }
 
 h1,h2,h3,h4 {
