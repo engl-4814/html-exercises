@@ -8,81 +8,125 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <!-- You need to put the ID of "main" on the element  -->
     <a href="#main" class="skip-to-link">Skip to content</a>
-    <header role="banner" aria-label="Home page of Justine Allyn's personal digital portfolio">
-        <h1>Justine Allyn</h1>
-    </header>
-    <nav role="navigation" aria-label="Main navigation">
-        <ul class="nav-menu">
-            <li><a href="index.html" class="header-link">Home</a></li>
-            <li><a href="./resume.html" class="header-link">Resume</a></li>
-            <li><a href="career.html" class="header-link">Career Goals</a></li>
-            <li><a href="idustry.html" class= "header-link">Industry Projects</a></li>
-        </ul>
-    </nav>
-    <main role="main" aria-label="Welcome">
-        <section role="region" aria-labelledby="introduction">
-            <div
-            class="grid-container">   
-                <h2>Welcome Into My Life!</h2>
-                <p>
-                    Hello Everyone! My name is Justine Allyn, thank you for visiting my site and taking a look into my life!
-                </p>
+
+    <div class="grid__main_layout_container">
+
+        <header role="banner" aria-label="Home page of Justine Allyn's personal digital portfolio">
+            <h1>Justine Allyn</h1>
+        </header>
+
+        <nav role="navigation" aria-label="Main navigation">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="header-link">Home</a></li>
+                <li><a href="./resume.html" class="header-link">Resume</a></li>
+                <li><a href="career.html" class="header-link">Career Goals</a></li>
+                <li><a href="idustry.html" class= "header-link">Industry Projects</a></li>
+            </ul>
+        </nav>
+
+        <!-- label not quite informative enough. What content should people expect to read in the main? -->
+        <main role="main" aria-label="Welcome">
+            <!-- there is no ID of "introduction" for the labelled-by -->
+            <section class="flex__1_1_container" role="region" aria-labelledby="introduction">
+                <div
+                class="grid-container">
+                    <h2>Welcome Into My Life!</h2>
+                    <p>
+                        Hello Everyone! My name is Justine Allyn, thank you for visiting my site and taking a look into my life!
+                    </p>
+                </div>
+                <div class="headshot">
+                    <!-- source is for the picture element -->
+                    <!-- <source media="(max-width:200px)" srcset="assets/images/headshot400x600.jpg"/> -->
+                    <!-- removed id repeating the headshot class name (id="headshot") -->
+                    <img src="assets/images/headshot400x600.jpeg"
+                        width="400" height="600"
+                        srcset="assets/images/headshot400x600.jpeg 400px,
+                                assets/images/headshot100x150.jpeg 100px,
+                                assets/images/headshot900x1350,jpeg 900px"
+                    alt="Headshot of Justine infront of Hokie Stone"/>
+                </div>
+            </section>
+            <section role="region" aria-labelledby="currently">
+                <div
+                class="currently">
+                    <h3 id="currently">Current Status</h3>
+                    <p>
+                        I am a Junior at Virginia Tech studying Agribusiness Management with a minor in both Organizational Leadership and Professional and Technical Writing. I plan to graduate from Virginia Tech in May 2025. Upon my graduation, I aspire to attend law school with a specialization in agricultural law. In order to work towards this goal, I am currently an undergraduate research assistant working on extension publications regarding land leasing. Aside from education, I own and show registered Holstein dairy cattle all over North America alongside my parents, owners and operators of Allyndale Holsteins. I take part in daily management, show preperation, breeding selection, and marketing/sale.
+                    </p>
+                    <h4>How I Created This Site</h4>
+                    <p>
+                        As mentioned apart of my education, I have a minor in Professional and Technical Writing. I enrolled in a Online Developement course Spring 2024 and was tasked with creating a website using html. Being completely alien to any coding content, I am growing my experience and skills with html and technological accessability.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Restructured as card component. I question the aside approach here, as it seems pretty pertinent to your main page. Also, there's no label for the landmark. -->
+
+        <aside role="complementary">
+            <!-- would be h2 since new landmark context -->
+            <h2>Recent Activities!</h2>
+            <p>
+                Blurb about this section. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda magni sint fuga molestias molestiae provident! Tempore eum est placeat aut asperiores facilis suscipit ratione iusto distinctio, ipsa esse odit hic.
+            </p>
+            <div class="flex__acts_card_container">
+                <div>
+                    <h3>Research Assistantship</h3>
+                    <div>
+                        <div class="acts__media_container">
+                            <img src="https://placehold.it/500x500"
+                             width="500" height="500"
+                             alt="Example card photo">
+                        </div>
+                        <div>
+                            <p>
+                                During the Spring Semester 2024, I was enrolled in 19 credits along with undergraduate research assistance with Professor Jen Freidel.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Cool Cow Stuff!</h3>
+                    <div>
+                        <div class="acts__media_container">
+                            <img src="assets/images/bright-luncrest-justine-allyn-395x340.jpg"
+                             width="600" height="338"
+                             srcset="assets/images/bright-600x338.jpeg 600px,
+                                    assets/images/bright-200x113.jpeg 200px,
+                                    assets/images/bright-900x506.jpeg 900px"
+                             alt="Luncrest Unix Bright 2488 Reserve Junior All-American Spring Yearling Exhibtor Justine Allyn, Canaan, CT Breeder Luncrest Farms LLC, Granville, NY Professional Side Profile Photo">
+                        </div>
+                        <div>
+                            <p>
+                                I am very proud to be named Junior Reserve All American 2023 and nominated All American in the Open Spring Yearling Class with Luncrest Unix Bright.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div 
-            class="headshot">
-                <source media="(max-width:200px)" srcset="assets/images/headshot400x600.jpg"/>
-                <img id="headshot" 
-                    src="assets/images/headshot400x600.jpeg" 
-                    width="400" height="600" 
-                    srcset="assets/images/headshot400x600.jpeg 400px,
-                            assets/images/headshot100x150.jpeg 100px,
-                            assets/images/headshot900x1350,jpeg 900px"
-                alt="Headshot of Justine infront of Hokie Stone"/>
-            </div>
-        </section>
-        <section role="region" aria-labelledby="currently">
-            <div 
-            class="currently">
-                <h3 id="currently">Current Status</h3>
-                <p>
-                    I am a Junior at Virginia Tech studying Agribusiness Management with a minor in both Organizational Leadership and Professional and Technical Writing. I plan to graduate from Virginia Tech in May 2025. Upon my graduation, I aspire to attend law school with a specialization in agricultural law. In order to work towards this goal, I am currently an undergraduate research assistant working on extension publications regarding land leasing. Aside from education, I own and show registered Holstein dairy cattle all over North America alongside my parents, owners and operators of Allyndale Holsteins. I take part in daily management, show preperation, breeding selection, and marketing/sale.
-                </p>
-                <h4>How I Created This Site</h4>
-                <p>
-                    As mentioned apart of my education, I have a minor in Professional and Technical Writing. I enrolled in a Online Developement course Spring 2024 and was tasked with creating a website using html. Being completely alien to any coding content, I am growing my experience and skills with html and technological accessability. 
-                </p>
-            </div>
-        </section>
-    </main>
-    <aside role="complementary">
-        <h4>Recent Activities!</h4>
-        <p>
-            <strong>Spring Semester 2024</strong> enrolled in 19 credits along with undergraduate research assistance with Professor Jen Freidel. 
-        </p>
-        <P>
-            <strong>Cool Cow Stuff!</strong> I am very proud to be named Junior Reserve All American 2023 and nominated All American in the Open Spring Yearling Class with Luncrest Unix Bright.
-        </p>
-        <picture>
-        <source media="(max-width:200px)" srcset="assets/images/bright-600x338"/>
-        <img 
-        src="assets/images/bright-600x338.jpeg" 
-        width="600" height="338" 
-        srcset="assets/images/bright-600x338.jpeg 600px,
-                assets/images/bright-200x113.jpeg 200px,
-                assets/images/bright-900x506jpeg 900px"
-        alt="Luncrest Unix Bright 2488 Reserve Junior All-American Spring Yearling Exhibtor Justine Allyn, Canaan, CT Breeder Luncrest Farms LLC, Granville, NY Professional Side Profile Photo">
-        </picture>
-    </aside>
+
+            <!-- <picture>
+            <source media="(max-width:200px)" srcset="assets/images/bright-600x338"/>
+
+            </picture> -->
+        </aside>
+
+        <!-- Footer needs to be in the body; no label provided -->
+        <footer role="contentinfo">
+            <h3>Contact</h3>
+            <ul>
+                <li>Email: Jrallyn@vt.edu</li>
+                <li>Phone: 860-689-4692</li>
+            </ul>
+            <p>
+                Copyright. All rights reversed.
+            </p>
+        </footer>
+
+    </div>
 </body>
-<footer role="contentinfo">
-    <h3>Contact</h3>
-    <ul>
-        <li>Email: Jrallyn@vt.edu</li>
-        <li>Phone: 860-689-4692</li>
-    </ul>
-    <p>
-        Copyright. All rights reversed.
-    </p>
-</footer>
 </html>
