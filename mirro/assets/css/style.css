@@ -1,0 +1,116 @@
+/*Fonts/Colors*/
+/*Note: I understand this is a final, but for whatever reason my CSS refuses to apply itself. I have done the work and included it all anyways in case some small issue is causing these problems- I don't want to lose the credit. Thank you so much for working with me this semester*/
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+:root {
+    --backgroundColor: #bbee8b;
+    --foregroundColor: #111;
+  
+    --primaryColor: #0a681a;
+    --primaryShade1: #0d8d33;
+    --primaryShade2: #24a339;
+    --primaryShade3: #70f38d;
+    --primaryShade4: #39dd90;
+    --primaryShade5: #02fc4d;
+  
+    --secondaryColor: #0e8151;
+    --secondaryShade1: #68c29f;
+    --secondaryShade2: #9ff5c6;
+    --secondaryShade3: #325542;
+    --secondaryShade4: #226d44;
+    --secondaryShade5: #06521f;
+  
+    --accentColor: #1c6e66;
+    --accentShade1: #48bbb5;
+    --accentShade2: #1f836a;
+    --accentShade3: #4db6ac;
+    --accentShade4: #00796b;
+    --accentShade5: #004d40;
+  
+    --accent2Color: #8bc34a;
+    --accent2Shade1: #e7f6d5;
+    --accent2Shade2: #c5e1a5;
+    --accent2Shade3: #aed581;
+    --accent2Shade4: #689f38;
+    --accent2Shade5: #558b2f;
+  
+    --accent3Color: #d1ff03;
+    --accent3Shade1: #a2c01e;
+    --accent3Shade2: #b5ce8e;
+    --accent3Shade3: #c9e64a;
+    --accent3Shade4: #798a2c;
+    --accent3Shade5: #4a5c0a;
+  
+    --neutralShade1: #f2f2f2;
+    --neutralShade2: #e8e9e9;
+    --neutralShade3: #d1d3d4;
+    --neutralShade4: #babdbf;
+    --neutralShade5: #808488;
+    --neutralShade6: #666a6d;
+    --neutralShade7: #4d5052;
+    --neutralShade8: #212122;
+  
+    --grayColor: #999;
+    --lightGrayColor: #ddd;
+
+
+h1 { color: var(--primaryColor);}
+h2 { color: var(--primaryColor);}
+h3 { color: var(--primaryColor);}
+h4 { color: var(--primaryColor);}
+h5 { color: var(--primaryColor);}
+p { color: var(--primaryShade2);}
+
+--headingFamily: "Teachers";
+--headingFamily: "Shadows Into Light";
+}
+
+
+
+/* Additional Formatting*/
+main { display: grid;
+    place-items: center;}
+
+section { display: grid;
+        place-items: center;}
+
+header { display: grid;
+    place-items: center;}
+
+body { display: grid;
+    place-items: center;}
+    
+
+/* Media Queries*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
