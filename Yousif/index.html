@@ -1,126 +1,143 @@
 <!DOCTYPE html>
+
+<!-- META TAGS to be able to list the website on google and show up on search results -->
 <html lang="en">
-   
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, intial-scale=1.0">
-  <meta name="author" content="Author">
-  <title>Engineering Nomad</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Engineering" />
+    <meta name="description" content="Engineering" />
+    <meta name="keywords" content="Engineering" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Engineering Nomad</title>
+  </head>
+  <body>
+    <!-- CALLOUT FOR MAIN CONTENT -->
+    <a class="skip-to-content-link visually-hidden" tabindex="1" href="#MainContent"> Skip to content </a>
 
-<body>
-  <a href ="#main" class="skip-to-link">Skip to content</a>
-   <header role="banner" aria-label="engineering-disciplines">
-     <h1 id="engineering-disciplines">Engineering Disciplines</h1>
+    <!-- NAVBAR FOR NAVIGATING THE SITE -->
+    <nav id="navbar" class="navbar" role="navigation" aria-label="Main Navigation">
+      <div class="container">
+        <li> <a href="index.html">Home</a> </li>
+        <li> <a href="content.html">Content</a> </li>
+        <li> <a href="additional.html">Additional</a> </li>
+      </div>
+    </nav>
 
-     <nav role="navigation" aria-label="Main Navigation">
-        <li><a href="index.html">Home</a></li>  
-        <li><a href="content.html">Content</a></li>
-        <li><a href="additional.html">Additional</a></li>
-     </nav>
-      <!--Adding Image at Header-->
-     <img src="./assets/images/header-pic-engineering-theme-400x267.jpg"
-          width="400" height="267"
-          srcset="./assets/images/header-pic-engineering-theme-400x267.jpg 400w,
-                  ./assets/images/header-pic-engineering-theme300x200.jpg 300w,
-                  ./assets/images/header-pic-engineering-theme200x133.jpg 200w"
-         alt="picture engineering theme engineering education" />
-   </header>
- 
-  <main role="main" aria-label="engineering majors">
-    <h2 id="engineering-majors">Engineering Majors</h2>
-    <p>discription of engineering majors</p>
-    <section role="region" aria-labelledby="discription of engineering majors" >
-     <ul>
-        <li>
-           Electrical Engineering
-           <p>"The creativity of electrical engineers has revolutionized our world. They create the methods and devices to detect, gauge, 
-              transform, transmit, manage, and receive both energy and information. In their work, electrical engineers tackle projects ranging 
-              from  tiny robots the size of mosquitoes to overseeing enormous structures spanning millions of miles, like the country's power 
-              network"
+    <!-- HEADER TEXT AND HEADER BACKGROUND IMAGE SOURCE -->
+    <header id="#MainContent" class="header">
+      <div class="container">
+        <h1>Engineering Disciplines</h1>
+      </div>
+      <img class="header__background-image" src="/assets/images/header-pic-engineering-theme-400x267.jpg"
+      width="400" height="267"
+      srcset="./assets/images/header-pic-engineering-theme-400x267.jpg 
+      400w,
+      ./assets/images/header-pic-engineering-theme300x200.jpg 300w,
+      ./assets/images/header-pic-engineering-theme200x133.jpg 200w"
+alt="picture engineering theme engineering education" />
+    </header>
+<main role="main" aria-label="engineering majors" >
+    <!-- SHOWCASE CONTENT -->
+    <section class="showcase" role="region" aria-labelledby="discription of engineering majors">
+      <div class="container">
+        <h2 id="engineering-majors">Engineering Majors</h2>
+        <p>Discription of Engineering Majors</p>
+
+        <!-- SHOWCASE CONTENT CARDS -->
+        <div class="showcase__cards">
+          <div class="showcase__card" aria-labelledby="Electrical Engineering">
+            <h3>Electrical Engineering</h3>
+            <p>
+              The creativity of electrical engineers has revolutionized our world. They create the methods and devices to detect, gauge, transform, transmit, manage, and receive both energy and information. In their work, electrical engineers tackle projects ranging from tiny
+              robots the size of mosquitoes to overseeing enormous structures spanning millions of miles, like the country's power network
             </p>
-        </li>
-        <li>
-           Civil Engineering
-           <p>"Civil engineers are the principal designers, constructors, operators, and maintainers of many of the constructed facilities in our 
-               society."
-           </p>
-        </li>
-        <li>
-           Chemical Engineering
-           <p>
-            "Chemical engineers have contributed to advancements in atomic science, polymers, paper, dyes, medications, plastics, fertilizers, food 
-            products, petrochemicals, vaccines, novel approaches for carbon capture, and many other areas."
-          </p>
-        </li>
-        <li>
-           Areospace Engineering
-           <p>
-            "The aerospace engineering program covers topics such as aerodynamics, flight dynamics and controls, propulsion, and aerospace 
-            structures. It concludes with a senior-level design sequence that is nationally recognized, focusing on the analysis and design of 
-            aircraft, spacecraft, and associated technologies."
-          </p>
-        </li>
-        <li>
-           Biomedical Engineering
-           <p>
-            "Biomedical engineers concentrate on merging technology and medical science to create innovative devices and apparatus aimed at 
-            enhancing human health. They may, for instance, develop software to operate medical devices or use computer simulations to evaluate 
-            novel drug treatments."
-          </p>
-        </li>
-     </ul>
+          </div>
+          <div class="showcase__card" aria-labelledby="Civil Engineering">
+            <h3>Civil Engineering</h3>
+            <p>Civil engineers are the principal designers, constructors, operators, and maintainers of many of the constructed facilities in our society.</p>
+          </div>
+          <div class="showcase__card" aria-labelledby="Chemical Engineering">
+            <h3>Chemical Engineering</h3>
+            <p>Chemical engineers have contributed to advancements in atomic science, polymers, paper, dyes, medications, plastics, fertilizers, food products, petrochemicals, vaccines, novel approaches for carbon capture, and many other areas.</p>
+          </div>
+          <div class="showcase__card" aria-labelledby="Areospace Engineering">
+            <h3>Areospace Engineering</h3>
+            <p>
+              The aerospace engineering program covers topics such as aerodynamics, flight dynamics and controls, propulsion, and aerospace structures. It concludes with a senior-level design sequence that is nationally recognized, focusing on the analysis and design of aircraft,
+              spacecraft, and associated technologies.
+            </p>
+          </div>
+          <div class="showcase__card" aria-labelledby="Biomedical Engineering">
+            <h3>Biomedical Engineering</h3>
+            <p>
+              Biomedical engineers concentrate on merging technology and medical science to create innovative devices and apparatus aimed at enhancing human health. They may, for instance, develop software to operate medical devices or use computer simulations to evaluate novel
+              drug treatments.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-   <section role="region" aria-label="course work among engineering students">
-   <h2 id="collaboration">Collaboration within Engineering</h2>
-    <p> 
-      Engineering work among students and its experiences. How collaboration would lead 
-      to success in such a difficult field. 
-    </p>
-     <img src="./assets/images/students-workshop-collaboration-800x450.png"
-          alt="Collborating Students pic gathered and working on a group project related to engineering"
-          width="800" height="450"
-          srcset="./assets/images/students-workshop-collaboration-800x450.png 800w,
-                  ./assets/images/students-workshop-collaboration-300x169.png 300w,
-                  ./assets/images/students-workshop-collaboration-200x112.png 200w"/>
+    <!-- TEXT WITH IMAGE -->
+    <section class="twi" role="region" aria-label="course work among engineering students">
+      <div class="container">
+        <!-- TEXT WITH IMAGE CONTENT -->
+        <div class="twi__content">
+          <div>
+            <h2>Collaboration within Engineering</h2>
+            <p>Engineering work among students and its experiences. How collaboration would lead to success in such a difficult field. Highlights group work and projects on engineering projects and how they can build skills needed for future careers</p>
+          </div>
+          <div>
+            <h2>In Depth</h2>
+            <p>"The study of engineering, why its important, interesting facts, requierments and prerequiesties for students. Additionally the future of engineers and their impact on society from innovation to creativity and maintaing sustainability for our planet"</p>
+          </div>
+          <div>
+            <h2>Differences</h2>
+            <p>"This section lists the differences of engineering majors within academics and also industry/career planning. Highlights key difference between majors and showcase expectations for students within each major"</p>
+          </div>
+        </div>
+
+        <!-- TEXT WITH IMAGE - IMAGE -->
+        <div class="twi__media">
+          <img src="/assets/images/students-workshop-collaboration.png"
+          srcset="
+          ./assets/images/students-workshop-collaboration.png,
+          ./assets/images/students-workshop-collaboration-300x169.png 300w,
+          ./assets/images/students-workshop-collaboration-200x112.png 200w,
+          ./assets/images/students-workshop-collaboration-800x450.png 800w"
+           alt="Collborating Students pic gathered and working on a group project related to engineering" />
+        </div>
+      </div>
     </section>
-    
-    <section role="region" aria-label="in depth">
-      <header>
-       <h2 id="in-depth">In Depth</h2>
-      </header>
-      <p>
-       "The study of engineering, why its important, interesting facts, requierments and prerequiesties for students...etc"
-      </p>
+
+    <!-- RESUING SHOWCASE STYLES AND SECTION -->
+    <section class="showcase" role="region" aria-label="note on student experience as an engineering major">
+      <div class="container">
+        <h2>Student Experience as an Engineering Major</h2>
+        <p>Based on current students and alumni, their experiences trials and advice for incomming students</p>
+
+        <h2>Helpful resources from articles</h2>
+        <p>Resources and articles that would benefit engineering majors</p>
+        <p>From university resources to different companies publications that would showcase the career side of engineering fields</p>
+        <p>Article one: A source of Article one, its description and breif details</p>
+        <p>Article two: A source of Article two, its description and breif details</p>
+        <p>Article three: A source of Article three, its description and breif details</p>
+        <p>Article four: A source of Article four, its description and breif details</p>
+        <p>Article five: A source of Article five, its description and breif details</p>
+      </div>
     </section>
 
-   <section role="region" aria-label="differences between engineering-majors labeling keypoints">
-     <header>
-       <h2 id="differences">Differences</h2>
-     </header>
-     <p>"This section lists the differences of engineering majors within academics and also industry/career planning"</p>
-   </section>
- </main>
-
- <aside role="complementary" aria-label="additional keypoints">
-   <section role="region" aria-labelledby="note on student experience as an engineering major">
-     <h2 id="student-experience-as-an-engineering-major">Student Experience as an Engineering Major</h2>
-     <p>"Based on current students and alumni, their experiences trials and advice for incomming students"</p>
-   </section>
-
-   <section role="region" aria-label="additional content sector that label additional links and helpful resources">
-     <h2 id="additional-content-sector">Additional Content Sector</h2>
-     <h3>helpful resources from articles</h3>
-      <p>"Resources and articles that would benefit engineering majors"</p>
-      <p>"From university resources to different companies publications that would showcase the career side of engineering fields"</p>
-    </section>
-  </aside>
-   
- <footer id="copyright"  role="contentinfo" aria-label="footer">
-     <h2>copyrights</h2>
-     <p>@Copyright info</p>
- </footer>
-
-</body>
-</html> 
+    <!-- FOOTER & PRIORITY GUIDE-->
+    <footer class="footer" id="copyright" role="contentinfo" aria-label="footer">
+      <div class="containter">
+        <a href="#top">Back to Navigation</a>
+        <p>@Copyright info</p>
+      </div>
+    </footer>
+  </body>
+</main>
+</html>
