@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap');
 :root {
+    /* Remember that 16px is the default */
     font-size: 16px;
     --backgroundColor: #fbfcc7;
     --foregroundColor: #0d242f;
@@ -52,6 +53,8 @@
 
 /*typography*/
 body {
+    /* removed default origin margins on body for you */
+    margin: 0;
     font-family: var(--copyfamily);
     color: var(--foregroundColor);
     background-color: var(--secondaryShade5);
@@ -61,11 +64,35 @@ h1,h2,h3,h4 {
     font-family: var(--headingfontfamily);
 }
 
+/*Font Sizing*/
+h1 { font-size: 3.5rem;}
+/* Since it's just your name, consider a more bold choice */
+h1 { font-size: clamp(3.5rem, 5rem, 6rem); }
+h2 { font-size: 3rem;}
+h3 {font-size: 2.5rem;}
+h4 {font-size: 2.25rem;}
+/* Odd choice to use pixels here. Why not rem? I would have considered 1rem as the default on the body instead. */
+body { font-size: 1rem; }
+/* p {font-size: 20px;}
+aside { font-size: 1rem;} */
+
+/*Font Colors*/
+/*  */
+h1 { color: var(--primaryColor);}
+/* Use mult selectors */
+h2,h3,h4 { color: var(--primaryShade1);}
+/* h2 { color: var(--primaryShade1);}
+h3 { color: var(--primaryShade1);}
+h4 { color: var(--primaryShade1);} */
+p { color: var(--foregroundColor);}
+
 /*Links*/
+/* Moved to place after font work overall */
 a {
     text-decoration: none;
     color: var(--primaryShade1);
 
+    /* Not selecting anything */
     &.header {
         font-size: 1.2rem;
         color: var(--primaryColor);
@@ -79,23 +106,96 @@ a:hover {
     transition: 0.5s;
 }
 
-/*Font Sizing*/
-h1 { font-size: 3.5rem;}
-h2 { font-size: 3rem;}
-h3 {font-size: 2.5rem;}
-h4 {font-size: 2.25rem;}
-p {font-size: 20px;}
-aside { font-size: 1rem;}
+/* Skip Link */
+/* Provided this and covered it in class a couple times */
+a.skip-to-link {
+    /* absolute positions the element to the viewport instead of the container element */
+    position: absolute;
+    /* Rules below position the skip link way way way out off of the viewport, so the link effectively 'disappears' for those who do not use ARIA technologies */
+    left: -999px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+}
+/* When the skip link has the condition of being focused by the ARIA tech (:focus), we bring it back into the viewport by reverting it to an inline-block element that can also be perceived visually.  */
+a.skip-to-link:focus {
+    color: black;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    position: static;
+    margin: auto;
+}
 
-/*Font Colors*/
-h1 { color: var(--primaryColor);}
-h2 { color: var(--primaryShade1);}
-h3 { color: var(--primaryShade1);}
-h4 { color: var(--primaryShade1);}
-p { color: var(--foregroundColor);}
+/* IMAGES / MEDIA */
+/* We reviewed how this was a key new default for images throughout a site as a general rule to help with content-sizing */
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* NAVIGATION */
+/* added a clearer spot for this work */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    /* flex items */
+    &> * {
+        margin: 0;
+        flex: 1 1 max-content;
+        text-align: center;
+    }
+}
+
 
 /*grid*/
-header {
+
+/*
+    Way too many grids here. Remember the lessons where I emphasized how a grid container (parent) will then automatically create grid items of all direct children of the parent. That clues you into how to structure your content. CSS grid works like a layout creator, so they are typically applied on very few containers.
+
+    Here's a new take on your site with an added div container for your page layout in the HTML
+*/
+/* GRIDS */
+
+/* Main Layout */
+
+.grid__main_layout_container {
+
+    /* Define grid areas to use in media queries */
+    &> header { grid-area: hdr; }
+    &> nav { grid-area: nav; }
+    &> main { grid-area: main; }
+    &> aside { grid-area: asd; }
+    &> footer { grid-area: ftr; }
+}
+/* easy uniform padding for the container's layout children */
+.grid__main_layout_container > * {
+    padding: 0 1rem;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    &> ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+}
+
+
+
+/* header {
     display: grid;
     place-items: center;
 }
@@ -156,33 +256,112 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-self: flex-end;
-}
+} */
 
 /*flex*/
-.nav-menu {
+/* .nav-menu {
     display: flex;
     flex-direction: column;
-}
+} */
 
 /*Aside*/
 aside {
-    width: 75%;
-    float: left;
+    /* width: 75%;
+    float: left; */
     padding: 2rem;
-    border: 5px solid var(--foregroundColor);
+    /* border: 5px solid var(--foregroundColor); */
     background-color: var(--accentShade1);
 }
 /*Footer*/
 footer {
-    background-color: var(--accent2Color);
-    border: 5px solid var(--foregroundColor);
+    /* background-color: var(--accent2Color); */
+    /* border: 5px solid var(--foregroundColor); */
 }
 
 /*@media queries*/
+
+/* Medium Screen Sizes */
 @media screen and (min-width: 600px) {
+    /* Navigation */
     .nav-menu {
-        flex-direction: row;
+        margin-bottom: 2rem;
+        /* flex-direction: row;
         justify-content: space-evenly;
-        flex-wrap: wrap;
+        flex-wrap: wrap; */
+    }
+
+    /* some max-widths on some landmarks for readability */
+    main, aside {
+        max-width: 780px;
+        margin: auto;
+    }
+
+    /* FLEXBOX WORK */
+    .flex__1_1_container {
+        display: flex;
+        gap: 1rem;
+
+        &> * {
+            flex: 1 1 400px;
+        }
+
+        /* headshot in this flex context */
+        .headshot {
+            height: 400px;
+
+            /* object-fit technique */
+            &> img { object-fit: cover; }
+        }
+
+    }
+
+    .flex__acts_card_container {
+        display: flex;
+        gap: 2rem;
+
+        h3 { text-align: center; }
+
+        .acts__media_container {
+            width: 300px;
+            height: 300px;
+            margin: auto;
+
+            &> img {
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+/* Large Screen Sizes */
+@media screen and (min-width: 1100px) {
+    /* Navigation */
+    .nav-menu {
+        margin-bottom: 2rem;
+    }
+
+    /* GRID */
+    .grid__main_layout_container {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-areas:
+        "hdr hdr hdr hdr hdr hdr hdr hdr"
+        "nav nav nav nav nav nav nav nav"
+        "main main main main main asd asd asd"
+        "main main main main main ftr ftr ftr"
+        ;
+
+        &> footer {
+            /* to match aside */
+            background-color: var(--accentShade1);
+        }
+    }
+
+    /* headshot */
+    .headshot {
+        height: 400px;
+
+        /* object-fit technique */
+        &> img { object-fit: cover; }
     }
 }
