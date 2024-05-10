@@ -1,18 +1,39 @@
+/* No font families imported, as per the criteria */
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* OVERALL COMMENTS
+  - No CSS for the main page in this file
+  - Wireframes don't match CSS techniques and output
+  - Wireframes needed to demonstrate what the site looked like across screen sizes, showing me your knowledge of the Mobile-First Design method
+  - Missing generalizable approach taught in lesson 3 with root vars, color scheme, and typography scheme techniques
+  - Mobile-first approach not executed to produce the planned results or in line with methods taught in the class
+  - Some repetitive selections and rules, such as in the body
+  - Flexbox and Grid work not setup appropriately in both HTML and CSS
+  - Some initial good use of comments to document your CSS, but it is difficult to understand your design goals without more help beyond a heading.
+  - Some font-to-bg coloring is inaccessible
+*/
+
 /*=====
 GENERAL
 =====*/
 
+/* Not the generalizable approach taught in class, but I appreciate the variable usage throughout. */
 :root {
   font-size: 18px;
   --barbie-pink: #e0218a;
   --memo-puple: #8f87e8;
   --memo-blue: #8abcde;
   --memo-pink: #ffa2f1;
+
+  --headingFontFam: Laila, serif;
+  --copyFontFam: Lato, serif;
 }
 
 body {
   background-color: var(--memo-blue);
+  /* this color combo has contrast ratio issues for A11Y */
   color: var(--memo-puple);
+  color: white;
   margin: 0;
 }
 
@@ -20,12 +41,130 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: var(--memo-blue);
-  color: var(--memo-puple);
+  /* background-color: var(--memo-blue);
+  color: var(--memo-puple); */
+}
+
+/* TYPOGRAPHY */
+
+/* Suggestions */
+
+/* Font Families */
+body { font-family: var(--copyFontFam); }
+h1,h2,h3,h4,h5,h6 { font-family: var(--headingFontFam); }
+
+/* Font colors */
+a,p,blockquote {
+  color: white;
+}
+
+/* Font Styling */
+h1, h2 { text-transform: uppercase; }
+
+/* MEDIA */
+/* Reviewed the importance of this general rule in class */
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* HEADER */
+
+.top_header_container {
+  background-color: var(--barbie-pink);
+  padding: 1rem 0;
+
+  &, a, a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Social Link Nav */
+  .social_media_links_container {
+
+    ul {
+      display: flex;
+      justify-content: end;
+      /* overwrite User Agent (browser origin styles) */
+      padding: 0;
+      list-style-type: none;
+      font-size: 0.8rem;
+
+      li {
+        margin-left: 0.25rem;
+      }
+    }
+  }
+
+  /* Logo + Primary Nav */
+  .flex__header_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-end;
+
+    .logo {
+      flex: 0 0 75px;
+    }
+
+    .main_nav {
+      flex: 1 1 200px;
+
+      ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        align-items: space-between;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* MAIN */
+main {
+  max-width: 1080px;
+  margin: auto;
+}
+
+/* MEMBER GALLERIES */
+
+.grid__member_gallery_container {
+  padding: 1rem;
+
+  /* Medium-Sized Screens */
+  @media screen and (min-width: 580px) {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    &> .grid_item__member_card {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+
+      &> .headshot {
+        flex: 0 0 200px;
+
+        img {
+          width: 200px;
+          height: 200px;
+          object-fit: cover;
+        }
+      }
+      &> .member_text {
+        flex: 1 1 250px;
+      }
+    }
+  }
 }
 
 /* Header */
-header {
+/* FYI: Order isn't the best approach nor always accessible */
+/* header {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
@@ -58,7 +197,7 @@ header {
 
 .logo {
   order: 3;
-}
+} */
 
 /* main content */
 
@@ -93,13 +232,13 @@ footer {
   padding: 10px 20px;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .header-content, .content-area {
     flex-direction: column;
   }
   .main_nav, .logo {
     margin: 10px 0;
   }
-}
+} */
 
 
