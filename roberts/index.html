@@ -12,34 +12,92 @@
 	<header role="banner" aria-labelledby="website-title">
 		<h1 id="website-title">Kayla Roberts: A Portfolio</h1>
 	</header>
+	<style>
+		/* NAVIGATION */
+		nav > ul {
+			display: flex;
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+
+		/* MAIN SECTIONS */
+		main > section {
+			margin-bottom: 2rem;
+		}
+	</style>
 	<nav role="navigation" aria-label="Website">
-		<p>Portfolio of Kayla's Work:</p>
+		<!-- <p>Portfolio of Kayla's Work:</p> -->
 		<ul>
 			<li> <a href="portfolio.html">Portfolio</a></li>
 		</ul>
 	</nav>
 	<main id="main">
-		<section role="region" aria-labelledby="purpose">
+		<!-- <section role="region" aria-labelledby="purpose">
 			<h2 id="purpose">Website Purpose</h2>
 				<p>Kayla created this website as part of her final technical writing class at Virginia Tech. In addition to showcasing her creative and technical works, this website is itself a prime example of the skills she developed in her undergraduate studies.</p>
-		</section>
-		<section role="region" aria-labelledby="photos">
-			<h2 id="photos">Visual Introduction</h2>
+		</section> -->
+		<style>
+			img {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+
+			.section__about_me_container {
+				max-width: 1080px;
+				margin: auto;
+			}
+
+			.intro {
+				/* Medium Screens */
+				@media screen and (min-width: 540px) {
+					display: flex;
+					flex-wrap: wrap;
+					gap: 1rem;
+
+					&> * {
+						flex: 1 1 200px;
+					}
+					img { object-fit: cover; }
+				}
+
+			}
+		</style>
+		<section class="section__about_me_container" role="region" aria-labelledby="photos">
+			<!-- <h2 id="purpose">Website Purpose</h2> -->
+			<h2 id="purpose">Hello! I'm Kayla Roberts</h2>
+			<p>Kayla created this website as part of her final technical writing class at Virginia Tech. In addition to showcasing her creative and technical works, this website is itself a prime example of the skills she developed in her undergraduate studies.</p>
+			<!-- <h2 id="photos">Visual Introduction</h2> -->
+
 			<section class="intro">
-					<img src="assets/images/headshot-1200x800.jpg"
-					alt="Photo of Kayla Roberts in graduation regalia for her bachelor's degree in English."
-					width="1200" height="800"
-					srcset="assets/images/headshot-600x400.jpg 600w,
-					assets/images/headshot-1200x800.jpg 1200w,
-					assets/images/headshot-2400x1600.jpg 2400w"/>
+				<!-- wrap those images in divs, yo -->
+				<div>
+					<div>
+						<img src="assets/images/headshot-1200x800.jpg"
+								alt="Photo of Kayla Roberts in graduation regalia for her bachelor's degree in English."
+								width="1200" height="800"
+								srcset="assets/images/headshot-600x400.jpg 600w,
+								assets/images/headshot-1200x800.jpg 1200w,
+								assets/images/headshot-2400x1600.jpg 2400w"/>
+					</div>
+
 					<p>Pictured: Kayla in her graduation regalia, Spring 2024.</p>
-			  <img src="assets/images/conference-photo-1200x800.jpg"
-			 		alt="Photo of Kayla Roberts (right) and a classmate (left) at an English conference."
-				 	width="1200" height="800"
-			 		srcset="assets/images/english-conference-literature-kayla-roberts-600x400.jpg 600w,
-					 assets/images/english-conference-literature-kayla-roberts-1200x800.jpg 1200w,
-					 assets/images/english-conference-literature-kayla-roberts-2400x1600.jpg 2400w"/>
-				<p>Pictured: Virginia Tech English Undergraduate Excellence Conference 2023</p>
+				</div>
+
+				<div>
+					<div>
+						<img src="assets/images/conference-photo-1200x800.jpg"
+								alt="Photo of Kayla Roberts (right) and a classmate (left) at an English conference."
+								width="1200" height="800"
+								srcset="assets/images/english-conference-literature-kayla-roberts-600x400.jpg 600w,
+								assets/images/english-conference-literature-kayla-roberts-1200x800.jpg 1200w,
+								assets/images/english-conference-literature-kayla-roberts-2400x1600.jpg 2400w"/>
+					</div>
+
+					<p>Pictured: Virginia Tech English Undergraduate Excellence Conference 2023</p>
+				</div>
+
 			</section>
 		</section>
 		<section role="region" aria-labelledby="education">
