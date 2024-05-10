@@ -29,7 +29,9 @@
         </ul>
     </nav>
 
+    <!-- Label for the main? -->
     <main id="main" role="main">
+        <!-- aria-labelledby works differently than this. It uses IDs as values -->
         <section aria-labelledby="About Us">
             <h2 id="About Us">About Us</h2>
             <p> 
@@ -81,6 +83,7 @@
         </section>
     </main>
     <footer role="footer-personal-info">
+        <!-- consider how you're labeling a nav menu a footer here. Also, this would not be considered a nav menu, since it is now navigating the user anywhere. -->
         <nav role="navigation" aria-label="Footer">
              <h2 id="personal-information">Personal Contacts</h2>
                 <section role="region" id="contact-info">

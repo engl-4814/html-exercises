@@ -1,4 +1,4 @@
-
+/* fonts should be imported in here, and you should have used the techniques learned and applied in the 3rd exercise to do it. */
 
 
 body {
@@ -37,11 +37,13 @@ nav ul li a {
     color: white;
 }
 
+/* Be cautious about applying such specific layout design work to very general rules: all mains, all sections, etc. */
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
+    /* this is overwriting the flex above, so nothing is in fact a flex item within the main. */
     display: table;
     margin: auto;
 
