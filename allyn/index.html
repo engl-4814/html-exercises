@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"
-    meta name="author" content="Justine Allyn">
+    <meta name="author" content="Justine Allyn">
     <title>Justine Allyn Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <a href="#main" class="skip-to-link">Skip to content</a>
@@ -12,43 +13,54 @@
         <h1>Justine Allyn</h1>
     </header>
     <nav role="navigation" aria-label="Main navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="./resume.html">Resume</a></li>
-            <li><a href="career.html">Career Goals</a></li>
-            <li><a href="idustry.html">Industry Projects</a></li>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="header-link">Home</a></li>
+            <li><a href="./resume.html" class="header-link">Resume</a></li>
+            <li><a href="career.html" class="header-link">Career Goals</a></li>
+            <li><a href="idustry.html" class= "header-link">Industry Projects</a></li>
         </ul>
     </nav>
-    <main role="main">
-        <section role="region">
-            <h2>Welcome Into My Life!</h2>
-            <p>
-                Hello Everyone! My name is Justine Allyn, thank you for joining my site and taking a look into my life!
-            </p>
-            <picture>
-            <source media="(max-width:200px)" srcset="assets/images/headshot400x600.jpg"/>
-            <img 
-            src="assets/images/headshot400x600.jpeg" 
-            width="400" height="600" 
-            srcset="assets/images/headshot400x600.jpeg 400px,
-                    assets/images/headshot100x150.jpeg 100px,
-                    assets/images/headshot900x1350,jpeg 900px"
-            alt="Headshot of Justine infront of Hokie Stone">
-            </picture>
-            <h3>Current Status</h3>
-            <p>
-                I am a Junior at Virginia Tech studying Agribusiness Management with a minor in both Organizational Leadership and Professional and Technical Writing. I plan to graduate from Virginia Tech in May 2025. Upon my graduation, I aspire to attend law school with a specialization in agricultural law. In order to work towards this goal, I am currently an undergraduate research assistant working on extension publications regarding land leasing. Aside from education, I own and show registered Holstein dairy cattle all over North America alongside my parents, owners and operators of Allyndale Holsteins. I take part in daily management, show preperation, breeding selection, and marketing/sale.
-            </p>
-            <h4>How I Created This Site</h4>
-            <p>
-                As mentioned apart of my education, I have a minor in Professional and Technical Writing. I enrolled in a Online Developement course Spring 2024 and was tasked with creating a website using html. Being completely alien to any coding content, I am growing my experience and skills with html and technological accessability. 
-            </p>
+    <main role="main" aria-label="Welcome">
+        <section role="region" aria-labelledby="introduction">
+            <div
+            class="grid-container">   
+                <h2>Welcome Into My Life!</h2>
+                <p>
+                    Hello Everyone! My name is Justine Allyn, thank you for visiting my site and taking a look into my life!
+                </p>
+            </div>
+            <div 
+            class="headshot">
+                <source media="(max-width:200px)" srcset="assets/images/headshot400x600.jpg"/>
+                <img id="headshot" 
+                    src="assets/images/headshot400x600.jpeg" 
+                    width="400" height="600" 
+                    srcset="assets/images/headshot400x600.jpeg 400px,
+                            assets/images/headshot100x150.jpeg 100px,
+                            assets/images/headshot900x1350,jpeg 900px"
+                alt="Headshot of Justine infront of Hokie Stone"/>
+            </div>
+        </section>
+        <section role="region" aria-labelledby="currently">
+            <div 
+            class="currently">
+                <h3 id="currently">Current Status</h3>
+                <p>
+                    I am a Junior at Virginia Tech studying Agribusiness Management with a minor in both Organizational Leadership and Professional and Technical Writing. I plan to graduate from Virginia Tech in May 2025. Upon my graduation, I aspire to attend law school with a specialization in agricultural law. In order to work towards this goal, I am currently an undergraduate research assistant working on extension publications regarding land leasing. Aside from education, I own and show registered Holstein dairy cattle all over North America alongside my parents, owners and operators of Allyndale Holsteins. I take part in daily management, show preperation, breeding selection, and marketing/sale.
+                </p>
+                <h4>How I Created This Site</h4>
+                <p>
+                    As mentioned apart of my education, I have a minor in Professional and Technical Writing. I enrolled in a Online Developement course Spring 2024 and was tasked with creating a website using html. Being completely alien to any coding content, I am growing my experience and skills with html and technological accessability. 
+                </p>
+            </div>
         </section>
     </main>
     <aside role="complementary">
         <h4>Recent Activities!</h4>
         <p>
             <strong>Spring Semester 2024</strong> enrolled in 19 credits along with undergraduate research assistance with Professor Jen Freidel. 
+        </p>
+        <P>
             <strong>Cool Cow Stuff!</strong> I am very proud to be named Junior Reserve All American 2023 and nominated All American in the Open Spring Yearling Class with Luncrest Unix Bright.
         </p>
         <picture>
