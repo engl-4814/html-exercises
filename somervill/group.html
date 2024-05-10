@@ -3,119 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Members: Goldstein's Research Lab</title>
+    <title>Members: Goldstein Research Lab</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a href="#main" class="skip-to-link">Skip to content</a>
-  <nav role="navigation" aria-label="Main navigation">
-    <ul>
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <ul class="navbar">
       <li><a href="index.html">Home</a></li>
       <li><a href="group.html">Group Members</a></li>
       <li><a href="research.html">Research Projects</a></li>
       <li><a href="publications.html">Publications</a></li>
       <li><a href="news.html">Lab News</a></li>
     </ul>
-    <div>
-      <h1>Goldstein's Research Lab</h1>
-      <img src="assets/images/logo_goldstein_research_bone_600x400.png" 
-        alt="Logo for Goldstein's Research Lab"
-        width="600" height="400"
-        srcset="assets/images/logo_goldstein_research_bone_600x400.png 600w, 
-                assets/images/logo_goldstein_research_bone_300x200.png 300w, 
-                assets/images/logo_goldstein_research_bone_150x100.png 150w" 
-      />
-    </div>
+    <h1>Goldstein Research Lab</h1>
   </nav>
-  <main role="main" aria-labelledby="research-group">
+  <main class = "group" role="main" aria-labelledby="research-group">
     <h2 id="research-group">The Group</h2>
     <div role="region" aria-labelledby="research-pi">
-      <img src="" alt="needs to be replaced"/> <!--add image of henos-->
-      <h3 id="research-pi">Dr. Goldstein</h3>
-      <p>Principal Investigator</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, eligendi sunt.</p>
+      <img src="assets/images/goldstein_group_photo_4032x3024.png" 
+      alt="Goldstein Research Group, Henos Tadesse, Lucy Somervill, Carolina Vega-Alvarado, Dr. Goldstein, Emily Arvesen (pictured from left to right)"
+      srcset="assets/images/goldstein_group_photo_4032x3024.png 4032w,
+              assets/images/goldstein_group_photo_2460x1845.png 2460w,
+              assets/images/goldstein_group_photo_1008x756.png 1008w"
+      /> 
+      <div class="memberhighlight">
+        <h2 class="section" id="research-pi">Dr. Goldstein</h2>
+        <img src="assets/images/goldstein_headshot_800x522.jpg" alt="Dr. Goldstein"
+        width="800" height="522"
+        srcset="assets/images/goldstein_headshot_800x522.jpg 800w,
+                assets/images/lucy_headshot_600x400.jpg 600w,
+                assets/images/lucy_headshot_400x267.jpg 267w"
+        />
+        <p><strong>Principal Investigator</strong></p>
+        <p>
+          Dr. Goldstein is the assistant department head for chemical engineering undergraduate studies. His research interests are biomedical and tissue engineering and interfacial phenomena in bioengineering.
+        </p>
+        <ul>
+          <li>Ph.D., Carnegie Mellon University, 1997</li>
+          <li>B.S., University of California, Berkeley, 1990</li>
+        </ul>
+      </div>
     </div>
     <div role="region" aria-labelledby="research-members">
-      <h3 id="research-members">Lab Members</h3>
-      <img src="assets/images/goldstein_group_photo_4032x3024.png" 
-        alt="image of Goldstein's research group, picture from left to right: Henos, Lucy, Carolina, Dr. Goldstein, Emily"
-        width="4032" height="3024"
-        srcset="assets/images/goldstein_group_photo_4032x3024.png 4032w,
-                assets/images/goldstein_group_photo_2460x1845.png 2460w,
-                assets/images/goldstein_group_photo_1008x756.png 1008w"
-      />
+      <h2 class="section" id="research-members">Lab Members</h2>
     </div>
-    <div role="region" aria-labelledby="henos">
-      <img src="" alt="needs to be replaced"/> <!--add image of henos-->
-      <h3 id="henos">Henos Tadesse</h3>
-      <p><strong>Ph.D. Student</strong></p>
-      <p>B.S., Engineering, Concentration Chemical and Biochemistry, Calvin University, 2020</p>
-    </div>
-    <div role="region" aria-labelledby="lucy">
-      <img src="assets/images/lucy_headshot_1997x2662.png" 
-        alt="image of Lucy Somervill"
-        width="1997" height="2662"
-        srcset="assets/images/lucy_headshot_1997x2662.png 1997w,
-                assets/images/lucy_headshot_999x1332.png 999w,
-                assets/images/lucy_headshot_599x798.png 599w"
-      />
-      <h3 id="lucy">Lucy Somervill</h3>
-      <p><strong>Undergraduate Student</strong></p>
-      <p>Chemical Engineering, Virginia Tech, Class of 2024</p>
-      <p>Lucy has been a part of this lab for three years. She has minors in Biomedical Engineering and Professional and Technical Writing with the hopes of continuing research after graduation and one day becoming a P.I. or project manager.</p>
-    </div>
-    <div role="region" aria-labelledby="carolina">
-      <img src="" alt="needs to be replaced"/> <!--add image-->
-      <h3 id="carolina">Carolina Vega-Alvarado</h3>
-      <p><strong>Undergraduate Student</strong></p>
-      <p>Chemical Engineering, Virginia Tech, Class of 2025</p>
-    </div>
-    <div role="region" aria-labelledby="emily">
-      <img src="assets/images/emily_headshot_3024x4032.png" 
-        alt="image of Lucy Somervill"
-        width="1997" height="2662"
-        srcset="assets/images/emily_headshot_3024x4032.png 3024w,
-                assets/images/emily_headshot_1149x1532.png 1149w,
-                assets/images/emily_headshot_998x1331.png 998w"
-      />
-      <h3 id="emily">Emily Arvesen</h3>
-      <p><strong>Undergraduate Student</strong></p>
-      <p>Chemical Engineering, Virginia Tech, Class of 2027</p>
-      <p>Emily is a freshman on the rubgy team. She enjoys spending time outside and working out. She plans to pursue a degree in Chemical Engineering and gain experience in research and industry.</p>
+    <div class="membergrid">
+      <div class="memberhighlight1" role="region" aria-labelledby="henos">
+        <h3 id="henos">Henos Tadesse</h3>
+        <img src="assets/images/henos_headshot_800x800.jpg"   alt="Henos Tadesse"
+        width="800" height="800"
+        srcset="assets/images/henos_headshot_800x800.jpg 800w,
+                assets/images/henos_headshot_600x600.jpg 600w,
+                assets/images/henos_headshot_400x400/jpg 400w"
+        />
+        <p><strong>Ph.D. Student</strong></p>
+        <p>B.S., Engineering, Concentration Chemical and Biochemistry, Calvin University, 2020</p>
+      </div>
+      <div class="memberhighlight2" role="region" aria-labelledby="lucy">
+        <h3 id="lucy">Lucy Somervill</h3>
+        <img src="assets/images/lucy_headshot_1997x2662.png" 
+          alt="image of Lucy Somervill"
+          width="1997" height="2662"
+          srcset="assets/images/lucy_headshot_1997x2662.png 1997w,
+                  assets/images/lucy_headshot_999x1332.png 999w,
+                  assets/images/lucy_headshot_599x798.png 599w"
+        />
+        <p><strong>Undergraduate Student</strong></p>
+        <p>Chemical Engineering, Virginia Tech, Class of 2024</p>
+        <!--<p>Lucy has been a part of this lab for three years. She has minors in Biomedical Engineering and Professional and Technical Writing with the hopes of continuing research after graduation and one day becoming a P.I. or project manager.</p>-->
+      </div>
+      <div class="memberhighlight3" role="region" aria-labelledby="carolina">
+        <h3 id="carolina">Carolina Vega-Alvarado</h3>
+        <img src="assets/images/carolina_headshot_800x800.jpg" 
+          alt="Carolina Vega-Alvarado"
+          width="800" height="800"
+          srcset="assets/images/carolina_headshot_800x800.jpg 800w,
+                  assets/images/carolina_headshot_600x600.jpg 600w,
+                  assets/images/carolina_headshot_400x400.jpg 400w"
+        />
+        <p><strong>Undergraduate Student</strong></p>
+        <p>Chemical Engineering, Virginia Tech, Class of 2025</p>
+      </div>
+      <div class="memberhighlight4" role="region"   aria-labelledby="emily">
+        <h3 id="emily">Emily Arvesen</h3>
+        <img src="assets/images/emily_headshot_3024x4032.png" 
+          alt="Emily Arvesen"
+          width="1997" height="2662"
+          srcset="assets/images/emily_headshot_3024x4032.png 3024w,
+                  assets/images/emily_headshot_1149x1532.png 1149w,
+                  assets/images/emily_headshot_998x1331.png 998w"
+        />
+        <p><strong>Undergraduate Student</strong></p>
+        <p>Chemical Engineering, Virginia Tech, Class of 2027</p>
+        <!--<p>Emily is a freshman on the rubgy team. She enjoys  spending time outside and working out. She plans to pursue a degree in Chemical Engineering and gain experience in   research and industry.</p>-->
+      </div>
     </div>
   </main>
-  <section role="region" aria-labelledby="alumni">
-    <h2 id="alumni">Lab Alumni</h2>
-      <h3>Ph.D. Students</h3>
-      <ul>
-        <li>person <em>year</em></li>
-        <li>person <em>year</em></li>
-        <li>person <em>year</em></li>
-        <li>person <em>year</em></li>
-      </ul>
-      <h3>Masters Students</h3>
-      <ul>
-        <li>person <em>year</em></li>
-        <li>person <em>year</em></li>
-        <li>person <em>year</em></li>
-        <li>person <em>year</em></li>
-      </ul>
-      <h3>Undergraduate Students</h3>
-      <ul>
-        <li>person <em>year</em></li>
-        <li>person <em>year</em></li>
-        <li>person <em>year</em></li>
-        <li>person <em>year</em></li>
-      </ul>
-  </section>
   <footer role="contentinfo" aria-labelledby="research-resources">
     <h2 id="research-resources">Resources</h2> <!--resources for users to find more about goldstein and research at VT-->
-    <ul>
-      <li>goldst@vt.edu</li>
-      <li><a href="https://che.vt.edu/People/faculty/Goldstein.html">Virginia Tech Faculty Page</a></li>
-      <li>240 Kelly Hall, Blacksburg VA 24060</li> <!--fix this address is incorrect-->
-      <li><!--add link to undergrad research pages--></li>
-    </ul>
-    <p>2024 Copyright</p>
+    <div class="footermain">
+      <div class="footerinfo">
+        <ul>
+          <li>240 Kelly Hall, Blacksburg VA 24060</li>
+          <li><a class="primary" href="https://che.vt.edu/People/faculty/Goldstein.html">Virginia Tech Faculty Page</a></li>
+          <li>goldst@vt.edu</li>
+        </ul>
+      </div>
+      <div class="fimgs">
+        <img class="footerimg1" src="assets/images/logo-white-black.svg" alt="vtlogo">
+        <img class="footerimg2" src="assets/images/vt-campuses.svg" alt="vt diagram">
+      </div>
+    </div>
+    <p class="footercc">© 2024 Lucy Somervill. All Rights Reserved.</p>
   </footer>
 </body>
 </html>

@@ -5,47 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Phoebe Hayashi">
   <title>Home - the Book Nest</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
   <a class="skip-to-link" href="#main">Skip to content</a>
   <header role="banner" aria-label="navigation menu">
-    <nav role="navigation" aria-label="main navigation">
-      <ul>
-        <li>
-          <a href="./index.html"><h1>Welcome to the Book Nest!</h1></a>
-        </li>
-        <li>
-          <a href="./reviews/all-reviews.html">Reviews</a>
-        </li>
-        <ul>
+    <h1>Welcome to the Book Nest!</h1>
+      <nav role="navigation" aria-label="main navigation">
+        <ul class="nav-menu">
           <li>
-            <a href="./reviews/mo-dao-zu-shi.html">Most Recent Review</a>
+            <a href="./index.html" class="header-link">Home</a>
           </li>
           <li>
-            <a href="./reviews/daisy-jones.html">Daisy Jones and the Six</a>
+            <a href="./reviews/all-reviews.html" class="header-link">Reviews</a>
+          </li>
+          <li>
+            <a href="./thoughts-about-things/just-thoughts.html" class="header-link">Just Thoughts</a>
           </li>
         </ul>
-        <li>
-          <a href="./thoughts-about-things/just-thoughts.html">Just Thoughts</a>
-        </li>
-        <ul>
-          <li>
-            <a href="./thoughts-about-things/asian-comics.html">Manga, manhua, and manhwa</a>
-          </li>
-          <li>
-            <a href="./thoughts-about-things/on-fanfic.html">On Fanfiction</a>
-          </li>
-        </ul>
-      </ul>
-    </nav>
-    <p>As a general spoiler disclaimer: There will be spoilers all over this website, so read at your own risk!</p>
+      </nav>
+      <p><strong>As a general spoiler disclaimer: There will be spoilers all over this website, so read at your own risk!</strong></p>
   </header>
   <main role="main" aria-label="Recent stories">
-    <section role="region" aria-labelledby="new">
-      <h2 id="new">Most Recent Review</h2>
+    <section role="region" aria-labelledby="new" class="page-section">
+      <h2 class="main-heading" id="new">Most Recent Review</h2>
       <article>
-        <h3>Grandmaster of Demonic Cultivation</h3>
-        <figure>
+        <h3 class="title">Grandmaster of Demonic Cultivation</h3>
+        <figure class="image">
           <img
             src="./assets/images/mdzs-promo-poster-6Feb24-WinnieChanPinterest-1200x849.jpg" 
             srcset="./assets/images/mdzs-promo-poster-6Feb24-WinnieChanPinterest-1200x849.jpg 1200w,
@@ -60,17 +46,17 @@
             Mo Dao Zu Shi - that's the name in Chinese - donghua promo. 
           </figcaption>
         </figure>
-        <div>
+        <div class="review">
           <p> So I caught Covid in the fall 2023 semester and needed something low-key for my fevered brain to latch onto and started watching the donghua for this. And then I started reading the manhua because this story is unfortunately both very interesting and has an enormous fandom, so here I am, nearly six months later, still buried in this obsession.</p>
           <p><a href="./reviews/mo-dao-zu-shi.html">Continue Reading</a></p>
           <p><a href="./reviews/all-reviews.html">Or check out my other reviews</a></p>
         </div>
       </article>
     </section>
-    <section role="region" aria-labelledby="other-reviews">
+    <section role="region" aria-labelledby="other-reviews" class="page-section">
       <h2 id="other-reviews">More Reviews</h2>
-      <article">
-        <h3>Daisy Jones and the Six</h3>
+      <article>
+        <h3><em>Daisy Jones and the Six</em></h3>
         <figure>
           <img 
             src="./assets/images/daisy-jones-book-cover-amazon-22feb24-646x1000.jpg" 
@@ -92,11 +78,11 @@
         </div>
       </article>
     </section>
-    <section role="region" aria-labelledby="new-thoughts">
-      <h2 id="new-thoughts">Just Thoughts</h2>
+    <section role="region" aria-labelledby="new-thoughts" class="page-section">
+      <h2 class="main-heading" id="new-thoughts">Just Thoughts</h2>
       <article>
-        <h3>Manga, manhwa, and manhua - What's the difference?</h3>
-        <figure>
+        <h3 class="title">Manga, manhwa, and manhua - What's the difference?</h3>
+        <figure class="image">
           <img 
             src="./assets/images/my-inlaws-are-obsessed-webtoon-16feb24-678x746.png"
             srcset="./assets/images/my-inlaws-are-obsessed-webtoon-16feb24-678x746.png 746w
@@ -110,15 +96,15 @@
             Current favorite manhwa: My In-Laws are Obsessed with Me
           </figcaption>
         </figure>
-        <div>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore asperiores, commodi aspernatur illum nostrum eos sequi accusantium omnis sapiente saepe libero reiciendis culpa nesciunt nemo. Facilis sunt magni dicta corporis!</p>
+        <div class="review">
+          <p>I should probably preface this by saying that I haven't read much manhua, so as far as I can tell, the style is less distinct in my head than manga or manhwa.</p>
           <p><a href="./thoughts-about-things/asian-comics.html">Continue Reading</a></p>
           <p><a href="./thoughts-about-things/just-thoughts.html">More Thoughts</a></p>
         </div>
       </article>
       <article>
-        <h3>On Fanfic, the reading of</h3>
-        <figure>
+        <h3 class="title">On Fanfic, the reading of</h3>
+        <figure class="image">
           <img 
             src="./assets/images/archive-of-our-own-quora-15feb24-602x401.jpg" 
             srcset="./assets/images/archive-of-our-own-quora-15feb24-602x401.jpg 602w
@@ -133,19 +119,20 @@
             Archive of Our Own logo, one of the main fanfiction websites
           </figcaption>
         </figure>
-        <div>
-          <p>reading fanfic Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptates culpa totam odio laboriosam quae nesciunt voluptate atque temporibus perspiciatis obcaecati nihil dolorem, corporis sint dolorum, non aliquid ducimus quasi.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatem modi eos nisi maxime ad eaque sunt, commodi quisquam, molestias esse? Eveniet quas doloribus corporis quo ad eius quasi facere.</p>
+        <div class="review">
+          <p>The main place I've been reading fanfiction is Archive of Our Own, and it's mostly <a href="./reviews/mo-dao-zu-shi.html"><em>The Grandmaster of Demonic Cultivation</em></a>'s fault because there are just so many fics in that fandom.</p>
           <p><a href="./thoughts-about-things/on-fanfic.html">Continue Reading</a></p>
           <p><a href="./thoughts-about-things/just-thoughts.html">More Thoughts</a></p>
         </div>
       </article>
     </section>
   </main>   
-  <footer role="contentinfo" aria-labelledby="personal-information">
+  <footer role="contentinfo" aria-labelledby="personal-information" class="about">
     <h2 id="personal-information">About me!</h2>
-    <p>I'm the Devourer of Books. I prefer fantasy books, but sometimes I branch out to other things. Original inhabitant of Hawaii, though currently based in Virginia. I've been reading books for about 15 years or so - since I was literate - and Asian comics since high school.</p>
-    <p>I don't do horror or thriller. Preferred genres are fantasy and fiction, preferably young adult but as non-angsty as possible because I have read way too many love triangles in my time.</p>
+    <div>
+      <p>I'm the Devourer of Books. I prefer fantasy books, but sometimes I branch out to other things. Original inhabitant of Hawaii, though currently based in Virginia. I've been reading books for about 15 years or so - since I was literate - and Asian comics since high school.</p>
+      <p>I don't do horror or thriller. Preferred genres are fantasy and fiction, preferably young adult but as non-angsty as possible because I have read way too many love triangles in my time.</p>
+    </div>
     <section role="region" id="contact-info">
       <h3 id="contact-info">Questions?</h3>
       <p>Contact me at phoebe22@vt.edu</p>

@@ -3,30 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News: Goldstein's Research Lab</title>
+    <title>News: Goldstein Research Lab</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a href="#main" class="skip-to-link">Skip to content</a>
-  <nav role="navigation" aria-label="Main navigation">
-    <ul>
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <ul class="navbar">
       <li><a href="index.html">Home</a></li>
       <li><a href="group.html">Group Members</a></li>
       <li><a href="research.html">Research Projects</a></li>
       <li><a href="publications.html">Publications</a></li>
       <li><a href="news.html">Lab News</a></li>
     </ul>
-    <div>
-      <h1>Goldstein's Research Lab</h1>
-      <img src="assets/images/logo_goldstein_research_bone_600x400.png" 
-        alt="Logo for Goldstein's Research Lab"
-        width="600" height="400"
-        srcset="assets/images/logo_goldstein_research_bone_600x400.png 600w, 
-                assets/images/logo_goldstein_research_bone_300x200.png 300w, 
-                assets/images/logo_goldstein_research_bone_150x100.png 150w" 
-      />
-    </div>
+    <h1>Goldstein Research Lab</h1>
   </nav>
-  <main role="main" aria-labelledby="research-news">
+  <main class="newspage" role="main" aria-labelledby="research-news">
     <h2 id="research-news">Lab News</h2>
     <ul>
       <section role="region" aria-label="2024">
@@ -49,15 +42,21 @@
     </ul>
   </main>
   <footer role="contentinfo" aria-labelledby="research-resources">
-    <h2 id="research-resources">Resources</h2> <!--resources for users 
-      to find more about goldstein and research at VT-->
-    <ul>
-      <li>goldst@vt.edu</li>
-      <li><a href="https://che.vt.edu/People/faculty/Goldstein.html">Virginia Tech Faculty Page</a></li>
-      <li>240 Kelly Hall, Blacksburg VA 24060</li> <!--fix this address is incorrect-->
-      <li><!--add link to undergrad research pages--></li>
-    </ul>
-    <p>2024 Copyright</p>
+    <h2 id="research-resources">Resources</h2> <!--resources for users to find more about goldstein and research at VT-->
+    <div class="footermain">
+      <div class="footerinfo">
+        <ul>
+          <li>240 Kelly Hall, Blacksburg VA 24060</li>
+          <li><a class="primary" href="https://che.vt.edu/People/faculty/Goldstein.html">Virginia Tech Faculty Page</a></li>
+          <li>goldst@vt.edu</li>
+        </ul>
+      </div>
+      <div class="fimgs">
+        <img class="footerimg1" src="assets/images/logo-white-black.svg" alt="vtlogo">
+        <img class="footerimg2" src="assets/images/vt-campuses.svg" alt="vt diagram">
+      </div>
+    </div>
+    <p class="footercc">© 2024 Lucy Somervill. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
