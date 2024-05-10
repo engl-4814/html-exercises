@@ -126,18 +126,11 @@ body {
   display: grid;
   gap: 1rem;
   grid-template-areas:
-    "header"
-    "main"
-    "left-sidebar"
-    "right-sidebar"
-    "footer";
-}
-
-.eor-grid-container {
-  display: flex;
-  gap: 1rem;
-  flex-flow: row wrap;
-  justify-content: center;
+      "header"
+      "main"
+      "left-sidebar"
+      "right-sidebar"
+      "footer";
 }
 
 @media (min-width: 500px) {
@@ -160,3 +153,4 @@ body {
         "footer footer footer";
     }
 }
+
