@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Yeseva+One&display=swap');
+
+:root {
+--copyFontFamily: "Open Sans", sans-serif;
+--headingFontFamily: "Yeseva One", serif;
+font-size: 18px;
+}
+
+body {
+    background-color: aliceblue;
+  }
+
+.skip-to-link {
+    left: 50%;
+    position: absolute;
+    transform: translateY(-300%);
+  }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 42rem;
+    width: 200px;
+    background-color: rgb(26, 45, 75);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 150%;
+    font-size: x-large;
+  }
+  
+li {
+    float: left;
+  }
+
+li a {
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: var(--headingFontFamily);
+  }
+  
+li a:hover {
+    background-color: rgb(61, 100, 162);
+    color: white;
+  }
+
+.welcome {
+    text-align: center;
+    font-size: 55px;
+    padding-top: 50px;
+}
+
+.home_flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 3000px;
+}
+
+.about_me {
+    max-width: 545px;
+    align-self: center;
+}
+
+.headshot {
+    align-items: center;
+    border: 3px solid rgb(26, 45, 75);
+}
+
+.interests {
+    max-width: 545px;
+    align-self: center;
+}
+
+.contact {
+    max-width: 545px;
+    align-self: center;
+}
+
+.resume_flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 3000px;
+    padding-top: 100px;
+}
+
+.my_resume {
+    align-self: center;
+    font-size: 25px;
+}
+
+.resume {
+    border: 3px solid rgb(26, 45, 75);
+      }
+
+body {font-family: var(--copyFontFamily);color:rgb(23, 62, 97) }
+h1, h2, h3 {font-family: var(--headingFontFamily);}
+
+.figcaption {
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    section {
+      font-size: .50rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    section {
+      font-size: 1rem;
+    }
+    nav ul {
+        padding-left: 0;
+    }
+    .welcome {
+        font-size: xx-large;
+    }
+}
+
+@media (min-width: 1200px) {
+    section {
+      font-size: 1.25rem;
+    }
+}

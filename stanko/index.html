@@ -5,45 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale =1. 0">
     <meta name="author" content="Kate Stanko"> 
     <title>Kate Stanko's Portfolio</title>
+    <link rel="stylesheet" href="/stanko/assets/css/style.css">
 </head>
 <body>
     <a href="#main" class="skip-to-link">Skip to content</a>
-    <nav role="navigation" aria-label="main menu">
+    <nav class="nav" role="navigation" aria-label="main menu">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="resume.html">Resume</a></li>
-            <li><a href="professional_work.html">Professional Work</a></li>
         </ul>
     </nav>
     <header role="banner" aria-label="Home page banner for Kate Stanko's Portfolio">
-        <h1>Welcome!</h1>
+        <div class="welcome">
+            <h1>Welcome!</h1>
+        </div>
     </header>
     <main id="main" role="main" aria-labelledby="kate-introduction">
-        <div>
-            <section role="region" aria-labelledby="about-me">
-                <h2 id="about-me">About Me</h2>
-                <p>I'm Kate Stanko, a junior double majoring in communication and professional & technical writing with a minor in human-computer interaction. 
-                Click around on this website to learn more about me and my work!</p>
-                <figure>
-                    <img 
-                        src="assets/images/smallcat386x214.png" 
-                        width="386" height="214"
-                        srcset="assets/images/smallcat386x214.png 386w,
-                        assets/images/mediumcat478x332.png 478w,
-                        assets/images/largecat3640x2226.jpeg 3640w"
-                        alt="A small picture of a brown cat."
-                    >
-                    <figcaption>Fig 1. A picture of a brown cat from Wikipedia.</figcaption>
-                </figure>
-            </section>
-            <section role="region" aria-labelledby="about-my-interests">
-                <h2 id="about-my-interests">About My Interests</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, est.</p>
-            </section>
-            <section role="region" aria-labelledby="about-my-portfolio">
-                <h2 id="about-my-portfolio">About My Portfolio</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, fuga.</p>
-            </section> 
+        <div class="home_flex">
+            <div class="about_me">
+                <section role="region" aria-labelledby="about-me">
+                    <h2 id="about-me">About Me</h2>
+                    <p>Hi, I'm Kate. Welcome to my corner of creativity! As a rising senior at Virginia Tech pursuing a double major in Professional & Technical Writing and Communication, I find immense joy in exploring various forms of expression, from penning down compelling narratives to curating captivating visual designs.
+                    </p>
+                    <figure>
+                        <img class="headshot" 
+                            src="assets/images/mediumkate545x545.jpeg" 
+                            width="400" height="400"
+                            alt="Professional headshot of Kate Stanko, a red-haired person wearing a blue sweater against Virginia Tech Hokie Stone."
+                        >
+                        <figcaption class="figcaption">Headshot of Kate Stanko.</figcaption>
+                    </figure>
+                </section>
+            </div>
+            <div class="interests">
+                <section role="region" aria-labelledby="about-my-interests">
+                    <h2 id="about-my-interests">About My Interests</h2>
+                    <p>My professional experiences, ranging from internships in technical writing for Virginia Tech's Department of IT to crafting media content for government communications in Chesterfield County, have honed my ability to communicate effectively across diverse audiences. I thrive in environments where innovation meets communication, striving to create impactful solutions through meticulous attention to detail and clear, concise messaging.</p>
+                    <p>
+                    Beyond academia and professional endeavors, I'm an active member of the community, serving as the previous FM Program Director for WUVT-FM 90.7 Blacksburg and now current General Manager as well as coaching public speaking at Virginia Tech's CommLab. These roles not only enrich my leadership skills but also foster a deep sense of connection with fellow enthusiasts of communication and expression.
+                    </p>                        
+                    In my spare time, you'll find me immersed in a world of melodies as a student DJ at WUVT-FM 90.7 Blacksburg or unleashing my creativity through drawing and writing. Whether it's crafting the perfect playlist or weaving narratives that captivate the imagination, I'm constantly inspired by the power of creativity to connect and inspire.</p>
+                </section>
+            </div>
+            <div class="contact">
+                <section role="region" aria-labelledby="about-my-portfolio">
+                    <h2 id="contact-me">Contact Me!</h2>
+                    <p>I'd love to hear from you! Whether you have questions, collaboration opportunities, or just want to connect, feel free to reach out. You can contact me via email at kstanko@vt.edu, and I'll get back to you as soon as possible. Let's start a conversation and explore the possibilities together!
+                    </p>
+                </section> 
+            </div>
         </div>
     </main>
     <footer id="footer" role="footer" aria-labelledby="copyright-statement">
