@@ -6,49 +6,149 @@
     <title>Mixed Emotions A Cappella</title>
     <link rel="stylesheet" href="assets/style.css"/>
 </head>
+<!-- OVERALL COMMENTS
+    - Missing A11Y labels for landmarks
+    - You have two nav menus with no label to distinguish them as a visually impaired user. The Perceivability in POUR Model is an essential baseline component of this course.
+    - Main doesn't use main element
+    - Images needed to be contained by divs to help control their size—a technique learned in class
+    - You had some unclosed and mis-indentations, which indicates the need for closer attention, copy-pasting, patchwork coding, which can impact A11Y too.
+-->
 <body>
-    <div class="main__grid_container">
-        <header role="banner">
-            <nav class="media" role="navigation">
+    <!-- need a skip link for A11Y -->
+
+    <!-- Sensing that you grabbed code here from the media query assignment, due to the previous class name. I modified the below to suggest how the HTML needed revision to then write CSS to create your planned design. -->
+
+    <div class="top_header_container">
+        <nav class="social_media_links_container" role="navigation" aria-label="Social Media Links">
+            <!-- List items go inside of a ul or ol -->
+            <ul>
                 <li><a href="https://www.instagram.com/mixedemotions_vt/?hl=en" aria-label="Link to our Instagram">Instagram</a></li>
                 <li><a href="https://open.spotify.com/artist/2BoHcRUfryDNxa9HQxXSpr?si=ogJRenlVS9yTKFmmqTnO9Q" aria-label="Link to our Spotify">Spotify</a></li>
                 <li><a href="https://www.youtube.com/user/VTMixedEmotions/featured" aria-label="Link to our YouTube">YouTube</a></li>
                 <li><a href="https://www.facebook.com/vtmixedemotions/" aria-label="Link to our Facebook">Facebook</a></li>
-            </nav>
-            <div class="header">
-                <img class="logo"
-                src="assets/images/memo-acappella-logo500x500.png"
-                width="100" height="100"
-                alt="MEMO A Cappella logo" />
-                <nav class="main_nav" role="navigation">
-                    <ol>
+            </ul>
+        </nav>
+        <header class="flex__header_container" role="banner">
+            <!-- I would have placed -->
+            <!-- <div class="header"> -->
+            <div class="logo">
+                <!-- logos/ornamental images leave the alt attr blank; img should be wrapped in div container for control of its content-sizing -->
+                <img src="assets/images/memo-acappella-logo500x500.png"
+                     width="100" height="100"
+                     alt="" />
+            </div>
+            <!-- revised to be an ul, as is convention -->
+            <nav class="main_nav" role="navigation" aria-label="Primary Navigation">
+                <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="meetmembers.html">Meet the Members</a></li>
                     <li><a href="photos.html">Photos & Videos</a></li>
                     <li>Contact Us</li>
-                    </ol>
-                </nav>
-            </div>
+                </ul>
+            </nav>
         </header>
-    <div role="main">
+    </div>
+
+    <!-- Needs to be a main element w/ label -->
+    <!-- <div role="main"> -->
+    <main role="main">
         <section aria-labelledby="seniors-header">
-            <h1 id="seniors-header">Seniors</h1>
-            <div>
-                <img src="assets/images/Tucker-Rossi-Virginia-Tech-MEMO1080x1080.jpg"
-                width="1080" height="1080"
-                alt="Picture of Tucker Rossi. Senior, Tenor, Architecture." />
-                <img src="assets/images/Waverly-VanGundy-Virginia-Tech-MEMO1080x1080.jpg"
-                width="1080" height="1080"
-                alt="Picture of Waverly VanGundy. Senior, Soprano, Neuroscience." />
-                <img src="assets/images/Kate-Fard-Virginia-Tech-MEMO1080x1080.jpg"
-                width="1080" height="1080"
-                alt="Picture of Kate Fard. Senior, Tenor, Civil Engineering." />
-                <img src="assets/images/Delphin-Virginia-Tech-MEMO1080x1080.jpg"
-                width="1080" height="1080"
-                alt="Picture of Delphin. Senior, Beatboxer, Telecommunications." />
-                <img src="assets/images/Drew-Tompkins-Virginia-Tech-MEMO1080x1080.jpg"
-                width="1080" height="1080"
-                alt="Picture of our social media director, Drew Tompkins. Senior, Tenor, Physics." />
+            <!-- should be h2; h1 == title of page only -->
+            <!-- <h1 id="seniors-header">Seniors</h1> -->
+            <h2 id="seniors-header">Seniors</h2>
+            <div class="grid__member_gallery_container">
+                <!-- Definitely A11Y issues here. You should be using headings with the nice images + a blurb. Here's a method we reviewed in class -->
+
+                <div class="grid_item__member_card">
+                    <div class="headshot">
+                        <img src="assets/images/Tucker-Rossi-Virginia-Tech-MEMO1080x1080.jpg"
+                             width="1080" height="1080"
+                             alt="Picture of Tucker Rossi. Senior, Tenor, Architecture." />
+                    </div>
+                    <div class="member_text">
+                        <h3>Member Name Here</h3>
+                        <div class="member_blurb">
+                            <p>
+                                Blurb info about member.
+                            </p>
+                        </div>
+                        <a href="#">CTA link for member</a>
+                    </div>
+                </div>
+
+                <div class="grid_item__member_card">
+                    <div class="headshot">
+                        <img src="assets/images/Waverly-VanGundy-Virginia-Tech-MEMO1080x1080.jpg"
+                             width="1080" height="1080"
+                             alt="Picture of Waverly VanGundy. Senior, Soprano, Neuroscience." />
+                    </div>
+                    <div class="member_text">
+                        <h3>Member Name Here</h3>
+                        <div class="member_blurb">
+                            <p>
+                                Blurb info about member.
+                            </p>
+                        </div>
+                        <a href="#">CTA link for member</a>
+                    </div>
+                </div>
+
+                <div class="grid_item__member_card">
+
+                    <div class="headshot">
+                        <img src="assets/images/Kate-Fard-Virginia-Tech-MEMO1080x1080.jpg"
+                             width="1080" height="1080"
+                             alt="Picture of Kate Fard. Senior, Tenor, Civil Engineering." />
+                    </div>
+                    <div class="member_text">
+                        <h3>Member Name Here</h3>
+                        <div class="member_blurb">
+                            <p>
+                                Blurb info about member.
+                            </p>
+                        </div>
+                        <a href="#">CTA link for member</a>
+                    </div>
+
+                </div>
+
+                <div class="grid_item__member_card">
+
+                    <div class="headshot">
+                        <img src="assets/images/Delphin-Virginia-Tech-MEMO1080x1080.jpg"
+                            width="1080" height="1080"
+                            alt="Picture of Delphin. Senior, Beatboxer, Telecommunications." />
+                    </div>
+                    <div class="member_text">
+                        <h3>Member Name Here</h3>
+                        <div class="member_blurb">
+                            <p>
+                                Blurb info about member.
+                            </p>
+                        </div>
+                        <a href="#">CTA link for member</a>
+                    </div>
+
+                </div>
+
+                <div class="grid_item__member_card">
+
+                    <div class="headshot">
+                        <img src="assets/images/Drew-Tompkins-Virginia-Tech-MEMO1080x1080.jpg"
+                            width="1080" height="1080"
+                            alt="Picture of our social media director, Drew Tompkins. Senior, Tenor, Physics." />
+                    </div>
+                    <div class="member_text">
+                        <h3>Member Name Here</h3>
+                        <div class="member_blurb">
+                            <p>
+                                Blurb info about member.
+                            </p>
+                        </div>
+                        <a href="#">CTA link for member</a>
+                    </div>
+
+                </div>
             </div>
         </section>
         <section aria-labelledby="juniors-header">
