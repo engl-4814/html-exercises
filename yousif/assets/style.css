@@ -17,6 +17,7 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
 }
+/*Root desgin of CSS general calling of design choices */
 :root {
   --grey-color: #f8faff;
   --black-color: #35374b;
