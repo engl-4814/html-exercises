@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sedan+SC&display=swap');
+
+/* TOC =========
+    1. ROOT & BODY
+    2. TYPOGRAPHY
+    3. GENERAL BASE STYLES
+    4. GRID LAYOUTS
+    5. FLEX LAYOUTS
+    6. @media QUERIES
+*/
+
+/*  1. ROOT & BODY */
+  :root {
+
+    /* Shades */
+    --primaryColor: #861F41;
+    --primaryShade1: #7A1A3B;
+    --primaryShade2: #6F1635;
+    --primaryShade3: #64112F;
+    --primaryShade4: #581029;
+    --primaryShade5: #4D0E23;
+
+    --secondaryColor: #E5751F;
+    --secondaryShade1: #CD690D;
+    --secondaryShade2: #B55D0B;
+    --secondaryShade3: #9D5109;
+    --secondaryShade4: #854508;
+    --secondaryShade5: #6D3906;
+ 
+    --accentColor: #75787b;
+    --accentShade1: #e6eaef;
+    --accentShade2: #c0c7ce;
+    --accentShade3: #84898f;
+    --accentShade4: #575a5e;
+    --accentShade5: #393b3c;
+  
+    --neutralShade1: #f2f2f2;
+    --neutralShade2: #e8e9e9;
+    --neutralShade3: #d1d3d4;
+    --neutralShade4: #babdbf;
+    --neutralShade5: #808488;
+    --neutralShade6: #666a6d;
+    --neutralShade7: #4d5052;
+    --neutralShade8: #212122;
+    --grayShade: #999;
+    --blackShade: #000000;
+    --whiteShade: #ffffff;
+    --backgroundColor: #e0c097;
+    
+    /* Fonts */
+    --headingFontFamily: "Sedan SC", serif;
+    --pFontFamily: "Arvo", sans-serif;
+    --boldFontFamily: "Bebas Neue", sans-serif;
+    --listFontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+
+  body {
+    font-size: 18px;
+    background: var(--backgroundColor);
+  }
+
+/* END ROOT & BODY */
+
+
+
+/* 2. TYPOGRAPHY */
+  h1 {
+    font-family: var(--headingFontFamily);
+    font-size: 3rem;
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: var(--pFontFamily);
+    font-size: 1.5rem;
+  }
+
+  h3, h4 {
+    font-family: var(--pFontFamily);
+    font-size: 1rem;
+  }
+
+  p {
+    font-family: var(--pFontFamily);
+    font-size: .7rem;
+    margin-left: 20px;
+  }
+
+  ul {
+    font-family: var(--listFontFamily);
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-family: var(--boldFontFamily)
+  }
+
+  a {
+    font-family: var(--boldFontFamily);
+    color: var(--whiteShade);
+    text-decoration: none;
+    font-weight: lighter;
+  }
+
+  img {
+    padding-left: 200px;
+  }
+/* END TYPOGRAPHY */
+
+
+/* 3. GENERAL BASE STYLES */
+  a.skip-to-link {
+    top:auto;
+  }
+
+  .navbar { padding-inline-start: 0; }
+
+  .title-text, .title-background {
+
+      padding: 10px 20px; /* Padding around the text */
+      border-radius: 10px; /* Rounded corners for the background */
+      color: white; /* White text for contrast */
+  }
+
+  .title-background {
+    background-image: url("assets/images/vtheader.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px; 
+  }
+
+  /*spacing after nav*/
+    header, main {
+      margin-top: 70px;
+    }
+
+    h1 {
+        text-shadow: var(--blackShade);
+        text-decoration: wavy;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+
+    .footerbullets {
+      list-style-type: none; /* Remove default list style */
+      padding: 0; /* Remove padding */
+    }
+
+    .footerbullets li::before {
+      content: ""; /* No content needed, shapes are formed using borders */
+      display: inline-block;
+      margin-right: 8px; /* Space between the arrow and text */
+      vertical-align: middle; /* Align the arrow with the text */
+      border-top: 5px solid transparent; /* Top border of the arrow */
+      border-bottom: 5px solid transparent; /* Bottom border of the arrow */
+      border-left: 10px solid #000; /* The arrow itself pointing right */
+      
+    }
+
+    img {
+      display: block;
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+    
+/* END GENERAL BASE STYLES */
+
+
+/* 4. GRID LAYOUTS */
+  .gwiddy {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "1 2 3 4";
+    gap: 35px;
+  }
+
+  .gwiddy, .gwiddy1, .gwiddy2, .gwiddy3, .gwiddy4 img {
+    position: relative; 
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  .gwiddy > div {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;  
+    justify-content: center;  
+    text-align: center;  
+    height: 100%; 
+}
+/* END GRID LAYOUTS */
+
+
+/* 5. FLEX LAYOUTS */
+  nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+    height: auto;
+    background-image: url("assets/images/black.jpg");
+    background-color: white;
+    align-items: center;
+    box-shadow: 0px 10px 10px var(--blackShade);
+    z-index: 1;
+  }
+
+  .navbar > li {
+    flex: 1;
+    padding: .4rem;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    color: var(--whiteShade);
+    background-color: var(--blackShade);
+    font-weight: 500;
+    font-family: monospace;
+    font-weight: bolder;
+  }
+
+  .navbar > li > a {
+    color: inherit;  /* Ensures the link color is the same as the li element */
+    text-decoration: none; /* Removes underline */
+    width: 100%; /* Makes the entire list item clickable */
+    display: block; /* Allows the width 100% to take effect */
+  }
+
+  
+/* END FLEX LAYOUTS */
+
+
+/* 6. @media QUERIES */
+  /* Add @media queries */
+/* END 6. @media QUERIES */
