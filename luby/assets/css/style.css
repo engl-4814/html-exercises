@@ -1,7 +1,135 @@
-/* Colors */
+
+/* Colors and Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --backgroundColor: #f3faff;
+  --foregroundColor: #0d242f;
+
+  --primaryColor: #4c0082;
+  --primaryShade1: #814ca7;
+  --primaryShade2: #6f329b;
+  --primaryShade3: #5d198e;
+  --primaryShade4: #440075;
+  --primaryShade5: #3c0068;
+
+  --secondaryColor: #e8d5d2;
+  --secondaryShade1: #eee1df;
+  --secondaryShade2: #ecdddb;
+  --secondaryShade3: #ead9d6;
+  --secondaryShade4: #d0bfbd;
+  --secondaryShade5: #b9aaa8;
+
+  --neutralShade1: #f2f2f2;
+  --neutralShade2: #e8e9e9;
+  --neutralShade3: #d1d3d4;
+  --neutralShade4: #babdbf;
+  --neutralShade5: #808488;
+  --neutralShade6: #666a6d;
+  --neutralShade7: #4d5052;
+  --neutralShade8: #212122;
+
+  --grayColor: #999;
+  --lightGrayColor: #ddd;
+
+  --copyFontFamily: "Palanquin", sans-serif;
+  --headingFontFamily: "Tinos", serif;
+
+  font-size: 18px;
+  margin: auto;
+  text-align: center;
+
+}
+
+/* Color Scheme */
+
+body {
+    background: var(--secondaryColor);
+    color: var(--foregroundColor);
+  }
+
+aside {
+    background-color: var(--secondaryColor);
+}
+
+h1 {
+    color: var(--primaryColor);
+}
+
+h2 {
+    color: var(--primaryColor);
+}
+
+h3 {
+    color: var(--primaryColor);
+}
 
 /* Typography */
 
-/* Left Sidebar */
+body { font-family: var(--copyFontFamily); }
+h1,h2,h3 { font-family: var(--headingFontFamily); }
 
-/* Right Sidebar */
+strong { font-weight: 500; }
+em { font-style: italic; }
+
+body {
+    font-weight: 400;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+  }
+  h1 {
+    font-weight: 800;
+    font-size: clamp(2.5rem,3rem,3.5rem);
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: clamp(1.75rem,2rem,2.5rem);
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-weight: 600;
+    font-size: clamp(1.25rem,1.5rem,1.75rem);
+    line-height: 1.2;
+  }
+
+/* Mobile-First */
+
+.header {
+    grid-area: header;
+  }
+
+.footer {
+    grid-area: footer;
+  }
+
+.main {
+    grid-area: main;
+  }
+
+.sidebar {
+    grid-area: sidebar;
+  }
+
+.page-grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "header"
+    "main"
+    "sidebar"
+    "footer";
+}
+
+@media (min-width: 500px) {
+    .page-grid-container {
+      grid-template-columns: 1fr 3fr;
+      grid-template-areas:
+        "header  header"
+        "sidebar main"
+        "footer      footer";
+    }
+}
