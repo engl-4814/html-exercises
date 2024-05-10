@@ -1,6 +1,13 @@
 /*Fonts/Colors*/
 /*Note: I understand this is a final, but for whatever reason my CSS refuses to apply itself. I have done the work and included it all anyways in case some small issue is causing these problems- I don't want to lose the credit. Thank you so much for working with me this semester*/
 
+/* COMMENTS
+    - Your wireframe needed to be across small, medium, and large screen sizes. It also needed to enact the CRAP design principles learned, which included our discussion and practice in class about how all-centered alignment is bad for A11Y and readability overall.
+    - CSS grids need to use things like grid-template-columns and any combination of rules that help create sized "tracks", so you can then place grid items along the lines in the grid that make up that track.
+    - Imported fonts need to be enacted
+    - Color choices are not accessible in some cases
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
@@ -84,7 +91,9 @@ body { display: grid;
     
 
 /* Media Queries/Mobile Formatting*/
-@media screen and (min-width: 600 px) {
+/* won't work until you use the unit correctly */
+/* @media screen and (min-width: 600 px) { */
+@media screen and (min-width: 600px) {
 .preview {
     display: block;
     margin-left: auto;
