@@ -4,45 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Website Title</title>
+    <link rel="stylesheet" href="assets/semenova.css">
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sedan+SC&display=swap');
+</style>
+
+    </style>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
 
-    <header role="banner" arialabelledby="Header is Yogi Training and Classes: Everything is possible ">
-        <h1>Yogi Training and Classes: Everything is possible</h1>
-        <nav role="navigation" aria-label="Main Page leading to links">
-            <ul>
-                <li><a href="1">Home</a></li>
-                <li><a href="2">About Us</a></li>
-                <li><a href="3">Classes</a></li>
-                <li><a href="4">Contact Info and Locations</a></li>
-            </ul>
-        </nav>
+    <header role="banner" aria-labelledby="header-label">
+        <h1 id="header-label">Yogi Training and Classes: Everything is possible</h1>
     </header>
 
+    <nav role="navigation" aria-label="Main Page leading to links">
+        <ul>
+            <li><a href="1">Home</a></li>
+            <li><a href="2">About Us</a></li>
+            <li><a href="3">Classes</a></li>
+            <li><a href="4">Contact Info and Locations</a></li>
+        </ul>
+    </nav>
+
     <main id="main" role="main">
-        <section aria-labelledby="main section containing yoga images and information about us">
+        <section aria-labelledby="About Us">
             <h2 id="About Us">About Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <img src="assets/images/yoga-lotus.jpeg" srcset="assets/images/yoga-lotus.jpeg 200w, assets/images/yoga-lotus.jpeg 400w" 
-            alt="This image shows 9 different yoga poses ranging from lotus to downwards facing dog" width="200" height="150">
+            <p> 
+                Welcome to our yoga studio, where we focus on meditation and helping you find your true self. Our classes are designed to not only strengthen your body but also calm your mind and nurture your spirit. Whether you're new to yoga or a seasoned practitioner, our welcoming community and experienced instructors are here to support you on your journey to inner peace and well-being.
+            </p>
+            <img src="assets/images/BuddhaMeditation.jpeg"
+            srcset="assets/images/BuddhaMeditation.jpeg 150px, assets/images/BuddhaMeditation.jpeg 200px, assets/images/BuddhaMeditation.jpeg 400px, assets/images/BuddhaMeditation.jpeg 600px"
+            alt="Buddha Meditating on a Mountain">
+
+            <img src="assets/images/dancer-pose-mountains-1-e1610514235791.webp"
+            srcset="assets/images/dancer-pose-mountains-1-e1610514235791.webp 150px, assets/images/dancer-pose-mountains-1-e1610514235791.webp 200px, assets/images/dancer-pose-mountains-1-e1610514235791.webp 400px, assets/images/dancer-pose-mountains-1-e1610514235791.webp 600 px"
+            alt="Woman holding her leg up in dancer pose on an edge of a mountain"
+            width="300" height="300">
+             
         </section>
 
-        <section aria-labelledby="Online Content Sign-Up/ Courses folder">
-            <h2 id="Classes Sign Up">Classes Sign-Up and Library</h2>
-            <p>Videos and Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-            <img src="assets/images/Yoga-Asana-Image.jpeg" alt="A shadow practing a standing tree pose" width="200" height="150">
+        <section aria-labelledby="Classes Sign Up">
+            <h2 id="Classes Sign Up"> Classes Sign-Up </h2>
+            <p>
+                Ready to begin your yoga journey with us? Sign up for one of our classes today and experience the transformative power of yoga. From beginner-friendly classes to more advanced sessions, we offer a variety of options to suit your needs and schedule. Join us on the mat and discover the joy of movement, breath, and mindfulness.
+            </p>
+            <img src="assets/images/PartnerYoga.webp" 
+            srcset="assets/images/PartnerYoga.webp 150px, assets/images/PartnerYoga.webp 200px, assets/images/PartnerYoga.webp 400px, assets/images/PartnerYoga.webp 600px"
+            alt="Partners practing a standing tree pose together" width="300" height="400" >
+        </section>
+
+        <section aria-labelledby="Prices Section">
+            <h2 id="Prices Section"> Prices Section </h2>
+            <p>
+                Our pricing is designed to be flexible and accessible, ensuring that everyone can experience the benefits of yoga. Whether you prefer drop-in classes or monthly memberships, we have options to fit your budget and lifestyle. Invest in your health and well-being with our affordable and empowering yoga classes.
+            </p>
+            <img src="assets/images/Bird.webp" 
+            alt="Image showing a reversed bird of paradise in plank" width="200" height="150"
+            srcset="assets/images/Yoga1Large.jpg 150px, assets/images/Yoga1Large.jpg 200px, assets/images/Yoga1Large.jpg 400px, assets/images/Yoga1Large.jpg 600px" 
+            sizes="(max-width: 600px), 200px, 400px"
+            >
+        </section>
+
+        <section aria-labelledby="Final Thoughts">
+            <h2 id="Final Thoughts">Final Thoughts</h2>
+            <p>
+                Thank you for considering our yoga studio for your practice. We believe that yoga is not just a physical exercise but a path to self-discovery and growth. Join our community and embark on a journey of transformation and self-awareness. Together, we can cultivate a more peaceful and harmonious world, starting from within. Train the poses demonstrated below to begin your journey! 
+            </p>
+            <img src="assets/images/YogaPoses.jpeg" alt="Image showing 8 different yoga poses and variations and possibilities" width="500" height="500"
+            alt="Image showing a reversed bird of paradise in plank" width="200" height="150"
+            srcset="assets/images/Bird.webp 150px, assets/images/Bird.webp 200px, assets/images/Yoga1Large.jpg 400px, assets/images/Bird.webp 600px" 
+            sizes="(max-width:600px), 200px, 400px"
+            >
         </section>
     </main>
 
-    <footer role="contentinfo">
-      <p>&copy; 2024 Yoga Lovers. All Rights Reserved.</p>
-      <nav role="navigation" aria-label="Footer"> </nav>
-      <div class="social-media">
-          <a href="#" aria-label="Facebook"></a>
-          <a href="#" aria-label="Twitter"></a>
-          <a href="#" aria-label="Instagram"></a>
-      </div>
-    </footer>
-</body>
 </html>
